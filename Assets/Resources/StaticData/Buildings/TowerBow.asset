@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a306de890949129245148bb923a655, type: 3}
+  m_Name: TowerBow
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  BuildingTypeId: 8
+  BuildingsData:
+  - LevelId: 1
+    CardKey: -1
+    Cards:
+    - CardId: -1
+      Prefab: {fileID: 7122430260205622607, guid: e70d293a4c134ff49906a7baa03171ba, type: 3}
+      CardPrefabUI: {fileID: 0}
+    HP: 0
+    GridSizeX: 2
+    CoinsValue: 15
+    BuildingTime: 5
+  - LevelId: 2
+    CardKey: -1
+    Cards:
+    - CardId: 3
+      Prefab: {fileID: 6489265398573498464, guid: 765b6d9f0895dc64595c673bd8f7b3dc, type: 3}
+      CardPrefabUI: {fileID: 8837097611545108470, guid: f9be7e662325ba64fa23ab90268e1c88, type: 3}
+    - CardId: 4
+      Prefab: {fileID: 2920593525128271419, guid: 48147456fac6092489d3693b909db1e5, type: 3}
+      CardPrefabUI: {fileID: 8837097611545108470, guid: ce8ba62ead2922e4e961b6d425e8bd9e, type: 3}
+    - CardId: 7
+      Prefab: {fileID: 2727829989252327591, guid: 2190c337c51a51d40b2b43e5992e89c1, type: 3}
+      CardPrefabUI: {fileID: 8837097611545108470, guid: 75511d613f3bc3943853bed784f96965, type: 3}
+    HP: 0
+    GridSizeX: 2
+    CoinsValue: 20
+    BuildingTime: 7
+  GhostSprite: {fileID: 2005045245, guid: 185205a9e9c149643bf43a935faa2266, type: 3}
+  KeyboardHint: "\u041F\u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C \u0431\u0430\u0448\u043D\u044E
+    \u0434\u043B\u044F \u043B\u0443\u0447\u043D\u0438\u043A\u0430"
+  HintSprite: {fileID: -1194379514, guid: d99c8eb7705f5284ab55ce6bfb22ad58, type: 3}
+  CatalogItemUI: {fileID: 898081003, guid: fd50f7a3c548a994eb7eedfec65dd469, type: 3}
+  TooltipText: TowerBowText

@@ -1,0 +1,1685 @@
+version: 2
+tpsheetFileNames:
+- Assets/Images/New/Bag/_-1_Animation_NRM.tpsheet
+- Assets/Images/New/Bag/_-1_Animation_RMSK.tpsheet
+- Assets/Images/New/Bag/_-1_Idle_NRM.tpsheet
+- Assets/Images/New/Bag/_-1_Idle_RMSK.tpsheet
+- Assets/Images/New/Barricade/_-Barricade_01_NRM.tpsheet
+- Assets/Images/New/Barricade/_-Barricade_01_RMSK.tpsheet
+- Assets/Images/New/Barricade/_-Barricade_02_NRM.tpsheet
+- Assets/Images/New/Barricade/_-Barricade_02_RMSK.tpsheet
+- Assets/Images/New/Barricade/_-Barricade_03_NRM.tpsheet
+- Assets/Images/New/Barricade/_-Barricade_03_RMSK.tpsheet
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-17_StartFyl_NRM.tpsheet
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-17_StartFyl_RMSK.tpsheet
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-18_Fyl_NRM.tpsheet
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-18_Fyl_RMSK.tpsheet
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-19_EndFly_NRM.tpsheet
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-19_EndFly_RMSK.tpsheet
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-20_Shoot_NRM.tpsheet
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-20_Shoot_RMSK.tpsheet
+- Assets/Images/New/Crystal/Crystal-Diff.tpsheet
+- Assets/Images/New/Crystal/Crystal-Mask.tpsheet
+- Assets/Images/New/Desk_and_Stoyki/Desk_and_Stoyki-1_Desk_NRM.tpsheet
+- Assets/Images/New/Desk_and_Stoyki/Desk_and_Stoyki-2_Desk_RMSK.tpsheet
+- Assets/Images/New/Desk_and_Stoyki/Desk_and_Stoyki-3_Stoyki_NRM.tpsheet
+- Assets/Images/New/Desk_and_Stoyki/Desk_and_Stoyki-4_Stoyki_RMSK.tpsheet
+- Assets/Images/New/Enemy/Effects/UI_EnemyEffects.tpsheet
+- Assets/Images/New/Enemy/ENM_BladeMan/_-1_Idle_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_BladeMan/_-1_Idle_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_BladeMan/_-2_Run_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_BladeMan/_-2_Run_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_BladeMan/_-3_Attack_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_BladeMan/_-3_Attack_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_BladeMan/_-4_Death_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_BladeMan/_-4_Death_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-1_Idle_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-1_Idle_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-2_Run_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-2_Run_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-3_Attack_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-3_Attack_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-4_Death_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-4_Death_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Imp/_-1_Idle_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Imp/_-1_Idle_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Imp/_-2_Run_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Imp/_-2_Run_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Imp/_-3_Attack_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Imp/_-3_Attack_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Imp/_-4_Death_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Imp/_-4_Death_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Imp/_-5_Stun_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Imp/_-5_Stun_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-1_Idle_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-1_Idle_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-2_Walk_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-2_Walk_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-3_Run_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-3_Run_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-4_Attack_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-4_Attack_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-5_01_Stun_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-5_01_Stun_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-5_02_Stun_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-5_02_Stun_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-6_01_Death_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-6_01_Death_RMSK.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-6_02_Death_NRM.tpsheet
+- Assets/Images/New/Enemy/ENM_Tank/_-6_02_Death_RMSK.tpsheet
+- Assets/Images/New/Fence/_-Fence_NRM.tpsheet
+- Assets/Images/New/Fence/_-Fence_RMSK.tpsheet
+- Assets/Images/New/Flags/_-Flags_NRM.tpsheet
+- Assets/Images/New/Flags/_-Flags_RMSK.tpsheet
+- Assets/Images/New/ForOfWar/UI_FogofWar.tpsheet
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Assets_NRM.tpsheet
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Assets_RMSK.tpsheet
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-CentralFlag_NRM.tpsheet
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-CentralFlag_RMSK.tpsheet
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Chest_Animation_NRM.tpsheet
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Chest_Animation_RMSK.tpsheet
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Chest_Idle_NRM.tpsheet
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Chest_Idle_RMSK.tpsheet
+- Assets/Images/New/Ruins/_-Ruins_NRM.tpsheet
+- Assets/Images/New/Ruins/_-Ruins_RMSK.tpsheet
+- Assets/Images/New/Towers/ArcherTowers/_-Towers_NRM.tpsheet
+- Assets/Images/New/Towers/ArcherTowers/_-Towers_RMSK.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/Ball/Ball-Ball_NRM.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/Ball/Ball-Ball_RMSK.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_2_NRM.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_2_RMSK.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_3_NRM.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_3_RMSK.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_4_NRM.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_4_RMSK.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_5_NRM.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_5_RMSK.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_NRM.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_RMSK.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/CatapultaTower-Tower_Spot_NRM.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/CatapultaTower-Tower_Spot_RMSK.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapultaMan-1_Idle_NRM.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapultaMan-1_Idle_RMSK.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapultaMan-2_ShootReolad_2_NRM.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapultaMan-2_ShootReolad_2_RMSK.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapultaMan-2_ShootReolad_NRM.tpsheet
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapultaMan-2_ShootReolad_RMSK.tpsheet
+- Assets/Images/New/Towers/Jug_new/Jug-Jug_NRM.tpsheet
+- Assets/Images/New/Towers/Jug_new/Jug-Jug_RMSK.tpsheet
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-1_Idle_NRM.tpsheet
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-2_Idle_RMSK.tpsheet
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-3_Reolad_NRM.tpsheet
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-4_Reolad_RMSK.tpsheet
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-5_Fire_NRM.tpsheet
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-6_Fire_RMSK.tpsheet
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Tower_Spot-TowerSpot_NRM.tpsheet
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Tower_Spot-TowerSpot_RMSK.tpsheet
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-1_Idle_NRM.tpsheet
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-2_Idle_RMSK.tpsheet
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-3_Reolad_NRM.tpsheet
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-4_Reolad_RMSK.tpsheet
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-5_Fire_NRM.tpsheet
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-6_Fire_RMSK.tpsheet
+- Assets/Images/New/Towers/Stone/Stone-1_Stone_Down_NRM.tpsheet
+- Assets/Images/New/Towers/Stone/Stone-1_Stone_Down_RMSK.tpsheet
+- Assets/Images/New/Towers/Stone/Stone-2_Stone_Up_NRM.tpsheet
+- Assets/Images/New/Towers/Stone/Stone-2_Stone_Up_RMSK.tpsheet
+- Assets/Images/New/Towers/Tar/Tar-Extanting.tpsheet
+- Assets/Images/New/Towers/Tar/Tar-idle.tpsheet
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Toer_Tar_Mechanic-Mechanica_NRM.tpsheet
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Toer_Tar_Mechanic-Mechanica_RMSK.tpsheet
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Toer_Tar_Mechanic-Tower_NRM.tpsheet
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Toer_Tar_Mechanic-Tower_RMSK.tpsheet
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Tower_Tar_Mechanica-Mechanica.tpsheet
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Tower_Tar_Mechanica-Tower_Tar_01.tpsheet
+- Assets/Images/New/Towers/Tower_Tar_Mechanica_new/Toer_Tar_Mechanic-Mechanica_NRM.tpsheet
+- Assets/Images/New/Towers/Tower_Tar_Mechanica_new/Toer_Tar_Mechanic-Mechanica_RMSK.tpsheet
+- Assets/Images/New/Towers/Tower_Tar_Mechanica_new/Toer_Tar_Mechanic-Tower_NRM.tpsheet
+- Assets/Images/New/Towers/Tower_Tar_Mechanica_new/Toer_Tar_Mechanic-Tower_RMSK.tpsheet
+- Assets/Images/New/Towers/TowerBalista/Ballista_Bow/Ballista_Bow-2_Shoot_NRM.tpsheet
+- Assets/Images/New/Towers/TowerBalista/Ballista_Bow/Ballista_Bow-2_Shoot_RMSK.tpsheet
+- Assets/Images/New/Towers/TowerBalista/Ballista_Bow/Ballista_Bow-3_Reolad_NRM.tpsheet
+- Assets/Images/New/Towers/TowerBalista/Ballista_Bow/Ballista_Bow-3_Reolad_RMSK.tpsheet
+- Assets/Images/New/Towers/TowerBalista/Tower_Ballista/Tower_Ballista-Tower_Ballista_NRM.tpsheet
+- Assets/Images/New/Towers/TowerBalista/Tower_Ballista/Tower_Ballista-Tower_Ballista_RMSK.tpsheet
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-1_Idle_NRM.tpsheet
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-1_Idle_RMSK.tpsheet
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-2_Shoot_NRM.tpsheet
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-2_Shoot_RMSK.tpsheet
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-3_Reolad_NRM.tpsheet
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-3_Reolad_RMSK.tpsheet
+- Assets/Images/New/Towers/Towers 1/_-Towers_NRM.tpsheet
+- Assets/Images/New/Towers/Towers 1/_-Towers_RMSK.tpsheet
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerBow_LV01_NRM.tpsheet
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerBow_LV01_RMSK.tpsheet
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerBow_LV02_NRM.tpsheet
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerBow_LV02_RMSK.tpsheet
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerFire_LV01_NRM.tpsheet
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerFire_LV01_RMSK.tpsheet
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerFire_LV02_NRM.tpsheet
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerFire_LV02_RMSK.tpsheet
+- Assets/Images/New/Towers/TowerTar_01/Jug_01/Jug_01-Jug_01_NRM.tpsheet
+- Assets/Images/New/Towers/TowerTar_01/Jug_01/Jug_01-Jug_01_RMSK.tpsheet
+- Assets/Images/New/Towers/TowerTar_01/Jug_and_Tar_01/Jug_and_Tar-Jug_01_NRM.tpsheet
+- Assets/Images/New/Towers/TowerTar_01/Jug_and_Tar_01/Jug_and_Tar-Jug_01_RMSK.tpsheet
+- Assets/Images/New/Towers/TowerTar_01/Jug_and_Tar_01/Jug_and_Tar-Tar_01_NRM.tpsheet
+- Assets/Images/New/Towers/TowerTar_01/Jug_and_Tar_01/Jug_and_Tar-TAR_01_RMSK.tpsheet
+- Assets/Images/New/Towers/TowerTar_01/Tower_Spot/Tower_Spot-Tower_Spot_NRM.tpsheet
+- Assets/Images/New/Towers/TowerTar_01/Tower_Spot/Tower_Spot-Tower_Spot_RMSK.tpsheet
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-1_Idle_NRM.tpsheet
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-1_Idle_RMSK.tpsheet
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-2_SHoot_NRM.tpsheet
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-2_Shoot_RMSK.tpsheet
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-3_Reolad_NRM.tpsheet
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-3_Reolad_RMSK.tpsheet
+- Assets/Images/New/Trees/ENV_Forest_Back.tpsheet
+- Assets/Images/New/Trees/ENV_Forest_Front.tpsheet
+- Assets/Images/New/Trees/ENV_Forest_Mid.tpsheet
+- Assets/Images/New/Trees/Tree/_-Tree_02_NRM.tpsheet
+- Assets/Images/New/Trees/Tree/_-Tree_02_RMSK.tpsheet
+- Assets/Images/New/Trees/Tree/_-Tree_NRM.tpsheet
+- Assets/Images/New/Trees/Tree/_-Tree_RMSK.tpsheet
+- Assets/Images/New/UI/Cards/UI_Cards_Award.tpsheet
+- Assets/Images/New/UI/Cards/UI_Cards_Cards.tpsheet
+- Assets/Images/New/UI/Cards/UI_Cards_Flags.tpsheet
+- Assets/Images/New/UI/Cards/UI_Cards_Req.tpsheet
+- Assets/Images/New/UI/Cards/UI_Cards_Sсhemes.tpsheet
+- Assets/Images/New/UI/Cards/UI_Cards_UI.tpsheet
+- Assets/Images/New/UI/TowerIcon/UI_TowerIcon.tpsheet
+- Assets/Images/New/Units/UNT_Darvish/_-1_Idle_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Darvish/_-1_Idle_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_Darvish/_-2_SitIdle_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Darvish/_-2_SitIdle_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_Darvish/_-3_Scary_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Darvish/_-3_Scary_NRM_02.tpsheet
+- Assets/Images/New/Units/UNT_Darvish/_-3_Scary_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_Darvish/_-3_Scary_RMSK_02.tpsheet
+- Assets/Images/New/Units/UNT_Darvish/_-4_Walk_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Darvish/_-4_Walk_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_Darvish/_-5_Run_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Darvish/_-5_Run_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_Darvish/_-6_ScaryRun_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Darvish/_-6_ScaryRun_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_Homeless/_-1_Idle_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Homeless/_-1_Idle_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_Homeless/_-2_Run_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Homeless/_-2_Run_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_Homeless/_-3_FastRun_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Homeless/_-3_FastRun_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_Homeless/_-4_Walk_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Homeless/_-4_Walk_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_Homeless/_-5_FreeWalk_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Homeless/_-5_FreeWalk_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_Homeless_02/_-1_Idle_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Homeless_02/_-1_Idle_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_Homeless_02/_-2_Walk_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Homeless_02/_-2_Walk_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_Homeless_02/_-3_Run_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Homeless_02/_-3_Run_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_Homeless_02/_-4_FastRun_NRM.tpsheet
+- Assets/Images/New/Units/UNT_Homeless_02/_-4_FastRun_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/Cub_Break-Cub_Break.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan_new-1_Idle.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan_new-2_Shoot.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan_new-3_Reolad.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan_new-3_Reolad_01.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan_new-4_cub 1.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan_new-4_cub.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-1_Idle_NRM.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-1_Idle_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-2_Shoot_NRM.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-2_Shoot_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-3_Reolad_01_NRM.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-3_Reolad_01_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-3_Reolad_NRM.tpsheet
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-3_Reolad_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_01_idle_NRM.tpsheet
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_01_idle_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_01_Shoot_NRM.tpsheet
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_01_Shoot_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_02_idle_NRM.tpsheet
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_02_idle_RMSK.tpsheet
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_02_Shoot_NRM.tpsheet
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_02_Shoot_RMSK.tpsheet
+- Assets/Images/New/Units/Vendors/UNT_Bow_Vendor/UNT_Bow_Vendor-1_Idle_1.tpsheet
+- Assets/Images/New/Units/Vendors/UNT_Bow_Vendor/UNT_Bow_Vendor-2_Idle_2.tpsheet
+- Assets/Images/New/Units/Vendors/UNT_Bow_Vendor/UNT_Bow_Vendor-3_Happy.tpsheet
+- Assets/Images/New/Units/Vendors/UNT_Hummer_Vendor/UNT_Hummer_Vendor-1 Idle.tpsheet
+- Assets/Images/New/Units/Vendors/UNT_Hummer_Vendor/UNT_Hummer_Vendor-2 Idle 2.tpsheet
+- Assets/Images/New/Units/Vendors/UNT_Hummer_Vendor/UNT_Hummer_Vendor-3_Happy.tpsheet
+- Assets/Images/New/Workshops/BowTent/_-BowTent_NRM.tpsheet
+- Assets/Images/New/Workshops/BowTent/_-BowTent_RMSK.tpsheet
+- Assets/Images/New/Workshops/BowTent/_-TentAnimation_NRM.tpsheet
+- Assets/Images/New/Workshops/BowTent/_-TentAnimation_RMSK.tpsheet
+- Assets/Images/New/Workshops/HummerTent/_-HummerTent_NRM.tpsheet
+- Assets/Images/New/Workshops/HummerTent/_-HummerTent_RMSK.tpsheet
+- Assets/Images/New/Workshops/HummerTent/_-TentAnimation_NRM.tpsheet
+- Assets/Images/New/Workshops/HummerTent/_-TentAnimation_RMSK.tpsheet
+- Assets/Images/New/Workshops/ResetTent/_-ReceptTent_NRM.tpsheet
+- Assets/Images/New/Workshops/ResetTent/_-ReceptTent_RMSK.tpsheet
+- Assets/Images/New/Workshops/ShieldTent/_-ShieldTent_NRM.tpsheet
+- Assets/Images/New/Workshops/ShieldTent/_-ShieldTent_RMSK.tpsheet
+- Assets/Images/New/Workshops/ShieldTent/_-Spot_NRM.tpsheet
+- Assets/Images/New/Workshops/ShieldTent/_-Spot_RMSK.tpsheet
+- Assets/Images/New/Workshops/ShieldTent/_-TentAnimation_NRM.tpsheet
+- Assets/Images/New/Workshops/ShieldTent/_-TentAnimation_RMSK.tpsheet
+- Assets/Images/New/Workshops/ShieldTent/_-TentAnimation02_NRM.tpsheet
+- Assets/Images/New/Workshops/ShieldTent/_-TentAnimation02_RMSK.tpsheet
+- Assets/Images/Old/Chest_Animation/Chest_Animation-Chest_NRM.tpsheet
+- Assets/Images/Old/Chest_Animation/Chest_Animation-Chest_RMSK.tpsheet
+- Assets/Images/Old/Coins/Coin-Coin_NRM.tpsheet
+- Assets/Images/Old/Coins/Coin-Coin_RMSK.tpsheet
+- Assets/Images/Old/RePack/Barricade/Asset-1_BDL_Barricade_LV01_NRM.tpsheet
+- Assets/Images/Old/RePack/Barricade/Asset-1_BDL_Barricade_LV01_RMSK.tpsheet
+- Assets/Images/Old/RePack/Barricade/Asset-2_BDL_Barricade_LV02_NRM.tpsheet
+- Assets/Images/Old/RePack/Barricade/Asset-2_BDL_Barricade_LV02_RMSK.tpsheet
+- Assets/Images/Old/RePack/Barricade/Asset-3_BDL_Barricade_LV03_NRM.tpsheet
+- Assets/Images/Old/RePack/Barricade/Asset-3_BDL_Barricade_LV03_RMSK.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-BDL_CentralFlag_LV01_NRM.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-BDL_CentralFlag_LV01_RMSK.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-BDL_Spot_NRM.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-BDL_Spot_RMSK.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Axe_NRM.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Axe_RMSK.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Bow_NRM.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Bow_RMSK.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_CapmFire_LV01_NRM.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_CapmFire_LV01_RMSK.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_FlashLight_01_NRM.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_FlashLight_01_RMSK.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Torch_NRM.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Torch_RMSK.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TorchStand_01_NRM.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TorchStand_01_RMSK.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TowerFlag_DIF.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TowerFlag_NRM.tpsheet
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TowerFlag_RMSK.tpsheet
+- Assets/Images/Old/RePack/Stones/Asset-BDL_Stone_LV01_NRM.tpsheet
+- Assets/Images/Old/RePack/Stones/Asset-BDL_Stone_LV01_RMSK.tpsheet
+- Assets/Images/Old/RePack/Stones/Asset-BDL_Stone_LV02_NRM.tpsheet
+- Assets/Images/Old/RePack/Stones/Asset-BDL_Stone_LV02_RMSK.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_BowTent_LV01_NRM.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_BowTent_LV01_RMSK.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_BowTent_LV02_NRM.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_BowTent_LV02_RMSK.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_HummerTent_LV01_NRM.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_HummerTent_LV01_RMSK.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_HummerTent_LV02_NRM.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_HummerTent_LV02_RMSK.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_ShieldTent_LV01_NRM.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_ShieldTent_LV01_RMSK.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerBow_LV01_NRM.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerBow_LV01_RMSK.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerBow_LV02_NRM.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerBow_LV02_RMSK.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerFire_LV01_NRM.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerFire_LV01_RMSK.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerFire_LV02_NRM.tpsheet
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerFire_LV02_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Ballisa_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Ballista_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Tower_Ballista_01_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Tower_Ballista_02_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Tower_Ballista_02_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/Barricades/BLD_Barricades_01-DIF.tpsheet
+- Assets/Images/Old/SpriteAtlas/Buildings/BLD_Buildings_01-DIF.tpsheet
+- Assets/Images/Old/SpriteAtlas/Buildings/BLD_Buildings_01-MSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/Buildings/BLD_Fence_01-DIF.tpsheet
+- Assets/Images/Old/SpriteAtlas/Buildings/BLD_HammerWorkshop_LVL01_MSK-default.tpsheet
+- Assets/Images/Old/SpriteAtlas/Buildings/BLD_Stribes-default.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin/CHR_Barchin-1 Idle .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin/CHR_Barchin-2 Walk.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin/CHR_Barchin-3 Run .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin/CHR_Barchin-4 Summon .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin/CHR_Barchin-5 Order .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin/CHR_Barchin-6 SE_Armor.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-1 Idle .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-2 Walk.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-3 Run .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-4 Summon .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-5 Order.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-6 SE_Armor .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-7 Idle-Turn-Idle.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-8 Idle-Turn-Walk.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-9 Idle-Turn-Run.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-1 Idle.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-2 Walk.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-3 Run .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-4 Summon .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-5 Orden.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-6 SE_Armor.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-7 TR_Idle_Turn_Idle.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-8 TR_Idle_Turn_Walk.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-9 TR_Idle_Turn_Run.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-1 Idle.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-2 Walk .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-3 Run.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-4 Summon .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-5 Order.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-6 SE_Armor.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-7 TR_Idle-Turn-Idle.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-8 TR_Idle-Turn-Walk.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-9 TR_Idle-Turn-run.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_-1 Idle.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_-2 Walk.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_-3 Run.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_-4 Summon.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_-5 Order.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_-6 SE_Armor.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-1_Idle_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-1_Ilde_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-10_TR_Idle_To_FastRun_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-10_TR_Idle_To_FastRun_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-11_TR_FastRun_To_Idle_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-11_TR_FastRun_To_Idle_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-12_HeaveBreak_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-12_HeaveBreak_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-13_TR_Idle_To_Building_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-13_TR_Idle_To_Building_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-14_TR_Building_To_Idle_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-14_TR_Building_To_Idle_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-15_Building_Walk_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-15_Building_Walk_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-16_Building_Idle_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-16_Building_Idle_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-2_Running_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-2_Running_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-3_FastRun_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-3_FastRun_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-4_Summon_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-4_Summon_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-5_Order_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-5_Order_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-6_SE_Armor_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-6_SE_Armor_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-7_Release_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-7_Release_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-8_TR_Idle_To_Run_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-8_TR_Idle_To_Run_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-9_TR_Run_To_Idle_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-9_TR_Run_To_Idle_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-1_Idle_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-1_Idle_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-2_Run_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-2_Run_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-3_Attack_01_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-3_Attack_01_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-4_Attack_02_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-4_Attack_02_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-5_Death_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-5_Death_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_Marauder/ENM_Marauder-1_Idle.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_Marauder/ENM_Marauder-2_Run.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_Marauder/ENM_Marauder-3_Jump_Attack.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_Marauder/ENM_Marauder-4_Attack.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_Marauder/ENM_Marauder-5_Death.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer/UNT_Archer-1_Idle_1.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer/UNT_Archer-2_Idle_2.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer/UNT_Archer-3_Light_Step.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer/UNT_Archer-4_Walk.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer/UNT_Archer-5_Run.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer/UNT_Archer-6_Shoot.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer_01-idle 1.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer_01-idle 2.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer_01-idle 3.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer_01-run.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer_01-shoot.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer_01-walk.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bonecrusher/UNT_bonecrusher-1 Idle .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bonecrusher/UNT_bonecrusher-2 Run .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bonecrusher/UNT_bonecrusher-3 Attack 1.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bonecrusher/UNT_bonecrusher-4 Attack 2.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bonecrusher/UNT_bonecrusher-5 Death .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bow_Vendor/UNT_Bow_Vendor-1 Idle.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bow_Vendor/UNT_Bow_Vendor-2 Idle 2.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bow_Vendor/UNT_Bow_Vendor-3 Happy .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-1 idle .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-10 work-idle-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-11 walk-run-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-12 run-walk-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-2 idle-walk-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-3 walk .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-4 walk-idle-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-5 idle-run-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-6 run.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-7 run-idle-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-8 idle-work-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-9 work.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Idle-0.19.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Idle-Run_TR-0.19.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Idle-Walk-TR-0.19.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Run-0.19.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Run-Work-TR-0.19.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Walk-0.19.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Walk-Work-TR-0.19.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Work-0.19.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Work-Idle-TR-0.19.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_New/UNT_Builder_New-1_Idle_1.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_New/UNT_Builder_New-2_Idle_2.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_New/UNT_Builder_New-3_Sad_Walk.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_New/UNT_Builder_New-4_Run.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_New/UNT_Builder_New-5_Fast_Run.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_New/UNT_Builder_New-6_Axe_Attack.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_FireCraft_New/UNT_FireCraft-1_Idle.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_FireCraft_New/UNT_FireCraft-2_Idle_2.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_FireCraft_New/UNT_FireCraft-3_Fire.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless/UNT_Homeless-1 Idle .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless/UNT_Homeless-2 Idle.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless/UNT_Homeless-3 Idle.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless/UNT_Homeless-4 Lightstep.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless/UNT_Homeless-5 Walk.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless/UNT_Homeless-6 Run .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless/UNT_Homeless-7 Fear.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless_New/UNT_Homeless_New-1_Idle_1.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless_New/UNT_Homeless_New-2_Idle_2.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless_New/UNT_Homeless_New-3_Idle_3.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless_New/UNT_Homeless_New-4_Sad_Walk.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless_New/UNT_Homeless_New-5_Run.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless_New/UNT_Homeless_New-6_Fast_Run.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless_New/UNT_Homeless_New-7_Fear.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless-1 Idle .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless-2 Idle.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless-3 Idle.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless-4 Lightstep.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless-5 Walk.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless-6 Run .tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless-7 Fear.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Hummer_Vendor/UNT_Hummer_Vendor-1 Idle.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Hummer_Vendor/UNT_Hummer_Vendor-2 Idle 2.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Hummer_Vendor/UNT_Hummer_Vendor-3 Happy.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Marksman/UNT_Marksman-1_Idle_1.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Marksman/UNT_Marksman-2_Idle_2.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Marksman/UNT_Marksman-3_Fire.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-1_Idle_1_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-10_TR_Attack_To_HoldShield_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-10_TR_Attack_To_HoldShield_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-11_Retreat_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-11_Retreat_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-2_Idle_2_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-2_Idle_2_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-3_LightStep_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-3_LightStep_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-4_Run_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-4_Run_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-5_FastRun_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-5_FastRun_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-6_TR_FastRun_To_Idle_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-6_TR_FastRun_To_Idle_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-7_HoldShild_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-7_HoldShild_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-8_TR_HoldShirld_To_Attack_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-8_TR_HoldShirld_To_Attack_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-9_attack_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-9_attack_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/ENV_BackGround_01-default.tpsheet
+- Assets/Images/Old/SpriteAtlas/EnvironmentSprites/ENV_Background-DIF.tpsheet
+- Assets/Images/Old/SpriteAtlas/EnvironmentSprites/ENV_Background-RML.tpsheet
+- Assets/Images/Old/SpriteAtlas/EnvironmentSprites/ENV_Foreground-DIF.tpsheet
+- Assets/Images/Old/SpriteAtlas/EnvironmentSprites/ENV_Midground-DIF.tpsheet
+- Assets/Images/Old/SpriteAtlas/EnvironmentSprites/ENV_Mountains-DIF.tpsheet
+- Assets/Images/Old/SpriteAtlas/EnvironmentSprites/ENV_Mountains-RML.tpsheet
+- Assets/Images/Old/SpriteAtlas/Forest_Black-default.tpsheet
+- Assets/Images/Old/SpriteAtlas/Forest_Black-Tree.tpsheet
+- Assets/Images/Old/SpriteAtlas/Props/PRP_Props_01-DIF.tpsheet
+- Assets/Images/Old/SpriteAtlas/Resources/RSR_Resource_01-DIF.tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/12.tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/destruction-default.tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/stroitel/stroitel-Idle .tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/stroitel/stroitel-walking.tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/stroitel/stroitel-work.tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/stroitel_01/stroitel-idle to walk .tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/stroitel_01/stroitel-walkt to work .tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-1 idle .tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-10 work-idle-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-11 walk-run-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-12 run-walk-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-2 idle-walk-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-3 walk .tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-4 walk-idle-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-5 idle-run-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-6 run.tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-7 run-idle-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-8 idle-work-TR.tpsheet
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-9 work.tpsheet
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Ballisa_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Ballista_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Tower_Ballista_01_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Tower_Ballista_01_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Tower_Ballista_02_NRM.tpsheet
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Tower_Ballista_02_RMSK.tpsheet
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_MainScreen-DIF_01.tpsheet
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_MainScreen-DIF_02.tpsheet
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_MenuIntro-default.tpsheet
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_MenuScreen-Defolt.tpsheet
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_Minimap-default.tpsheet
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_Minimap-default-default.tpsheet
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_SpeachBubble-default.tpsheet
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_UnitFaces-default.tpsheet
+- Assets/Images/Old/SpriteAtlas/UISprites/UI-01.tpsheet
+- Assets/Images/Old/SpriteAtlas/UISprites/UI-DIF.tpsheet
+- Assets/Images/Old/TestForDelete/Test-1.tpsheet
+- Assets/Images/Old/TestForDelete/Test-2.tpsheet
+- Assets/Images/Old/TestForDelete/Test-default.tpsheet
+textureFileNames:
+- Assets/Images/New/Bag/_-1_Animation_NRM.png
+- Assets/Images/New/Bag/_-1_Animation_RMSK.png
+- Assets/Images/New/Bag/_-1_Idle_NRM.png
+- Assets/Images/New/Bag/_-1_Idle_RMSK.png
+- Assets/Images/New/Barricade/_-Barricade_01_NRM.png
+- Assets/Images/New/Barricade/_-Barricade_01_RMSK.png
+- Assets/Images/New/Barricade/_-Barricade_02_NRM.png
+- Assets/Images/New/Barricade/_-Barricade_02_RMSK.png
+- Assets/Images/New/Barricade/_-Barricade_03_NRM.png
+- Assets/Images/New/Barricade/_-Barricade_03_RMSK.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-17_StartFyl_NRM.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-17_StartFyl_RMSK.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-18_Fyl_NRM.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-18_Fyl_RMSK.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-19_EndFly_NRM.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-19_EndFly_RMSK.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-20_Shoot_NRM.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-20_Shoot_RMSK.png
+- Assets/Images/New/Crystal/Crystal-Diff.png
+- Assets/Images/New/Crystal/Crystal-Mask.png
+- Assets/Images/New/Desk_and_Stoyki/Desk_and_Stoyki-1_Desk_NRM.png
+- Assets/Images/New/Desk_and_Stoyki/Desk_and_Stoyki-2_Desk_RMSK.png
+- Assets/Images/New/Desk_and_Stoyki/Desk_and_Stoyki-3_Stoyki_NRM.png
+- Assets/Images/New/Desk_and_Stoyki/Desk_and_Stoyki-4_Stoyki_RMSK.png
+- Assets/Images/New/Enemy/Effects/UI_EnemyEffects.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-1_Idle_NRM.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-1_Idle_RMSK.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-2_Run_NRM.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-2_Run_RMSK.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-3_Attack_NRM.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-3_Attack_RMSK.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-4_Death_NRM.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-4_Death_RMSK.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-1_Idle_NRM.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-1_Idle_RMSK.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-2_Run_NRM.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-2_Run_RMSK.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-3_Attack_NRM.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-3_Attack_RMSK.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-4_Death_NRM.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-4_Death_RMSK.png
+- Assets/Images/New/Enemy/ENM_Imp/_-1_Idle_NRM.png
+- Assets/Images/New/Enemy/ENM_Imp/_-1_Idle_RMSK.png
+- Assets/Images/New/Enemy/ENM_Imp/_-2_Run_NRM.png
+- Assets/Images/New/Enemy/ENM_Imp/_-2_Run_RMSK.png
+- Assets/Images/New/Enemy/ENM_Imp/_-3_Attack_NRM.png
+- Assets/Images/New/Enemy/ENM_Imp/_-3_Attack_RMSK.png
+- Assets/Images/New/Enemy/ENM_Imp/_-4_Death_NRM.png
+- Assets/Images/New/Enemy/ENM_Imp/_-4_Death_RMSK.png
+- Assets/Images/New/Enemy/ENM_Imp/_-5_Stun_NRM.png
+- Assets/Images/New/Enemy/ENM_Imp/_-5_Stun_RMSK.png
+- Assets/Images/New/Enemy/ENM_Tank/_-1_Idle_NRM.png
+- Assets/Images/New/Enemy/ENM_Tank/_-1_Idle_RMSK.png
+- Assets/Images/New/Enemy/ENM_Tank/_-2_Walk_NRM.png
+- Assets/Images/New/Enemy/ENM_Tank/_-2_Walk_RMSK.png
+- Assets/Images/New/Enemy/ENM_Tank/_-3_Run_NRM.png
+- Assets/Images/New/Enemy/ENM_Tank/_-3_Run_RMSK.png
+- Assets/Images/New/Enemy/ENM_Tank/_-4_Attack_NRM.png
+- Assets/Images/New/Enemy/ENM_Tank/_-4_Attack_RMSK.png
+- Assets/Images/New/Enemy/ENM_Tank/_-5_01_Stun_NRM.png
+- Assets/Images/New/Enemy/ENM_Tank/_-5_01_Stun_RMSK.png
+- Assets/Images/New/Enemy/ENM_Tank/_-5_02_Stun_NRM.png
+- Assets/Images/New/Enemy/ENM_Tank/_-5_02_Stun_RMSK.png
+- Assets/Images/New/Enemy/ENM_Tank/_-6_01_Death_NRM.png
+- Assets/Images/New/Enemy/ENM_Tank/_-6_01_Death_RMSK.png
+- Assets/Images/New/Enemy/ENM_Tank/_-6_02_Death_NRM.png
+- Assets/Images/New/Enemy/ENM_Tank/_-6_02_Death_RMSK.png
+- Assets/Images/New/Fence/_-Fence_NRM.png
+- Assets/Images/New/Fence/_-Fence_RMSK.png
+- Assets/Images/New/Flags/_-Flags_NRM.png
+- Assets/Images/New/Flags/_-Flags_RMSK.png
+- Assets/Images/New/ForOfWar/UI_FogofWar.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Assets_NRM.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Assets_RMSK.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-CentralFlag_NRM.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-CentralFlag_RMSK.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Chest_Animation_NRM.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Chest_Animation_RMSK.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Chest_Idle_NRM.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Chest_Idle_RMSK.png
+- Assets/Images/New/Ruins/_-Ruins_NRM.png
+- Assets/Images/New/Ruins/_-Ruins_RMSK.png
+- Assets/Images/New/Towers/ArcherTowers/_-Towers_NRM.png
+- Assets/Images/New/Towers/ArcherTowers/_-Towers_RMSK.png
+- Assets/Images/New/Towers/Catapulta_Tower/Ball/Ball-Ball_NRM.png
+- Assets/Images/New/Towers/Catapulta_Tower/Ball/Ball-Ball_RMSK.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_2_NRM.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_2_RMSK.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_3_NRM.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_3_RMSK.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_4_NRM.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_4_RMSK.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_5_NRM.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_5_RMSK.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_NRM.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_RMSK.png
+- Assets/Images/New/Towers/Catapulta_Tower/CatapultaTower-Tower_Spot_NRM.png
+- Assets/Images/New/Towers/Catapulta_Tower/CatapultaTower-Tower_Spot_RMSK.png
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapiltMan-1_Idle_NRM.png
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapiltMan-1_Idle_RMSK.png
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapiltMan-2_ShootReolad_2_NRM.png
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapiltMan-2_ShootReolad_2_RMSK.png
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapiltMan-2_ShootReolad_NRM.png
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapiltMan-2_ShootReolad_RMSK.png
+- Assets/Images/New/Towers/Jug_new/Jug-Jug_NRM.png
+- Assets/Images/New/Towers/Jug_new/Jug-Jug_RMSK.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-1_Idle_NRM.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-2_Idle_RMSK.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-3_Reolad_NRM.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-4_Reolad_RMSK.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-5_Fire_NRM.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-6_Fire_RMSK.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Tower_Spot-TowerSpot_NRM.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Tower_Spot-TowerSpot_RMSK.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-1_Idle_NRM.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-2_Idle_RMSK.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-3_Reolad_NRM.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-4_Reolad_RMSK.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-5_Fire_NRM.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-6_Fire_RMSK.png
+- Assets/Images/New/Towers/Stone/Stone-1_Stone_Down_NRM.png
+- Assets/Images/New/Towers/Stone/Stone-1_Stone_Down_RMSK.png
+- Assets/Images/New/Towers/Stone/Stone-2_Stone_Up_NRM.png
+- Assets/Images/New/Towers/Stone/Stone-2_Stone_Up_RMSK.png
+- Assets/Images/New/Towers/Tar/Tar-Extanting.png
+- Assets/Images/New/Towers/Tar/Tar-idle.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Toer_Tar_Mechanic-Mechanica_NRM.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Toer_Tar_Mechanic-Mechanica_RMSK.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Toer_Tar_Mechanic-Tower_NRM.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Toer_Tar_Mechanic-Tower_RMSK.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Tower_Tar_Mechanica-Mechanica.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Tower_Tar_Mechanica-Tower_Tar_01.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica_new/Toer_Tar_Mechanic-Mechanica_NRM.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica_new/Toer_Tar_Mechanic-Mechanica_RMSK.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica_new/Toer_Tar_Mechanic-Tower_NRM.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica_new/Toer_Tar_Mechanic-Tower_RMSK.png
+- Assets/Images/New/Towers/TowerBalista/Ballista_Bow/Ballista_Bow-2_Shoot_NRM.png
+- Assets/Images/New/Towers/TowerBalista/Ballista_Bow/Ballista_Bow-2_Shoot_RMSK.png
+- Assets/Images/New/Towers/TowerBalista/Ballista_Bow/Ballista_Bow-3_Reolad_NRM.png
+- Assets/Images/New/Towers/TowerBalista/Ballista_Bow/Ballista_Bow-3_Reolad_RMSK.png
+- Assets/Images/New/Towers/TowerBalista/Tower_Ballista/Tower_Ballista-Tower_Ballista_NRM.png
+- Assets/Images/New/Towers/TowerBalista/Tower_Ballista/Tower_Ballista-Tower_Ballista_RMSK.png
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-1_Idle_NRM.png
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-1_Idle_RMSK.png
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-2_Shoot_NRM.png
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-2_Shoot_RMSK.png
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-3_Reolad_NRM.png
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-3_Reolad_RMSK.png
+- Assets/Images/New/Towers/Towers 1/_-Towers_NRM.png
+- Assets/Images/New/Towers/Towers 1/_-Towers_RMSK.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerBow_LV01_NRM.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerBow_LV01_RMSK.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerBow_LV02_NRM.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerBow_LV02_RMSK.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerFire_LV01_NRM.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerFire_LV01_RMSK.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerFire_LV02_NRM.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerFire_LV02_RMSK.png
+- Assets/Images/New/Towers/TowerTar_01/Jug_01/Jug_01-Jug_01_NRM.png
+- Assets/Images/New/Towers/TowerTar_01/Jug_01/Jug_01-Jug_01_RMSK.png
+- Assets/Images/New/Towers/TowerTar_01/Jug_and_Tar_01/Jug_and_Tar-Jug_01_NRM.png
+- Assets/Images/New/Towers/TowerTar_01/Jug_and_Tar_01/Jug_and_Tar-Jug_01_RMSK.png
+- Assets/Images/New/Towers/TowerTar_01/Jug_and_Tar_01/Jug_and_Tar-Tar_01_NRM.png
+- Assets/Images/New/Towers/TowerTar_01/Jug_and_Tar_01/Jug_and_Tar-TAR_01_RMSK.png
+- Assets/Images/New/Towers/TowerTar_01/Tower_Spot/Tower_Spot-Tower_Spot_NRM.png
+- Assets/Images/New/Towers/TowerTar_01/Tower_Spot/Tower_Spot-Tower_Spot_RMSK.png
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-1_Idle_NRM.png
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-1_Idle_RMSK.png
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-2_SHoot_NRM.png
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-2_Shoot_RMSK.png
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-3_Reolad_NRM.png
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-3_Reolad_RMSK.png
+- Assets/Images/New/Trees/ENV_Forest_Back.png
+- Assets/Images/New/Trees/ENV_Forest_Front.png
+- Assets/Images/New/Trees/ENV_Forest_Mid.png
+- Assets/Images/New/Trees/Tree/_-Tree_02_NRM.png
+- Assets/Images/New/Trees/Tree/_-Tree_02_RMSK.png
+- Assets/Images/New/Trees/Tree/_-Tree_NRM.png
+- Assets/Images/New/Trees/Tree/_-Tree_RMSK.png
+- Assets/Images/New/UI/Cards/UI_Cards_Award.png
+- Assets/Images/New/UI/Cards/UI_Cards_Cards.png
+- Assets/Images/New/UI/Cards/UI_Cards_Flags.png
+- Assets/Images/New/UI/Cards/UI_Cards_Req.png
+- Assets/Images/New/UI/Cards/UI_Cards_Sсhemes.png
+- Assets/Images/New/UI/Cards/UI_Cards_UI.png
+- Assets/Images/New/UI/TowerIcon/UI_TowerIcon.png
+- Assets/Images/New/Units/UNT_Darvish/_-1_Idle_NRM.png
+- Assets/Images/New/Units/UNT_Darvish/_-1_Idle_RMSK.png
+- Assets/Images/New/Units/UNT_Darvish/_-2_SitIdle_NRM.png
+- Assets/Images/New/Units/UNT_Darvish/_-2_SitIdle_RMSK.png
+- Assets/Images/New/Units/UNT_Darvish/_-3_Scary_NRM.png
+- Assets/Images/New/Units/UNT_Darvish/_-3_Scary_NRM_02.png
+- Assets/Images/New/Units/UNT_Darvish/_-3_Scary_RMSK.png
+- Assets/Images/New/Units/UNT_Darvish/_-3_Scary_RMSK_02.png
+- Assets/Images/New/Units/UNT_Darvish/_-4_Walk_NRM.png
+- Assets/Images/New/Units/UNT_Darvish/_-4_Walk_RMSK.png
+- Assets/Images/New/Units/UNT_Darvish/_-5_Run_NRM.png
+- Assets/Images/New/Units/UNT_Darvish/_-5_Run_RMSK.png
+- Assets/Images/New/Units/UNT_Darvish/_-6_ScaryRun_NRM.png
+- Assets/Images/New/Units/UNT_Darvish/_-6_ScaryRun_RMSK.png
+- Assets/Images/New/Units/UNT_Homeless/_-1_Idle_NRM.png
+- Assets/Images/New/Units/UNT_Homeless/_-1_Idle_RMSK.png
+- Assets/Images/New/Units/UNT_Homeless/_-2_Run_NRM.png
+- Assets/Images/New/Units/UNT_Homeless/_-2_Run_RMSK.png
+- Assets/Images/New/Units/UNT_Homeless/_-3_FastRun_NRM.png
+- Assets/Images/New/Units/UNT_Homeless/_-3_FastRun_RMSK.png
+- Assets/Images/New/Units/UNT_Homeless/_-4_Walk_NRM.png
+- Assets/Images/New/Units/UNT_Homeless/_-4_Walk_RMSK.png
+- Assets/Images/New/Units/UNT_Homeless/_-5_FreeWalk_NRM.png
+- Assets/Images/New/Units/UNT_Homeless/_-5_FreeWalk_RMSK.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-1_Idle_NRM.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-1_Idle_RMSK.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-2_Walk_NRM.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-2_Walk_RMSK.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-3_Run_NRM.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-3_Run_RMSK.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-4_FastRun_NRM.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-4_FastRun_RMSK.png
+- Assets/Images/New/Units/UNT_TarMan_New/Cub_Break-Cub_Break.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan_new-1_Idle.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan_new-2_Shoot.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan_new-3_Reolad.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan_new-3_Reolad_01.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan_new-4_cub.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan_new-4_cub.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-1_Idle_NRM.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-1_Idle_RMSK.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-2_Shoot_NRM.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-2_Shoot_RMSK.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-3_Reolad_01_NRM.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-3_Reolad_01_RMSK.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-3_Reolad_NRM.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-3_Reolad_RMSK.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_01_idle_NRM.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_01_idle_RMSK.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_01_Shoot_NRM.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_01_Shoot_RMSK.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_02_idle_NRM.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_02_idle_RMSK.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_02_Shoot_NRM.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_02_Shoot_RMSK.png
+- Assets/Images/New/Units/Vendors/UNT_Bow_Vendor/UNT_Bow_Vendor-1_Idle_1.png
+- Assets/Images/New/Units/Vendors/UNT_Bow_Vendor/UNT_Bow_Vendor-2_Idle_2.png
+- Assets/Images/New/Units/Vendors/UNT_Bow_Vendor/UNT_Bow_Vendor-3_Happy.png
+- Assets/Images/New/Units/Vendors/UNT_Hummer_Vendor/UNT_Hummer_Vendor-1 Idle.png
+- Assets/Images/New/Units/Vendors/UNT_Hummer_Vendor/UNT_Hummer_Vendor-2 Idle 2.png
+- Assets/Images/New/Units/Vendors/UNT_Hummer_Vendor/UNT_Hummer_Vendor-3_Happy.png
+- Assets/Images/New/Workshops/BowTent/_-BowTent_NRM.png
+- Assets/Images/New/Workshops/BowTent/_-BowTent_RMSK.png
+- Assets/Images/New/Workshops/BowTent/_-TentAnimation_NRM.png
+- Assets/Images/New/Workshops/BowTent/_-TentAnimation_RMSK.png
+- Assets/Images/New/Workshops/HummerTent/_-HummerTent_NRM.png
+- Assets/Images/New/Workshops/HummerTent/_-HummerTent_RMSK.png
+- Assets/Images/New/Workshops/HummerTent/_-TentAnimation_NRM.png
+- Assets/Images/New/Workshops/HummerTent/_-TentAnimation_RMSK.png
+- Assets/Images/New/Workshops/ResetTent/_-ReceptTent_NRM.png
+- Assets/Images/New/Workshops/ResetTent/_-ReceptTent_RMSK.png
+- Assets/Images/New/Workshops/ShieldTent/_-ShieldTent_NRM.png
+- Assets/Images/New/Workshops/ShieldTent/_-ShieldTent_RMSK.png
+- Assets/Images/New/Workshops/ShieldTent/_-Spot_NRM.png
+- Assets/Images/New/Workshops/ShieldTent/_-Spot_RMSK.png
+- Assets/Images/New/Workshops/ShieldTent/_-TentAnimation_NRM.png
+- Assets/Images/New/Workshops/ShieldTent/_-TentAnimation_RMSK.png
+- Assets/Images/New/Workshops/ShieldTent/_-TentAnimation02_NRM.png
+- Assets/Images/New/Workshops/ShieldTent/_-TentAnimation02_RMSK.png
+- Assets/Images/Old/Chest_Animation/Chest_Animation-Chest_NRM.png
+- Assets/Images/Old/Chest_Animation/Chest_Animation-Chest_RMSK.png
+- Assets/Images/Old/Coins/Coin-Coin_NRM.png
+- Assets/Images/Old/Coins/Coin-Coin_RMSK.png
+- Assets/Images/Old/RePack/Barricade/Asset-1_BDL_Barricade_LV01_NRM.png
+- Assets/Images/Old/RePack/Barricade/Asset-1_BDL_Barricade_LV01_RMSK.png
+- Assets/Images/Old/RePack/Barricade/Asset-2_BDL_Barricade_LV02_NRM.png
+- Assets/Images/Old/RePack/Barricade/Asset-2_BDL_Barricade_LV02_RMSK.png
+- Assets/Images/Old/RePack/Barricade/Asset-3_BDL_Barricade_LV03_NRM.png
+- Assets/Images/Old/RePack/Barricade/Asset-3_BDL_Barricade_LV03_RMSK.png
+- Assets/Images/Old/RePack/PRP/Asset-BDL_CentralFlag_LV01_NRM.png
+- Assets/Images/Old/RePack/PRP/Asset-BDL_CentralFlag_LV01_RMSK.png
+- Assets/Images/Old/RePack/PRP/Asset-BDL_Spot_NRM.png
+- Assets/Images/Old/RePack/PRP/Asset-BDL_Spot_RMSK.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Axe_NRM.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Axe_RMSK.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Bow_NRM.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Bow_RMSK.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_CapmFire_LV01_NRM.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_CapmFire_LV01_RMSK.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_FlashLight_01_NRM.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_FlashLight_01_RMSK.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Torch_NRM.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Torch_RMSK.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TorchStand_01_NRM.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TorchStand_01_RMSK.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TowerFlag_DIF.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TowerFlag_NRM.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TowerFlag_RMSK.png
+- Assets/Images/Old/RePack/Stones/Asset-BDL_Stone_LV01_NRM.png
+- Assets/Images/Old/RePack/Stones/Asset-BDL_Stone_LV01_RMSK.png
+- Assets/Images/Old/RePack/Stones/Asset-BDL_Stone_LV02_NRM.png
+- Assets/Images/Old/RePack/Stones/Asset-BDL_Stone_LV02_RMSK.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_BowTent_LV01_NRM.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_BowTent_LV01_RMSK.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_BowTent_LV02_NRM.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_BowTent_LV02_RMSK.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_HummerTent_LV01_NRM.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_HummerTent_LV01_RMSK.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_HummerTent_LV02_NRM.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_HummerTent_LV02_RMSK.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_ShieldTent_LV01_NRM.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_ShieldTent_LV01_RMSK.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerBow_LV01_NRM.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerBow_LV01_RMSK.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerBow_LV02_NRM.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerBow_LV02_RMSK.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerFire_LV01_NRM.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerFire_LV01_RMSK.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerFire_LV02_NRM.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerFire_LV02_RMSK.png
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Ballisa_RMSK.png
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Ballista_NRM.png
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Tower_Ballista_01_RMSK.png
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Tower_Ballista_02_NRM.png
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Tower_Ballista_02_RMSK.png
+- Assets/Images/Old/SpriteAtlas/Barricades/BLD_Barricades_01-DIF.png
+- Assets/Images/Old/SpriteAtlas/Buildings/BLD_Buildings_01-DIF.png
+- Assets/Images/Old/SpriteAtlas/Buildings/BLD_Buildings_01-MSK.png
+- Assets/Images/Old/SpriteAtlas/Buildings/BLD_Fence_01-DIF.png
+- Assets/Images/Old/SpriteAtlas/Buildings/BLD_HammerWorkshop_LVL01_MSK-default.png
+- Assets/Images/Old/SpriteAtlas/Buildings/BLD_Stribes-default.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin/CHR_Barchin-1 Idle .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin/CHR_Barchin-2 Walk.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin/CHR_Barchin-3 Run .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin/CHR_Barchin-4 Summon .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin/CHR_Barchin-5 Order .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin/CHR_Barchin-6 SE_Armor.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-1 Idle .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-2 Walk.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-3 Run .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-4 Summon .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-5 Order.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-6 SE_Armor .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-7 Idle-Turn-Idle.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-8 Idle-Turn-Walk.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/DIF/CHR_Barchin-9 Idle-Turn-Run.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-1 Idle.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-2 Walk.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-3 Run .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-4 Summon .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-5 Orden.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-6 SE_Armor.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-7 TR_Idle_Turn_Idle.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-8 TR_Idle_Turn_Walk.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/NRM/CHR_Barchin_NRM-9 TR_Idle_Turn_Run.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-1 Idle.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-2 Walk .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-3 Run.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-4 Summon .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-5 Order.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-6 SE_Armor.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-7 TR_Idle-Turn-Idle.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-8 TR_Idle-Turn-Walk.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_01/RMSK/CRH_Barchin_RMSK-9 TR_Idle-Turn-run.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_-1 Idle.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_-2 Walk.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_-3 Run.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_-4 Summon.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_-5 Order.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_-6 SE_Armor.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-1_Idle_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-1_Ilde_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-10_TR_Idle_To_FastRun_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-10_TR_Idle_To_FastRun_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-11_TR_FastRun_To_Idle_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-11_TR_FastRun_To_Idle_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-12_HeaveBreak_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-12_HeaveBreak_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-13_TR_Idle_To_Building_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-13_TR_Idle_To_Building_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-14_TR_Building_To_Idle_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-14_TR_Building_To_Idle_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-15_Building_Walk_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-15_Building_Walk_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-16_Building_Idle_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-16_Building_Idle_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-2_Running_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-2_Running_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-3_FastRun_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-3_FastRun_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-4_Summon_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-4_Summon_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-5_Order_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-5_Order_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-6_SE_Armor_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-6_SE_Armor_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-7_Release_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-7_Release_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-8_TR_Idle_To_Run_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-8_TR_Idle_To_Run_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-9_TR_Run_To_Idle_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-9_TR_Run_To_Idle_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-1_Idle_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-1_Idle_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-2_Run_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-2_Run_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-3_Attack_01_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-3_Attack_01_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-4_Attack_02_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-4_Attack_02_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-5_Death_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-5_Death_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_Marauder/ENM_Marauder-1_Idle.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_Marauder/ENM_Marauder-2_Run.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_Marauder/ENM_Marauder-3_Jump_Attack.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_Marauder/ENM_Marauder-4_Attack.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_Marauder/ENM_Marauder-5_Death.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer/UNT_Archer-1_Idle_1.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer/UNT_Archer-2_Idle_2.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer/UNT_Archer-3_Light_Step.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer/UNT_Archer-4_Walk.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer/UNT_Archer-5_Run.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer/UNT_Archer-6_Shoot.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer_01-idle 1.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer_01-idle 2.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer_01-idle 3.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer_01-run.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer_01-shoot.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Archer_01-walk.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bonecrusher/UNT_bonecrusher-1 Idle .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bonecrusher/UNT_bonecrusher-2 Run .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bonecrusher/UNT_bonecrusher-3 Attack 1.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bonecrusher/UNT_bonecrusher-4 Attack 2.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bonecrusher/UNT_bonecrusher-5 Death .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bow_Vendor/UNT_Bow_Vendor-1 Idle.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bow_Vendor/UNT_Bow_Vendor-2 Idle 2.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Bow_Vendor/UNT_Bow_Vendor-3 Happy .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-1 idle .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-10 work-idle-TR.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-11 walk-run-TR.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-12 run-walk-TR.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-2 idle-walk-TR.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-3 walk .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-4 walk-idle-TR.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-5 idle-run-TR.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-6 run.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-7 run-idle-TR.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-8 idle-work-TR.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-9 work.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Idle-0.19.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Idle-Run_TR-0.19.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Idle-Walk-TR-0.19.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Run-0.19.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Run-Work-TR-0.19.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Walk-0.19.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Walk-Work-TR-0.19.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Work-0.19.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_01-Work-Idle-TR-0.19.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_New/UNT_Builder_New-1_Idle_1.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_New/UNT_Builder_New-2_Idle_2.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_New/UNT_Builder_New-3_Sad_Walk.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_New/UNT_Builder_New-4_Run.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_New/UNT_Builder_New-5_Fast_Run.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Builder_New/UNT_Builder_New-6_Axe_Attack.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_FireCraft_New/UNT_FireCraft-1_Idle.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_FireCraft_New/UNT_FireCraft-2_Idle_2.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_FireCraft_New/UNT_FireCraft-3_Fire.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless/UNT_Homeless-1 Idle .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless/UNT_Homeless-2 Idle.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless/UNT_Homeless-3 Idle.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless/UNT_Homeless-4 Lightstep.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless/UNT_Homeless-5 Walk.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless/UNT_Homeless-6 Run .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless/UNT_Homeless-7 Fear.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless_New/UNT_Homeless_New-1_Idle_1.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless_New/UNT_Homeless_New-2_Idle_2.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless_New/UNT_Homeless_New-3_Idle_3.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless_New/UNT_Homeless_New-4_Sad_Walk.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless_New/UNT_Homeless_New-5_Run.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless_New/UNT_Homeless_New-6_Fast_Run.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless_New/UNT_Homeless_New-7_Fear.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless-1 Idle .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless-2 Idle.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless-3 Idle.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless-4 Lightstep.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless-5 Walk.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless-6 Run .png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Homeless-7 Fear.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Hummer_Vendor/UNT_Hummer_Vendor-1 Idle.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Hummer_Vendor/UNT_Hummer_Vendor-2 Idle 2.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Hummer_Vendor/UNT_Hummer_Vendor-3 Happy.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Marksman/UNT_Marksman-1_Idle_1.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Marksman/UNT_Marksman-2_Idle_2.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Marksman/UNT_Marksman-3_Fire.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-1_Idle_1_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-10_TR_Attack_To_HoldShield_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-10_TR_Attack_To_HoldShield_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-11_Retreat_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-11_Retreat_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-2_Idle_2_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-2_Idle_2_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-3_LightStep_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-3_LightStep_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-4_Run_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-4_Run_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-5_FastRun_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-5_FastRun_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-6_TR_FastRun_To_Idle_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-6_TR_FastRun_To_Idle_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-7_HoldShild_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-7_HoldShild_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-8_TR_HoldShirld_To_Attack_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-8_TR_HoldShirld_To_Attack_RMSK.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-9_attack_NRM.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-9_attack_RMSK.png
+- Assets/Images/Old/SpriteAtlas/ENV_BackGround_01-default.png
+- Assets/Images/Old/SpriteAtlas/EnvironmentSprites/ENV_Background-DIF.png
+- Assets/Images/Old/SpriteAtlas/EnvironmentSprites/ENV_Background-RML.png
+- Assets/Images/Old/SpriteAtlas/EnvironmentSprites/ENV_Foreground-DIF.png
+- Assets/Images/Old/SpriteAtlas/EnvironmentSprites/ENV_Midground-DIF.png
+- Assets/Images/Old/SpriteAtlas/EnvironmentSprites/ENV_Mountains-DIF.png
+- Assets/Images/Old/SpriteAtlas/EnvironmentSprites/ENV_Mountains-RML.png
+- Assets/Images/Old/SpriteAtlas/Forest_Black-default.png
+- Assets/Images/Old/SpriteAtlas/Forest_Black-Tree.png
+- Assets/Images/Old/SpriteAtlas/Props/PRP_Props_01-DIF.png
+- Assets/Images/Old/SpriteAtlas/Resources/RSR_Resource_01-DIF.png
+- Assets/Images/Old/SpriteAtlas/Test/12.png
+- Assets/Images/Old/SpriteAtlas/Test/destruction-default.png
+- Assets/Images/Old/SpriteAtlas/Test/stroitel/stroitel-Idle .png
+- Assets/Images/Old/SpriteAtlas/Test/stroitel/stroitel-walking.png
+- Assets/Images/Old/SpriteAtlas/Test/stroitel/stroitel-work.png
+- Assets/Images/Old/SpriteAtlas/Test/stroitel_01/stroitel-idle to walk .png
+- Assets/Images/Old/SpriteAtlas/Test/stroitel_01/stroitel-walkt to work .png
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-1 idle .png
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-10 work-idle-TR.png
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-11 walk-run-TR.png
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-12 run-walk-TR.png
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-2 idle-walk-TR.png
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-3 walk .png
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-4 walk-idle-TR.png
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-5 idle-run-TR.png
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-6 run.png
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-7 run-idle-TR.png
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-8 idle-work-TR.png
+- Assets/Images/Old/SpriteAtlas/Test/UNT_Builder_test/UNT_Builder_test-9 work.png
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Ballisa_RMSK.png
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Ballista_NRM.png
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Tower_Ballista_01_NRM.png
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Tower_Ballista_01_RMSK.png
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Tower_Ballista_02_NRM.png
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Tower_Ballista_02_RMSK.png
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_MainScreen-DIF_01.png
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_MainScreen-DIF_02.png
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_MenuIntro-default.png
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_MenuScreen-Defolt.png
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_Minimap-default.png
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_Minimap-default-default.png
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_SpeachBubble-default.png
+- Assets/Images/Old/SpriteAtlas/UISprites/UI_UnitFaces-default.png
+- Assets/Images/Old/SpriteAtlas/UISprites/UI-01.png
+- Assets/Images/Old/SpriteAtlas/UISprites/UI-DIF.png
+- Assets/Images/Old/TestForDelete/Test-1.png
+- Assets/Images/Old/TestForDelete/Test-2.png
+- Assets/Images/Old/TestForDelete/Test-default.png
+normalmapFileNames:
+- Assets/Images/New/Bag/_-1_Animation_NRM_n.png
+- Assets/Images/New/Bag/_-1_Animation_RMSK_n.png
+- Assets/Images/New/Bag/_-1_Idle_NRM_n.png
+- Assets/Images/New/Bag/_-1_Idle_RMSK_n.png
+- Assets/Images/New/Barricade/_-Barricade_01_NRM_n.png
+- Assets/Images/New/Barricade/_-Barricade_01_RMSK_n.png
+- Assets/Images/New/Barricade/_-Barricade_02_NRM_n.png
+- Assets/Images/New/Barricade/_-Barricade_02_RMSK_n.png
+- Assets/Images/New/Barricade/_-Barricade_03_NRM_n.png
+- Assets/Images/New/Barricade/_-Barricade_03_RMSK_n.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-17_StartFyl_NRM_n.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-17_StartFyl_RMSK_n.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-18_Fyl_NRM_n.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-18_Fyl_RMSK_n.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-19_EndFly_NRM_n.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-19_EndFly_RMSK_n.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-20_Shoot_NRM_n.png
+- Assets/Images/New/CHR_Barchin_New/CHR_Barchin_New-20_Shoot_RMSK_n.png
+- 
+- 
+- Assets/Images/New/Desk_and_Stoyki/Desk_and_Stoyki-1_Desk_NRM_n.png
+- Assets/Images/New/Desk_and_Stoyki/Desk_and_Stoyki-2_Desk_RMSK_n.png
+- Assets/Images/New/Desk_and_Stoyki/Desk_and_Stoyki-3_Stoyki_NRM_n.png
+- Assets/Images/New/Desk_and_Stoyki/Desk_and_Stoyki-4_Stoyki_RMSK_n.png
+- 
+- Assets/Images/New/Enemy/ENM_BladeMan/_-1_Idle_NRM_n.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-1_Idle_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-2_Run_NRM_n.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-2_Run_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-3_Attack_NRM_n.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-3_Attack_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-4_Death_NRM_n.png
+- Assets/Images/New/Enemy/ENM_BladeMan/_-4_Death_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-1_Idle_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-1_Idle_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-2_Run_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-2_Run_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-3_Attack_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-3_Attack_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-4_Death_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Govlin_03/_-4_Death_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Imp/_-1_Idle_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Imp/_-1_Idle_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Imp/_-2_Run_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Imp/_-2_Run_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Imp/_-3_Attack_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Imp/_-3_Attack_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Imp/_-4_Death_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Imp/_-4_Death_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Imp/_-5_Stun_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Imp/_-5_Stun_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-1_Idle_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-1_Idle_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-2_Walk_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-2_Walk_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-3_Run_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-3_Run_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-4_Attack_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-4_Attack_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-5_01_Stun_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-5_01_Stun_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-5_02_Stun_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-5_02_Stun_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-6_01_Death_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-6_01_Death_RMSK_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-6_02_Death_NRM_n.png
+- Assets/Images/New/Enemy/ENM_Tank/_-6_02_Death_RMSK_n.png
+- Assets/Images/New/Fence/_-Fence_NRM_n.png
+- Assets/Images/New/Fence/_-Fence_RMSK_n.png
+- Assets/Images/New/Flags/_-Flags_NRM_n.png
+- Assets/Images/New/Flags/_-Flags_RMSK_n.png
+- 
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Assets_NRM_n.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Assets_RMSK_n.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-CentralFlag_NRM_n.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-CentralFlag_RMSK_n.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Chest_Animation_NRM_n.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Chest_Animation_RMSK_n.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Chest_Idle_NRM_n.png
+- Assets/Images/New/Mainflag/CentralFlag_Assets/_-Chest_Idle_RMSK_n.png
+- Assets/Images/New/Ruins/_-Ruins_NRM_n.png
+- Assets/Images/New/Ruins/_-Ruins_RMSK_n.png
+- Assets/Images/New/Towers/ArcherTowers/_-Towers_NRM_n.png
+- Assets/Images/New/Towers/ArcherTowers/_-Towers_RMSK_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/Ball/Ball-Ball_NRM_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/Ball/Ball-Ball_RMSK_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_2_NRM_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_2_RMSK_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_3_NRM_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_3_RMSK_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_4_NRM_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_4_RMSK_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_5_NRM_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_5_RMSK_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_NRM_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/Catapulta_loshka/Loshka-2_ShootReolad_RMSK_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/CatapultaTower-Tower_Spot_NRM_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/CatapultaTower-Tower_Spot_RMSK_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapiltMan-1_Idle_NRM_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapiltMan-1_Idle_RMSK_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapiltMan-2_ShootReolad_2_NRM_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapiltMan-2_ShootReolad_2_RMSK_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapiltMan-2_ShootReolad_NRM_n.png
+- Assets/Images/New/Towers/Catapulta_Tower/UNT_CatapultaMan/UNT_CatapiltMan-2_ShootReolad_RMSK_n.png
+- Assets/Images/New/Towers/Jug_new/Jug-Jug_NRM_n.png
+- Assets/Images/New/Towers/Jug_new/Jug-Jug_RMSK_n.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-1_Idle_NRM_n.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-2_Idle_RMSK_n.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-3_Reolad_NRM_n.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-4_Reolad_RMSK_n.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-5_Fire_NRM_n.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Samovar/Samovar-6_Fire_RMSK_n.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Tower_Spot-TowerSpot_NRM_n.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/Tower_Spot-TowerSpot_RMSK_n.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-1_Idle_NRM_n.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-2_Idle_RMSK_n.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-3_Reolad_NRM_n.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-4_Reolad_RMSK_n.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-5_Fire_NRM_n.png
+- Assets/Images/New/Towers/ScaryTower_and_Spot/UNT_ScaryMan/ScaryMan-6_Fire_RMSK_n.png
+- Assets/Images/New/Towers/Stone/Stone-1_Stone_Down_NRM_n.png
+- Assets/Images/New/Towers/Stone/Stone-1_Stone_Down_RMSK_n.png
+- Assets/Images/New/Towers/Stone/Stone-2_Stone_Up_NRM_n.png
+- Assets/Images/New/Towers/Stone/Stone-2_Stone_Up_RMSK_n.png
+- 
+- 
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Toer_Tar_Mechanic-Mechanica_NRM_n.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Toer_Tar_Mechanic-Mechanica_RMSK_n.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Toer_Tar_Mechanic-Tower_NRM_n.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica/Toer_Tar_Mechanic-Tower_RMSK_n.png
+- 
+- 
+- Assets/Images/New/Towers/Tower_Tar_Mechanica_new/Toer_Tar_Mechanic-Mechanica_NRM_n.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica_new/Toer_Tar_Mechanic-Mechanica_RMSK_n.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica_new/Toer_Tar_Mechanic-Tower_NRM_n.png
+- Assets/Images/New/Towers/Tower_Tar_Mechanica_new/Toer_Tar_Mechanic-Tower_RMSK_n.png
+- Assets/Images/New/Towers/TowerBalista/Ballista_Bow/Ballista_Bow-2_Shoot_NRM_n.png
+- Assets/Images/New/Towers/TowerBalista/Ballista_Bow/Ballista_Bow-2_Shoot_RMSK_n.png
+- Assets/Images/New/Towers/TowerBalista/Ballista_Bow/Ballista_Bow-3_Reolad_NRM_n.png
+- Assets/Images/New/Towers/TowerBalista/Ballista_Bow/Ballista_Bow-3_Reolad_RMSK_n.png
+- Assets/Images/New/Towers/TowerBalista/Tower_Ballista/Tower_Ballista-Tower_Ballista_NRM_n.png
+- Assets/Images/New/Towers/TowerBalista/Tower_Ballista/Tower_Ballista-Tower_Ballista_RMSK_n.png
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-1_Idle_NRM_n.png
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-1_Idle_RMSK_n.png
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-2_Shoot_NRM_n.png
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-2_Shoot_RMSK_n.png
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-3_Reolad_NRM_n.png
+- Assets/Images/New/Towers/TowerBalista/UNT_BallistaMan/UNT_BallistaMan-3_Reolad_RMSK_n.png
+- Assets/Images/New/Towers/Towers 1/_-Towers_NRM_n.png
+- Assets/Images/New/Towers/Towers 1/_-Towers_RMSK_n.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerBow_LV01_NRM_n.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerBow_LV01_RMSK_n.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerBow_LV02_NRM_n.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerBow_LV02_RMSK_n.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerFire_LV01_NRM_n.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerFire_LV01_RMSK_n.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerFire_LV02_NRM_n.png
+- Assets/Images/New/Towers/Towers/Tower-BDL_TowerFire_LV02_RMSK_n.png
+- Assets/Images/New/Towers/TowerTar_01/Jug_01/Jug_01-Jug_01_NRM_n.png
+- Assets/Images/New/Towers/TowerTar_01/Jug_01/Jug_01-Jug_01_RMSK_n.png
+- Assets/Images/New/Towers/TowerTar_01/Jug_and_Tar_01/Jug_and_Tar-Jug_01_NRM_n.png
+- Assets/Images/New/Towers/TowerTar_01/Jug_and_Tar_01/Jug_and_Tar-Jug_01_RMSK_n.png
+- Assets/Images/New/Towers/TowerTar_01/Jug_and_Tar_01/Jug_and_Tar-Tar_01_NRM_n.png
+- Assets/Images/New/Towers/TowerTar_01/Jug_and_Tar_01/Jug_and_Tar-TAR_01_RMSK_n.png
+- Assets/Images/New/Towers/TowerTar_01/Tower_Spot/Tower_Spot-Tower_Spot_NRM_n.png
+- Assets/Images/New/Towers/TowerTar_01/Tower_Spot/Tower_Spot-Tower_Spot_RMSK_n.png
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-1_Idle_NRM_n.png
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-1_Idle_RMSK_n.png
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-2_SHoot_NRM_n.png
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-2_Shoot_RMSK_n.png
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-3_Reolad_NRM_n.png
+- Assets/Images/New/Towers/TowerTar_01/TowerTar_01-3_Reolad_RMSK_n.png
+- 
+- 
+- 
+- Assets/Images/New/Trees/Tree/_-Tree_02_NRM_n.png
+- Assets/Images/New/Trees/Tree/_-Tree_02_RMSK_n.png
+- Assets/Images/New/Trees/Tree/_-Tree_NRM_n.png
+- Assets/Images/New/Trees/Tree/_-Tree_RMSK_n.png
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- Assets/Images/New/Units/UNT_Darvish/_-1_Idle_NRM_n.png
+- Assets/Images/New/Units/UNT_Darvish/_-1_Idle_RMSK_n.png
+- Assets/Images/New/Units/UNT_Darvish/_-2_SitIdle_NRM_n.png
+- Assets/Images/New/Units/UNT_Darvish/_-2_SitIdle_RMSK_n.png
+- Assets/Images/New/Units/UNT_Darvish/_-3_Scary_NRM_n.png
+- Assets/Images/New/Units/UNT_Darvish/_-3_Scary_NRM_02_n.png
+- Assets/Images/New/Units/UNT_Darvish/_-3_Scary_RMSK_n.png
+- Assets/Images/New/Units/UNT_Darvish/_-3_Scary_RMSK_02_n.png
+- Assets/Images/New/Units/UNT_Darvish/_-4_Walk_NRM_n.png
+- Assets/Images/New/Units/UNT_Darvish/_-4_Walk_RMSK_n.png
+- Assets/Images/New/Units/UNT_Darvish/_-5_Run_NRM_n.png
+- Assets/Images/New/Units/UNT_Darvish/_-5_Run_RMSK_n.png
+- Assets/Images/New/Units/UNT_Darvish/_-6_ScaryRun_NRM_n.png
+- Assets/Images/New/Units/UNT_Darvish/_-6_ScaryRun_RMSK_n.png
+- Assets/Images/New/Units/UNT_Homeless/_-1_Idle_NRM_n.png
+- Assets/Images/New/Units/UNT_Homeless/_-1_Idle_RMSK_n.png
+- Assets/Images/New/Units/UNT_Homeless/_-2_Run_NRM_n.png
+- Assets/Images/New/Units/UNT_Homeless/_-2_Run_RMSK_n.png
+- Assets/Images/New/Units/UNT_Homeless/_-3_FastRun_NRM_n.png
+- Assets/Images/New/Units/UNT_Homeless/_-3_FastRun_RMSK_n.png
+- Assets/Images/New/Units/UNT_Homeless/_-4_Walk_NRM_n.png
+- Assets/Images/New/Units/UNT_Homeless/_-4_Walk_RMSK_n.png
+- Assets/Images/New/Units/UNT_Homeless/_-5_FreeWalk_NRM_n.png
+- Assets/Images/New/Units/UNT_Homeless/_-5_FreeWalk_RMSK_n.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-1_Idle_NRM_n.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-1_Idle_RMSK_n.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-2_Walk_NRM_n.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-2_Walk_RMSK_n.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-3_Run_NRM_n.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-3_Run_RMSK_n.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-4_FastRun_NRM_n.png
+- Assets/Images/New/Units/UNT_Homeless_02/_-4_FastRun_RMSK_n.png
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-1_Idle_NRM_n.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-1_Idle_RMSK_n.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-2_Shoot_NRM_n.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-2_Shoot_RMSK_n.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-3_Reolad_01_NRM_n.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-3_Reolad_01_RMSK_n.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-3_Reolad_NRM_n.png
+- Assets/Images/New/Units/UNT_TarMan_New/UNT_TarMan-3_Reolad_RMSK_n.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_01_idle_NRM_n.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_01_idle_RMSK_n.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_01_Shoot_NRM_n.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_01_Shoot_RMSK_n.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_02_idle_NRM_n.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_02_idle_RMSK_n.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_02_Shoot_NRM_n.png
+- Assets/Images/New/Units/UNT_TowerArchers/_-TowerArcher_02_Shoot_RMSK_n.png
+- 
+- 
+- 
+- 
+- 
+- 
+- Assets/Images/New/Workshops/BowTent/_-BowTent_NRM_n.png
+- Assets/Images/New/Workshops/BowTent/_-BowTent_RMSK_n.png
+- Assets/Images/New/Workshops/BowTent/_-TentAnimation_NRM_n.png
+- Assets/Images/New/Workshops/BowTent/_-TentAnimation_RMSK_n.png
+- Assets/Images/New/Workshops/HummerTent/_-HummerTent_NRM_n.png
+- Assets/Images/New/Workshops/HummerTent/_-HummerTent_RMSK_n.png
+- Assets/Images/New/Workshops/HummerTent/_-TentAnimation_NRM_n.png
+- Assets/Images/New/Workshops/HummerTent/_-TentAnimation_RMSK_n.png
+- Assets/Images/New/Workshops/ResetTent/_-ReceptTent_NRM_n.png
+- Assets/Images/New/Workshops/ResetTent/_-ReceptTent_RMSK_n.png
+- Assets/Images/New/Workshops/ShieldTent/_-ShieldTent_NRM_n.png
+- Assets/Images/New/Workshops/ShieldTent/_-ShieldTent_RMSK_n.png
+- Assets/Images/New/Workshops/ShieldTent/_-Spot_NRM_n.png
+- Assets/Images/New/Workshops/ShieldTent/_-Spot_RMSK_n.png
+- Assets/Images/New/Workshops/ShieldTent/_-TentAnimation_NRM_n.png
+- Assets/Images/New/Workshops/ShieldTent/_-TentAnimation_RMSK_n.png
+- Assets/Images/New/Workshops/ShieldTent/_-TentAnimation02_NRM_n.png
+- Assets/Images/New/Workshops/ShieldTent/_-TentAnimation02_RMSK_n.png
+- Assets/Images/Old/Chest_Animation/Chest_Animation-Chest_NRM_n.png
+- Assets/Images/Old/Chest_Animation/Chest_Animation-Chest_RMSK_n.png
+- Assets/Images/Old/Coins/Coin-Coin_NRM_n.png
+- Assets/Images/Old/Coins/Coin-Coin_RMSK_n.png
+- Assets/Images/Old/RePack/Barricade/Asset-1_BDL_Barricade_LV01_NRM_n.png
+- Assets/Images/Old/RePack/Barricade/Asset-1_BDL_Barricade_LV01_RMSK_n.png
+- Assets/Images/Old/RePack/Barricade/Asset-2_BDL_Barricade_LV02_NRM_n.png
+- Assets/Images/Old/RePack/Barricade/Asset-2_BDL_Barricade_LV02_RMSK_n.png
+- Assets/Images/Old/RePack/Barricade/Asset-3_BDL_Barricade_LV03_NRM_n.png
+- Assets/Images/Old/RePack/Barricade/Asset-3_BDL_Barricade_LV03_RMSK_n.png
+- Assets/Images/Old/RePack/PRP/Asset-BDL_CentralFlag_LV01_NRM_n.png
+- Assets/Images/Old/RePack/PRP/Asset-BDL_CentralFlag_LV01_RMSK_n.png
+- Assets/Images/Old/RePack/PRP/Asset-BDL_Spot_NRM_n.png
+- Assets/Images/Old/RePack/PRP/Asset-BDL_Spot_RMSK_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Axe_NRM_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Axe_RMSK_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Bow_NRM_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Bow_RMSK_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_CapmFire_LV01_NRM_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_CapmFire_LV01_RMSK_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_FlashLight_01_NRM_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_FlashLight_01_RMSK_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Torch_NRM_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_Torch_RMSK_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TorchStand_01_NRM_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TorchStand_01_RMSK_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TowerFlag_DIF_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TowerFlag_NRM_n.png
+- Assets/Images/Old/RePack/PRP/Asset-PRP_TowerFlag_RMSK_n.png
+- Assets/Images/Old/RePack/Stones/Asset-BDL_Stone_LV01_NRM_n.png
+- Assets/Images/Old/RePack/Stones/Asset-BDL_Stone_LV01_RMSK_n.png
+- Assets/Images/Old/RePack/Stones/Asset-BDL_Stone_LV02_NRM_n.png
+- Assets/Images/Old/RePack/Stones/Asset-BDL_Stone_LV02_RMSK_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_BowTent_LV01_NRM_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_BowTent_LV01_RMSK_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_BowTent_LV02_NRM_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_BowTent_LV02_RMSK_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_HummerTent_LV01_NRM_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_HummerTent_LV01_RMSK_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_HummerTent_LV02_NRM_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_HummerTent_LV02_RMSK_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_ShieldTent_LV01_NRM_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_ShieldTent_LV01_RMSK_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerBow_LV01_NRM_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerBow_LV01_RMSK_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerBow_LV02_NRM_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerBow_LV02_RMSK_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerFire_LV01_NRM_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerFire_LV01_RMSK_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerFire_LV02_NRM_n.png
+- Assets/Images/Old/RePack/Tents/Asset-BDL_TowerFire_LV02_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Ballisa_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Ballista_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Tower_Ballista_01_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Tower_Ballista_02_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/Ballista and Towers/Ballista_and_Towers-Tower_Ballista_02_RMSK_n.png
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-1_Idle_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-1_Ilde_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-10_TR_Idle_To_FastRun_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-10_TR_Idle_To_FastRun_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-11_TR_FastRun_To_Idle_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-11_TR_FastRun_To_Idle_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-12_HeaveBreak_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-12_HeaveBreak_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-13_TR_Idle_To_Building_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-13_TR_Idle_To_Building_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-14_TR_Building_To_Idle_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-14_TR_Building_To_Idle_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-15_Building_Walk_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-15_Building_Walk_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-16_Building_Idle_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-16_Building_Idle_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-2_Running_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-2_Running_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-3_FastRun_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-3_FastRun_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-4_Summon_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-4_Summon_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-5_Order_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-5_Order_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-6_SE_Armor_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-6_SE_Armor_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-7_Release_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-7_Release_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-8_TR_Idle_To_Run_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-8_TR_Idle_To_Run_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-9_TR_Run_To_Idle_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/CHR_Barchin_New/CHR_Barchin_New-9_TR_Run_To_Idle_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-1_Idle_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-1_Idle_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-2_Run_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-2_Run_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-3_Attack_01_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-3_Attack_01_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-4_Attack_02_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-4_Attack_02_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-5_Death_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/ENM_BoneCrusher/ENM_BoneCrusher-5_Death_RMSK_n.png
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-1_Idle_1_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-10_TR_Attack_To_HoldShield_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-10_TR_Attack_To_HoldShield_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-11_Retreat_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-11_Retreat_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-2_Idle_2_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-2_Idle_2_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-3_LightStep_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-3_LightStep_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-4_Run_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-4_Run_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-5_FastRun_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-5_FastRun_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-6_TR_FastRun_To_Idle_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-6_TR_FastRun_To_Idle_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-7_HoldShild_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-7_HoldShild_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-8_TR_HoldShirld_To_Attack_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-8_TR_HoldShirld_To_Attack_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-9_attack_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/CharacterSprite/UNT_Shielder/UNT_Shielder-9_attack_RMSK_n.png
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Ballisa_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Ballista_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Tower_Ballista_01_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Tower_Ballista_01_RMSK_n.png
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Tower_Ballista_02_NRM_n.png
+- Assets/Images/Old/SpriteAtlas/Towers_Ballista/Ballista-Tower_Ballista_02_RMSK_n.png
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+enableDebugOutput: 0

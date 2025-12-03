@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a306de890949129245148bb923a655, type: 3}
+  m_Name: TowerTar
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  BuildingTypeId: 13
+  BuildingsData:
+  - LevelId: 1
+    CardKey: -1
+    Cards:
+    - CardId: -1
+      Prefab: {fileID: 1780564659419125146, guid: c101f82538a133a4c89006709fc93135, type: 3}
+      CardPrefabUI: {fileID: 0}
+    HP: 0
+    GridSizeX: 2
+    CoinsValue: 20
+    BuildingTime: 5
+  - LevelId: 2
+    CardKey: -1
+    Cards:
+    - CardId: 5
+      Prefab: {fileID: 8604470511807100291, guid: 0829c60054fa5fd4db55fc5a67627e3f, type: 3}
+      CardPrefabUI: {fileID: 8837097611545108470, guid: 9d785dba50f31ac4eb9abe0096abbd10, type: 3}
+    - CardId: 6
+      Prefab: {fileID: 2801652310505233812, guid: cdecbb1e00a371f4287de894c9ce2efe, type: 3}
+      CardPrefabUI: {fileID: 8837097611545108470, guid: ac16c00f0c51f7444ae973020b7553fe, type: 3}
+    HP: 0
+    GridSizeX: 2
+    CoinsValue: 40
+    BuildingTime: 10
+  GhostSprite: {fileID: 1927143054, guid: 185205a9e9c149643bf43a935faa2266, type: 3}
+  KeyboardHint: "\u041F\u043E\u0441\u0442\u0440\u043E\u0438\u0442\u044C \u0431\u0430\u0448\u043D\u044E
+    \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044F"
+  HintSprite: {fileID: 189855979, guid: d99c8eb7705f5284ab55ce6bfb22ad58, type: 3}
+  CatalogItemUI: {fileID: 521152190, guid: 8a47421747a5edc4f8759fd337338cd9, type: 3}
+  TooltipText: TowerTarText

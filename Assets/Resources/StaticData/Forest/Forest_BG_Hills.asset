@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3911256542264fd59a9cc1fa395e8611, type: 3}
+  m_Name: Forest_BG_Hills
+  m_EditorClassIdentifier: 
+  TreePrefabs:
+  - {fileID: 6338380623953593730, guid: f5cdba349a33361489543cae23555aec, type: 3}
+  - {fileID: 4890790548055786104, guid: 5590d40d21fd049489075c942a05de89, type: 3}
+  MinDistanceBetweenTrees: 3
+  TreeCount: 8
+  Container: {fileID: 855851569784457499, guid: 81dbf3c31f349614bafbe38d9337aa93, type: 3}

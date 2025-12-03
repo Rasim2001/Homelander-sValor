@@ -1,0 +1,566 @@
+fileFormatVersion: 2
+guid: fd50f7a3c548a994eb7eedfec65dd469
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BLD_ArrowWorkshop_LVL01_DIF
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 1714
+        width: 454
+        height: 334
+      alignment: 9
+      pivot: {x: 0.50440526, y: 0.047904193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2699568f73f3356489f1e56b0983dbac
+      internalID: -440600915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_ArrowWorkshop_LVL02_DIF
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 1351
+        width: 384
+        height: 363
+      alignment: 9
+      pivot: {x: 0.5052083, y: 0.044077136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac389cc2975a79640a6172f58ab3e64b
+      internalID: 1491902587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_BowProduct_01_DIF
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 1572
+        width: 34
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ca2f96363cbaa44a68494574d98bba
+      internalID: 86393844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Campfire_LVL01_DIF
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 515
+        width: 157
+        height: 66
+      alignment: 9
+      pivot: {x: 0.522293, y: 0.1969697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a3a51d32d9aa243a07d8db2009f28f
+      internalID: -1105259021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Flag_LVL01_DIF
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 678
+        width: 355
+        height: 484
+      alignment: 9
+      pivot: {x: 0.48450705, y: 0.010330578}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007bf0ee29e23e04290cda051d6d5c7f
+      internalID: -931516087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Flag_LVL02_DIF
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 955
+        width: 787
+        height: 536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31ec20097e551d4fb48bfabf7e2024c
+      internalID: -1232040020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_HammerWorkshop_LVL01_DIF
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1162
+        width: 481
+        height: 329
+      alignment: 9
+      pivot: {x: 0.49064448, y: 0.045592707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e60e01aa5a746f498818478f38a4210
+      internalID: 1020024165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_HammerWorkshop_LVL02_DIF
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 980
+        width: 358
+        height: 371
+      alignment: 9
+      pivot: {x: 0.49162012, y: 0.045822103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ce0fb9dcf0ca44d91b8271e8d2b951
+      internalID: -1451736534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_HummerProduct_01_DIF
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 1654
+        width: 57
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3477b8f30e8b946b015e9e2fdf5952
+      internalID: 143796993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Pole_01_DIF.png
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 1108
+        width: 91
+        height: 243
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0fa351e3b612742a8fc7c6f4b83aca
+      internalID: -1144001141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_TowerBeacon_01_DIF
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 209
+        height: 321
+      alignment: 9
+      pivot: {x: 0.32535884, y: 0.024922118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ee1f7c8bac9f748ad1d99c73a13f98
+      internalID: -1891076600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_TowerBow_LVL01_DIF
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 374
+        width: 230
+        height: 360
+      alignment: 9
+      pivot: {x: 0.50869566, y: 0.033333335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291570938805b7f428c78ab5379bb979
+      internalID: 898081003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_TowerBow_LVL02_DIF
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 734
+        width: 289
+        height: 436
+      alignment: 9
+      pivot: {x: 0.50865054, y: 0.03440367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8cd5212a216df4f9ce853755eb9c56
+      internalID: -1505271269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_TowerFire_LVL01_DIF
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 1170
+        width: 298
+        height: 321
+      alignment: 9
+      pivot: {x: 0.5402685, y: 0.056074765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa539e198677a2e4d842059fad88e393
+      internalID: 64188889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_TowerFire_LVL02_DIF
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 582
+        width: 338
+        height: 398
+      alignment: 9
+      pivot: {x: 0.5, y: 0.042713568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538d59c00a2883f429f45cba0409fde7
+      internalID: 84870595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_TowerFlag_LVL01_DIF
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 484
+        width: 184
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dac6cf563f2d8f44b812407b8e44428
+      internalID: 120634060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL_TENT_LVL03_DIF.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1491
+        width: 1594
+        height: 557
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d34b5675f8a2e458b5102dc7d18049
+      internalID: -1122242728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_CentreFlag_Flag_01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 581
+        width: 167
+        height: 97
+      alignment: 9
+      pivot: {x: 0.5, y: 0.340741}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b947eaab3fc62764c9c5b7a476ed26b1
+      internalID: -1540650553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 542090a07511f7c41b7161a3d47f8285
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {instanceID: 0}
+      name: _NormalMap
+    - texture: {instanceID: 0}
+      name: _MaskTex
+    nameFileIdTable:
+      BLD_ArrowWorkshop_LVL01_DIF: -440600915
+      BLD_ArrowWorkshop_LVL02_DIF: 1491902587
+      BLD_BowProduct_01_DIF: 86393844
+      BLD_Campfire_LVL01_DIF: -1105259021
+      BLD_CentreFlag_Flag_01: -1540650553
+      BLD_Flag_LVL01_DIF: -931516087
+      BLD_Flag_LVL02_DIF: -1232040020
+      BLD_HammerWorkshop_LVL01_DIF: 1020024165
+      BLD_HammerWorkshop_LVL02_DIF: -1451736534
+      BLD_HummerProduct_01_DIF: 143796993
+      BLD_Pole_01_DIF.png: -1144001141
+      BLD_TowerBeacon_01_DIF: -1891076600
+      BLD_TowerBow_LVL01_DIF: 898081003
+      BLD_TowerBow_LVL02_DIF: -1505271269
+      BLD_TowerFire_LVL01_DIF: 64188889
+      BLD_TowerFire_LVL02_DIF: 84870595
+      BLD_TowerFlag_LVL01_DIF: 120634060
+      CENTRAL_TENT_LVL03_DIF.png: -1122242728
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

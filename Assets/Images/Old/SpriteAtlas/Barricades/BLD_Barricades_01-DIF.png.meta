@@ -1,0 +1,496 @@
+fileFormatVersion: 2
+guid: 00d9d87d2931909419e43a948961adf8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL01_00_DIF
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 845
+        width: 201
+        height: 22
+      alignment: 9
+      pivot: {x: 0.49751243, y: 0.08181818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca1471b5c04997498b898b3c9d5719d
+      internalID: -431365177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL01_100_DIF
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 545
+        width: 117
+        height: 187
+      alignment: 9
+      pivot: {x: 0.47008547, y: 0.013368984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e131c98a1cec54ab4a484624326406
+      internalID: 1411773715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL01_25_DIF
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 874
+        width: 92
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5, y: 0.047169812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc039efe0e59174c9b4a09efe30f324
+      internalID: 46159744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL01_50_DIF
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 929
+        width: 101
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5445545, y: 0.026595745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ecccbb58edbc94f86b1abfd505477c
+      internalID: 725424968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL01_75_DIF
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 423
+        width: 115
+        height: 120
+      alignment: 9
+      pivot: {x: 0.47826087, y: 0.020833334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8437ab5aaa982774bad4ac6c641b6d30
+      internalID: 1593004091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL02_00_DIF
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 845
+        width: 201
+        height: 22
+      alignment: 9
+      pivot: {x: 0.49751243, y: 0.11363637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816efc8c7db0af04fb2be4af8012e473
+      internalID: -102497692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL02_100_DIF
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 799
+        width: 202
+        height: 224
+      alignment: 9
+      pivot: {x: 0.6138614, y: 0.015625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3622c19cfb7468348878e021f08aeef8
+      internalID: -868901601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL02_25_DIF
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 729
+        width: 194
+        height: 68
+      alignment: 9
+      pivot: {x: 0.63917524, y: 0.05147059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970981eaed4bbfb489773bc5ebac4bbf
+      internalID: 1493745861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL02_50_DIF
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 734
+        width: 198
+        height: 109
+      alignment: 9
+      pivot: {x: 0.6262626, y: 0.03211009}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fabea4e12c83f4b8985320632b9fe6
+      internalID: -1866871928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL02_75_DIF
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 869
+        width: 202
+        height: 154
+      alignment: 9
+      pivot: {x: 0.6138614, y: 0.022727273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ef5c2261be0cc408237687fde13ac9
+      internalID: -130829057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL03_00_DIF
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 845
+        width: 201
+        height: 22
+      alignment: 9
+      pivot: {x: 0.49751243, y: 0.11363637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9f6e5f832692444af8488d7e865166
+      internalID: -228181128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL03_100_DIF
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 455
+        width: 182
+        height: 277
+      alignment: 9
+      pivot: {x: 0.56593406, y: 0.009025271}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed6d268a88dcab42b40b1a3f43a4334
+      internalID: -599512266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL03_25_DIF
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 356
+        width: 158
+        height: 97
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025773196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b72edbc2c9468749b8dc40399ef4bf7
+      internalID: 1963045701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL03_50_DIF
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 383
+        width: 176
+        height: 151
+      alignment: 9
+      pivot: {x: 0.5511364, y: 0.01655629}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bcc86a43479c14ab9f3dcfd529bcae
+      internalID: -1658637277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BLD_Baricade_LVL03_75_DIF
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 536
+        width: 182
+        height: 191
+      alignment: 9
+      pivot: {x: 0.56593406, y: 0.013089005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ee18d26a3b4db46aeb790ed02ff691
+      internalID: 973660414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 92fc6a8d37c35e243b415fec0f5e95e0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BLD_Baricade_LVL01_00_DIF: -431365177
+      BLD_Baricade_LVL01_100_DIF: 1411773715
+      BLD_Baricade_LVL01_25_DIF: 46159744
+      BLD_Baricade_LVL01_50_DIF: 725424968
+      BLD_Baricade_LVL01_75_DIF: 1593004091
+      BLD_Baricade_LVL02_00_DIF: -102497692
+      BLD_Baricade_LVL02_100_DIF: -868901601
+      BLD_Baricade_LVL02_25_DIF: 1493745861
+      BLD_Baricade_LVL02_50_DIF: -1866871928
+      BLD_Baricade_LVL02_75_DIF: -130829057
+      BLD_Baricade_LVL03_00_DIF: -228181128
+      BLD_Baricade_LVL03_100_DIF: -599512266
+      BLD_Baricade_LVL03_25_DIF: 1963045701
+      BLD_Baricade_LVL03_50_DIF: -1658637277
+      BLD_Baricade_LVL03_75_DIF: 973660414
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

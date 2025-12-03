@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2fe5988d19547acb805d9a4bf0c19ad, type: 3}
+  m_Name: CoinsStaticData
+  m_EditorClassIdentifier: 
+  CoingImagePrefab: {fileID: 7923617920965777312, guid: 08bbcb32204feb841a4faf56c481b5b2, type: 3}
+  CoinPrefab: {fileID: 4353955058830090223, guid: d2ab91860659b054e8ac46c99557d128, type: 3}
+  CoinsSprite: {fileID: -871393591, guid: d99c8eb7705f5284ab55ce6bfb22ad58, type: 3}
+  ActiveCoinsSprite: {fileID: -777478345, guid: d99c8eb7705f5284ab55ce6bfb22ad58, type: 3}
+  SpendCoinsAnimationDuration: 0.2

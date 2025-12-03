@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3911256542264fd59a9cc1fa395e8611, type: 3}
+  m_Name: Forest_MG
+  m_EditorClassIdentifier: 
+  TreePrefabs:
+  - {fileID: 6401369714925354481, guid: 79b4f3ee5e3332b4cb150896caf2167d, type: 3}
+  - {fileID: 7818570059285137699, guid: c23cdefd7da90d246a19080ba178c741, type: 3}
+  - {fileID: 7544819990510932035, guid: 16df8783739713b48bb9447821acf6ea, type: 3}
+  - {fileID: 1178011212965506943, guid: c80d36e96bca9bc4d86c66661a8f2978, type: 3}
+  - {fileID: 3842502086698943637, guid: 6222fa3f7354ff847a4b24f0aa7f4a34, type: 3}
+  - {fileID: 896824439639007346, guid: 4b426dff3cc426441a16e14492e2223a, type: 3}
+  - {fileID: 7122159013736688754, guid: 82c0ab00a3fe99c48a7a80cb1b521005, type: 3}
+  - {fileID: 8474728917226452718, guid: 71ee0dedd5b2a124b97b171c1e1850c9, type: 3}
+  - {fileID: 7923787994929563611, guid: 65fae7e16a203bc4db8ed40fef19a46b, type: 3}
+  MinDistanceBetweenTrees: 1
+  TreeCount: 25
+  Container: {fileID: 4977131065285520185, guid: 27cf94037e668054e9804633dd4f31d2, type: 3}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Bonecrusher
+  m_Controller: {fileID: 9100000, guid: 2c14ba0f01f455246bfa318c7d926a39, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: d86403a400e055e40a518072c41c0f03, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2f3ca32eafb284d49988a0035190d477, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fdabb8b7b9f4d8046a0096a20d19b0ad, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1312ddda9c33a87469566347eb516265, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f23710c3f6cd0f941b2b99a02a000966, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 04c75f6e472b1af478d20b5098981dfd, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: dc02c6d8811f94c449f8410b1947ea02, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f5471d26aac7740479a7775cd3b0fd6b, type: 2}

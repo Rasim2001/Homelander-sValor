@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3911256542264fd59a9cc1fa395e8611, type: 3}
+  m_Name: Forest_MG_Homes
+  m_EditorClassIdentifier: 
+  TreePrefabs:
+  - {fileID: 1432577066128946112, guid: aea42b794df8c654ea8b5cb2ab7ac181, type: 3}
+  - {fileID: 7202227648372463396, guid: bfa8d87877b80b346afd368691f8b294, type: 3}
+  MinDistanceBetweenTrees: 3
+  TreeCount: 2
+  Container: {fileID: 4977131065285520185, guid: 27cf94037e668054e9804633dd4f31d2, type: 3}

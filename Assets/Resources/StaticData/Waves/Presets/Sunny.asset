@@ -1,0 +1,227 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e593e04c4f5f400b962076846a8c7fa4, type: 3}
+  m_Name: Sunny
+  m_EditorClassIdentifier: 
+  DayNightMaterialData:
+    ColorSinriseA: {r: 0.94509804, g: 0.8039216, b: 0.9764706, a: 0}
+    ColorSinriseAValue: 1.19
+    ColorSinriseB: {r: 0.9098039, g: 0.41568628, b: 0, a: 0}
+    ColorSinriseBValue: 0.61
+    ColorDayA: {r: 0.27058825, g: 0.5686275, b: 1, a: 0}
+    ColorDayAValue: 3.13
+    ColorDayB: {r: 0.6392157, g: 0.7882353, b: 1, a: 0}
+    ColorDayBValue: 0.48
+    ColorSunsetA: {r: 0.6156863, g: 0.6156863, b: 0.6156863, a: 0}
+    ColorSunsetAValue: 0.89
+    ColorSunsetB: {r: 0.9607843, g: 0.22745098, b: 0.019607844, a: 0}
+    ColorSunsetBValue: 0.68
+    ColorNightA: {r: 0.003921569, g: 0.039215688, b: 0.21960784, a: 0}
+    ColorNightAValue: 3.55
+    ColorNightB: {r: 0.050980393, g: 0.1764706, b: 0.40784314, a: 0}
+    ColorNightBValue: 0.53
+    SunriseInPercent: 0.1
+    SunsetInPercent: 0.8
+    DayInPercent: 0.25
+  DayNightLightsData:
+    MoonNormalGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    MoonMaskGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    MoonNormalBGGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    MoonMaskBGGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    MoonNormalMGGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    MoonMaskMGGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    SunNormalGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    SunMaskGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    SunNormalBGGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    SunMaskBGGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    SunNormalMGGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    SunMaskMGGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    GlobalLightGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    GlobalLightBGGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    GlobalLightMGGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100
+    SunGlareGradient:
+      m_mode: 0
+      m_serializedColorKeys:
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 0
+      - color: {r: 1, g: 1, b: 1, a: 1}
+        time: 100
+      m_serializedAlphaKeys:
+      - alpha: 1
+        time: 0
+      - alpha: 1
+        time: 100

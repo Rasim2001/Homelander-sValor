@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: f8f1bb4d706fc7941835bd97c89934f1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Composite0172
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 161
+        width: 59
+        height: 214
+      alignment: 9
+      pivot: {x: 0.3898305, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f9a0be7bdcc63429474c2b1de78c77
+      internalID: -1767345982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0174
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 377
+        width: 59
+        height: 214
+      alignment: 9
+      pivot: {x: 0.40677965, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c140fb31552b94a972d254bfd999aa
+      internalID: -1456216995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0176
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 377
+        width: 58
+        height: 214
+      alignment: 9
+      pivot: {x: 0.41379312, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10b994e30b65134bb6f1b6784f6dc33
+      internalID: -1615308806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0178
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 377
+        width: 80
+        height: 214
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0bea166e028464ba223fb91f119173
+      internalID: 1067121796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0180
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 377
+        width: 93
+        height: 214
+      alignment: 9
+      pivot: {x: 0.29032257, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ce899a048426a43aa826ff73e7c39e
+      internalID: 1522664036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0182
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 377
+        width: 100
+        height: 214
+      alignment: 9
+      pivot: {x: 0.29, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7693b6aa5474874792392298acd542e
+      internalID: -411868072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0184
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 377
+        width: 107
+        height: 214
+      alignment: 9
+      pivot: {x: 0.28037384, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c940d829ab68cb44b6807b553655088
+      internalID: -1073659184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0186
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 593
+        width: 107
+        height: 214
+      alignment: 9
+      pivot: {x: 0.28037384, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a759770fc8d8b948bd6fb92c0d1cd01
+      internalID: -1448354357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0188
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 593
+        width: 106
+        height: 214
+      alignment: 9
+      pivot: {x: 0.2735849, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dbbf8288a2a6040b234d0943be01ab
+      internalID: 1797893431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0190
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 593
+        width: 106
+        height: 214
+      alignment: 9
+      pivot: {x: 0.26415095, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35a9f2f153ddb4428be8b995573cbb6
+      internalID: 1566096375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0192
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 593
+        width: 107
+        height: 214
+      alignment: 9
+      pivot: {x: 0.26168224, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a359c078205df4c42a409f44bf686c77
+      internalID: 797912977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0194
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 809
+        width: 106
+        height: 214
+      alignment: 9
+      pivot: {x: 0.254717, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88ba6984f0bb0d40b19db6e880090b1
+      internalID: -1392760322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0196
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 809
+        width: 105
+        height: 214
+      alignment: 9
+      pivot: {x: 0.25714287, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2342f937b911545a063ea9f7d92f40
+      internalID: 1543785404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0198
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 160
+        width: 101
+        height: 215
+      alignment: 9
+      pivot: {x: 0.25742576, y: 0.006976744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d171d89aec1c64046a618b0fbf2201d6
+      internalID: -895864206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0200
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 160
+        width: 97
+        height: 215
+      alignment: 9
+      pivot: {x: 0.25773194, y: 0.006976744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26ea5e32a917d14fb435213344d69a4
+      internalID: 1119811037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0202
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 160
+        width: 91
+        height: 215
+      alignment: 9
+      pivot: {x: 0.25274727, y: 0.006976744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483c383cf04ddb744b64a75fc1660028
+      internalID: -588996525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0204
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 809
+        width: 78
+        height: 214
+      alignment: 9
+      pivot: {x: 0.2948718, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc909ee12c6a7048a6334f1f0beb1d3
+      internalID: 1851012958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0206
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 160
+        width: 60
+        height: 215
+      alignment: 9
+      pivot: {x: 0.38333333, y: 0.006976744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fccdbe23dcaf54478c67bf782d964dd
+      internalID: -1213250881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0208
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 160
+        width: 59
+        height: 215
+      alignment: 9
+      pivot: {x: 0.3898305, y: 0.006976744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7dfd4a5096bef343acdc08a2fa3a1a9
+      internalID: -255877268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0210
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 809
+        width: 60
+        height: 214
+      alignment: 9
+      pivot: {x: 0.38333333, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf99e9efaa5335408addfb750bd1e33
+      internalID: -35852571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0212
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 809
+        width: 59
+        height: 214
+      alignment: 9
+      pivot: {x: 0.3898305, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a9cf041bc08a147a480873728e471a
+      internalID: 1026457371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Composite0214
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 809
+        width: 59
+        height: 214
+      alignment: 9
+      pivot: {x: 0.3898305, y: 0.0070093456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66d1903f2e5f6c4eb493104d1bd9ae9
+      internalID: 1267068941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ba7669dde3b78aa4aa0af5dc45022553
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Composite0172: -1767345982
+      Composite0174: -1456216995
+      Composite0176: -1615308806
+      Composite0178: 1067121796
+      Composite0180: 1522664036
+      Composite0182: -411868072
+      Composite0184: -1073659184
+      Composite0186: -1448354357
+      Composite0188: 1797893431
+      Composite0190: 1566096375
+      Composite0192: 797912977
+      Composite0194: -1392760322
+      Composite0196: 1543785404
+      Composite0198: -895864206
+      Composite0200: 1119811037
+      Composite0202: -588996525
+      Composite0204: 1851012958
+      Composite0206: -1213250881
+      Composite0208: -255877268
+      Composite0210: -35852571
+      Composite0212: 1026457371
+      Composite0214: 1267068941
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779157b13e7d49e5874e845162636ab5, type: 3}
+  m_Name: LightData
+  m_EditorClassIdentifier: 
+  SunNormalLightIntensity: 0.8
+  SunNormalIsActive: 1
+  SunNormalBGLightIntensity: 0.2
+  SunNormalBGIsActive: 1
+  SunNormalMGLightIntensity: 1.57
+  SunNormalMGIsActive: 1
+  SunMaskLightIntensity: 3
+  SunMaskIsActive: 1
+  SunMaskBGLightIntensity: 0.53
+  SunMaskBGIsActive: 1
+  SunMaskMGLightIntensity: 5
+  SunMaskMGIsActive: 1
+  MoonNormalLightIntensity: 0.2
+  MoonNormalIsActive: 1
+  MoonNormalBGLightIntensity: 0.2
+  MoonNormalBGIsActive: 1
+  MoonNormalMGLightIntensity: 1.57
+  MoonNormalMGIsActive: 1
+  MoonMaskLightIntensity: 2
+  MoonMaskIsActive: 1
+  MoonMaskBGLightIntensity: 0.1
+  MoonMaskBGIsActive: 1
+  MoonMaskMGLightIntensity: 13
+  MoonMaskMGIsActive: 1
+  GlobalLightIntensity: 0.15
+  GlobalLightIsActive: 1
+  GlobalBGLightIntensity: 0.5
+  GlobalBGLightIsActive: 1
+  GlobalMGLightIntensity: 0.37
+  GlobalMGLightIsActive: 1
+  SunNormalLightIntensityReadonly: 1.57
+  SunMaskLightIntensityReadonly: 5
+  MoonNormalLightIntensityReadonly: 1.57
+  MoonMaskLightIntensityReadonly: 13
+  GlobalLightIntensityReadonly: 0.25

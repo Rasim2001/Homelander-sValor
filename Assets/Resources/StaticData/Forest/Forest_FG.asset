@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3911256542264fd59a9cc1fa395e8611, type: 3}
+  m_Name: Forest_FG
+  m_EditorClassIdentifier: 
+  TreePrefabs:
+  - {fileID: 8885745287362952161, guid: 4765ef65445d6f24f865434300fbe4a6, type: 3}
+  - {fileID: 9099790230007546903, guid: c49cc625013dc154da050437744ae57a, type: 3}
+  - {fileID: 9217401315103295817, guid: bc0c45ea4ff57b24ba9ae18a5aa8493e, type: 3}
+  - {fileID: 4759395862872656623, guid: a51e746dde8957e40b858f647eb5fb9c, type: 3}
+  - {fileID: 1032142932744830885, guid: deb558e90aa464f468635be1d312adfa, type: 3}
+  - {fileID: 3542030263523780109, guid: bcc745b3154f4784c9fc2a40cd6a6a93, type: 3}
+  - {fileID: 7168259344658819139, guid: 4ee332b87e9b1a543b2ff58eb772f103, type: 3}
+  MinDistanceBetweenTrees: 1
+  TreeCount: 30
+  Container: {fileID: 7562774302247747961, guid: f2d67caa042a78846bb06fbb52cf372d, type: 3}

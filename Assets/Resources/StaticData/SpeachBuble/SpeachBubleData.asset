@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 285f14eaa60c43b296d6a5086cabcb10, type: 3}
+  m_Name: SpeachBubleData
+  m_EditorClassIdentifier: 
+  PlayerConfigs:
+  - SpeachBubleId: 0
+    SpeachBubleSprite: {fileID: -477942859, guid: 4f399e072bac2cd45aaeadde9018b6e2, type: 3}
+  - SpeachBubleId: 1
+    SpeachBubleSprite: {fileID: 1034804576, guid: 4f399e072bac2cd45aaeadde9018b6e2, type: 3}
+  - SpeachBubleId: 2
+    SpeachBubleSprite: {fileID: -1860362343, guid: 4f399e072bac2cd45aaeadde9018b6e2, type: 3}
+  - SpeachBubleId: 3
+    SpeachBubleSprite: {fileID: 1525082384, guid: 4f399e072bac2cd45aaeadde9018b6e2, type: 3}
+  UnitConfigs:
+  - OrderID: 0
+    Sprite: {fileID: 1409975043, guid: 79f628547ad20944db8016aa9caa2e90, type: 3}
+  - OrderID: 1
+    Sprite: {fileID: -1393635036, guid: 79f628547ad20944db8016aa9caa2e90, type: 3}
+  - OrderID: 2
+    Sprite: {fileID: -370702565, guid: 79f628547ad20944db8016aa9caa2e90, type: 3}
+  - OrderID: 3
+    Sprite: {fileID: 1277430369, guid: 79f628547ad20944db8016aa9caa2e90, type: 3}
+  - OrderID: 5
+    Sprite: {fileID: -1125800787, guid: 79f628547ad20944db8016aa9caa2e90, type: 3}
+  HomelessConfigs:
+  - BuildingTypeId: 10
+    Sprite: {fileID: -1138742979, guid: 79f628547ad20944db8016aa9caa2e90, type: 3}
+  - BuildingTypeId: 11
+    Sprite: {fileID: 1214481474, guid: 79f628547ad20944db8016aa9caa2e90, type: 3}
+  - BuildingTypeId: 12
+    Sprite: {fileID: 1515717210, guid: 79f628547ad20944db8016aa9caa2e90, type: 3}
+  - BuildingTypeId: 8
+    Sprite: {fileID: -571835930, guid: 79f628547ad20944db8016aa9caa2e90, type: 3}
+  - BuildingTypeId: 13
+    Sprite: {fileID: -571835930, guid: 79f628547ad20944db8016aa9caa2e90, type: 3}

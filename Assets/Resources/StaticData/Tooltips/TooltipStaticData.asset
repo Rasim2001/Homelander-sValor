@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c880b2361504f7391711ce8fa33917a, type: 3}
+  m_Name: TooltipStaticData
+  m_EditorClassIdentifier: 
+  BuildingFlagTooltips:
+  - Id: 1
+    Text: BowWorkshopText
+  - Id: 2
+    Text: HammerWorkshopText
+  - Id: 3
+    Text: ShielderWorkshopText
+  - Id: 4
+    Text: ResetWorkshopText
+  - Id: 11
+    Text: BallistaText
+  - Id: 12
+    Text: PiersingText
+  - Id: 13
+    Text: BurningText
+  - Id: 14
+    Text: ArcherText
+  - Id: 15
+    Text: DoubleArrowText
+  UnitTypeTooltips:
+  - Id: 0
+    Text: BuilderText
+  - Id: 1
+    Text: ArcherText
+  - Id: 2
+    Text: ShielderText
+  - Id: 5
+    Text: HomelessText
+  SpritesUnlitDefault: {fileID: 2100000, guid: cc63264f20e4fd64cafe6d64dbc6c3dc, type: 2}

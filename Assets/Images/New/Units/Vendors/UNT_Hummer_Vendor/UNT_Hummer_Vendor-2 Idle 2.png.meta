@@ -1,0 +1,1530 @@
+fileFormatVersion: 2
+guid: efefb4d4ae3872e4b9447a01ad5802ae
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DIF-Frame0082
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 829
+        width: 149
+        height: 96
+      alignment: 9
+      pivot: {x: 0.39597315, y: -1.0103126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bb3f5e70797274895829cb7ad9b036
+      internalID: 877917304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0084
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 829
+        width: 150
+        height: 96
+      alignment: 9
+      pivot: {x: 0.39333335, y: -1.0103126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1e2500a45815647a9ca2a39201b132
+      internalID: 253438884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0086
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 631
+        width: 151
+        height: 97
+      alignment: 9
+      pivot: {x: 0.39072847, y: -0.9998969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8505fd0df20c140ae63b02ec0d048b
+      internalID: 1509452268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0088
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 430
+        width: 150
+        height: 98
+      alignment: 9
+      pivot: {x: 0.38666666, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05091b4cf48c52146aa0f8d3e3d9e2f7
+      internalID: 1648228815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0090
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 430
+        width: 146
+        height: 98
+      alignment: 9
+      pivot: {x: 0.38356164, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd895a078f98e1247912ab324234e742
+      internalID: 368787224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0092
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 126
+        width: 139
+        height: 99
+      alignment: 9
+      pivot: {x: 0.38848922, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328e11ee0f450504a9d7b034f9f5429d
+      internalID: 1805738498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0094
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 126
+        width: 134
+        height: 99
+      alignment: 9
+      pivot: {x: 0.3955224, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7c60fcc300a0349b56322a8a332ed2
+      internalID: 2142084741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0096
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 126
+        width: 129
+        height: 99
+      alignment: 9
+      pivot: {x: 0.39534885, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72878b510c50d9f4ebf23e9c46b0d33b
+      internalID: -1272558935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0098
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 227
+        width: 127
+        height: 99
+      alignment: 9
+      pivot: {x: 0.39370078, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff610b62db931d409e1828fdb84838b
+      internalID: -733770739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0100
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 227
+        width: 126
+        height: 99
+      alignment: 9
+      pivot: {x: 0.3888889, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2281c939621fc0b4fa0bfb6c155b6e02
+      internalID: 228248758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0102
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 227
+        width: 127
+        height: 99
+      alignment: 9
+      pivot: {x: 0.38582677, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5d910aa9d75f746b0ed7a5d7b7d8df
+      internalID: 341788000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0104
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 227
+        width: 128
+        height: 99
+      alignment: 9
+      pivot: {x: 0.3828125, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97185ec608d55045b2bcb312595e117
+      internalID: -1832767838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0106
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 227
+        width: 132
+        height: 99
+      alignment: 9
+      pivot: {x: 0.37121212, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cb11f3e91d855449e11c33bc86c7c6
+      internalID: -1802552671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0108
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 227
+        width: 134
+        height: 99
+      alignment: 9
+      pivot: {x: 0.35820895, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c413da547c64244bc9fc442e669cec
+      internalID: 1796468946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0110
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 227
+        width: 135
+        height: 99
+      alignment: 9
+      pivot: {x: 0.35555556, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4fe55f24f9acf4c9807f75534172a2
+      internalID: 506633873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0112
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 328
+        width: 137
+        height: 99
+      alignment: 9
+      pivot: {x: 0.34306568, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c741071b87e0b48917bceb6dba11fc
+      internalID: 1137940546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0114
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 328
+        width: 139
+        height: 99
+      alignment: 9
+      pivot: {x: 0.3381295, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca64da50de09edd4a88355e02da33502
+      internalID: -978262407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0116
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 430
+        width: 140
+        height: 98
+      alignment: 9
+      pivot: {x: 0.33571428, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8102f986f1c2e7a438c7690ef4460af7
+      internalID: -428184105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0118
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 430
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.33333334, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14c778810fa0504c891036f826885fd
+      internalID: 213614186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0120
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 530
+        width: 139
+        height: 98
+      alignment: 9
+      pivot: {x: 0.33093524, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353fd2c9ab9ca054eb6939873e93fd3a
+      internalID: -1756414008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0122
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 530
+        width: 139
+        height: 98
+      alignment: 9
+      pivot: {x: 0.33093524, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d84ab3529dfa148abf445930794813
+      internalID: 1123986752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0124
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 530
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.33333334, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c17d3a5b324124396881a410275698
+      internalID: -1917644096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0126
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 631
+        width: 137
+        height: 97
+      alignment: 9
+      pivot: {x: 0.33576643, y: -0.9998969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9d749d1cee71e408529f026ecef76e
+      internalID: -925153217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0128
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 631
+        width: 134
+        height: 97
+      alignment: 9
+      pivot: {x: 0.33582088, y: -0.9998969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56874b740830bc145a52d21f7c4afb18
+      internalID: -1075915473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0130
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 829
+        width: 133
+        height: 96
+      alignment: 9
+      pivot: {x: 0.33834586, y: -1.0103126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0bad71607bb1049bf6f93e87329dd0
+      internalID: 962440532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0132
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 328
+        width: 132
+        height: 99
+      alignment: 9
+      pivot: {x: 0.3409091, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61d2abe314016f4094ab50c1f413f80
+      internalID: -1197505352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0134
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 123
+        width: 129
+        height: 102
+      alignment: 9
+      pivot: {x: 0.34108528, y: -0.9508824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7590422d3239c3498cdc085198e37da
+      internalID: 301132774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0136
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 123
+        width: 128
+        height: 102
+      alignment: 9
+      pivot: {x: 0.3515625, y: -0.9508824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b029f6504d9f4440ac2433ddceb7c58
+      internalID: -1646725065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0138
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 125
+        width: 126
+        height: 100
+      alignment: 9
+      pivot: {x: 0.34920636, y: -0.9699}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28cdc17eb0842cd42b564afb811ca76f
+      internalID: -1405068997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0140
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 929
+        width: 126
+        height: 94
+      alignment: 9
+      pivot: {x: 0.34920636, y: -1.0318085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092fcc431a53a7249adf6bc9c1bf709e
+      internalID: -1521979368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0142
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 929
+        width: 126
+        height: 94
+      alignment: 9
+      pivot: {x: 0.34920636, y: -1.0318085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d0ebc3ee21c2f45a7daa2a4f35e7a0
+      internalID: -1950187227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0144
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 928
+        width: 126
+        height: 95
+      alignment: 9
+      pivot: {x: 0.34920636, y: -1.0209473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2b2708087b489429c40f05fff30513
+      internalID: 2079325281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0146
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 928
+        width: 125
+        height: 95
+      alignment: 9
+      pivot: {x: 0.352, y: -1.0209473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3213b27751281494fbd4153bbdcf607b
+      internalID: -832399158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0148
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 928
+        width: 125
+        height: 95
+      alignment: 9
+      pivot: {x: 0.352, y: -1.0209473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52dc8f52b2e97b644af05d2e1026e047
+      internalID: 360266031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0150
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 928
+        width: 126
+        height: 95
+      alignment: 9
+      pivot: {x: 0.35714287, y: -1.0209473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919e5eb9744ab334195ca418c30c3d5b
+      internalID: 1808848435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0152
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 730
+        width: 126
+        height: 97
+      alignment: 9
+      pivot: {x: 0.35714287, y: -0.9998969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c78d02e54b1564daab9f0e51e0dfac
+      internalID: -750584922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0154
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 730
+        width: 127
+        height: 97
+      alignment: 9
+      pivot: {x: 0.35433072, y: -0.9998969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c239472f97da974a9a69f494fc48c31
+      internalID: -772626536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0156
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 530
+        width: 127
+        height: 98
+      alignment: 9
+      pivot: {x: 0.36220473, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767afbbc037961141b568d2ead81b3db
+      internalID: -1331881476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0158
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 530
+        width: 128
+        height: 98
+      alignment: 9
+      pivot: {x: 0.359375, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9518e7e3e9ddd44bbb0808927accc7
+      internalID: -325938343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0160
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 328
+        width: 128
+        height: 99
+      alignment: 9
+      pivot: {x: 0.359375, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707d6ab9240b9cc4884b9670950aca97
+      internalID: -1194790992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0162
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 530
+        width: 129
+        height: 98
+      alignment: 9
+      pivot: {x: 0.36434108, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61bd624a2720f3b40a9d71b550c73d1c
+      internalID: 1664859177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0164
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 328
+        width: 129
+        height: 99
+      alignment: 9
+      pivot: {x: 0.36434108, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415de1687d750ca458d8d094164a4201
+      internalID: 1499411307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0166
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 328
+        width: 129
+        height: 99
+      alignment: 9
+      pivot: {x: 0.36434108, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a315ac1e320700544811c04fb1d4d545
+      internalID: -734996130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0168
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 328
+        width: 130
+        height: 99
+      alignment: 9
+      pivot: {x: 0.36153847, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8226139252d0c40bc8bb203470fff9
+      internalID: 1912782372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0170
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 429
+        width: 131
+        height: 99
+      alignment: 9
+      pivot: {x: 0.35877863, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a243619a8298245b2bf87b8235643d
+      internalID: -1163156285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0172
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 429
+        width: 130
+        height: 99
+      alignment: 9
+      pivot: {x: 0.36153847, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc0b72747fb5d0499ee23ec09b172b1
+      internalID: 965560805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0174
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 429
+        width: 131
+        height: 99
+      alignment: 9
+      pivot: {x: 0.35877863, y: -0.979697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8794fe95aa29d3e45aab8b343ac2f893
+      internalID: -1247422784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0176
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 530
+        width: 131
+        height: 98
+      alignment: 9
+      pivot: {x: 0.36641222, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca833fabf6ffd0744a978346621cad78
+      internalID: -1843885615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0178
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 630
+        width: 127
+        height: 98
+      alignment: 9
+      pivot: {x: 0.37795275, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b19f9c03f6e0ba45b42f747a0c9d062
+      internalID: -552334423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0180
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 730
+        width: 127
+        height: 97
+      alignment: 9
+      pivot: {x: 0.38582677, y: -0.9998969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494c8d66590d6dc41bbb328ad8fcdb33
+      internalID: 2118016625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0182
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 630
+        width: 127
+        height: 98
+      alignment: 9
+      pivot: {x: 0.38582677, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b321af6d0e7469c42b69e487a3b6d750
+      internalID: -433624553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0184
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 630
+        width: 128
+        height: 98
+      alignment: 9
+      pivot: {x: 0.390625, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd19c271fd39a841b72db72a2786420
+      internalID: 1320238883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0186
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 630
+        width: 128
+        height: 98
+      alignment: 9
+      pivot: {x: 0.390625, y: -0.9896939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4897f7d8a0c31542929055e1197b469
+      internalID: 969408801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0188
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 730
+        width: 129
+        height: 97
+      alignment: 9
+      pivot: {x: 0.39534885, y: -0.9998969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cf1f8e7db89bb4787c97ba31be23f8
+      internalID: 553717172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0190
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 730
+        width: 129
+        height: 97
+      alignment: 9
+      pivot: {x: 0.4031008, y: -0.9998969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21771ba81f523d247b1703b2a00bfc4f
+      internalID: -995656126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0192
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 730
+        width: 129
+        height: 97
+      alignment: 9
+      pivot: {x: 0.4108527, y: -0.9998969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181b1dda04657434a85ccfa44a89038f
+      internalID: 163092387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0194
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 730
+        width: 133
+        height: 97
+      alignment: 9
+      pivot: {x: 0.41353384, y: -0.9998969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11913ef5624d964e9a05ee06c9f9df9
+      internalID: -1267510746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0196
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 829
+        width: 136
+        height: 96
+      alignment: 9
+      pivot: {x: 0.4117647, y: -1.0103126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978ac5ce776cd4b468df5b04532c5520
+      internalID: 557891849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0198
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 829
+        width: 142
+        height: 96
+      alignment: 9
+      pivot: {x: 0.4084507, y: -1.0103126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687e5e0cb274f1a4499dac30041a99f6
+      internalID: -1502672655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0200
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 829
+        width: 146
+        height: 96
+      alignment: 9
+      pivot: {x: 0.4041096, y: -1.0103126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd644fefb1cff143930cf2765f4f738
+      internalID: 1407058156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0202
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 829
+        width: 148
+        height: 96
+      alignment: 9
+      pivot: {x: 0.39864865, y: -1.0103126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709f043fa7e89cb45a6703b42fb62c35
+      internalID: -1654261862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIF-Frame0204
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 927
+        width: 149
+        height: 96
+      alignment: 9
+      pivot: {x: 0.39597315, y: -1.0103126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbcbf27a8b84d441a34ea08dc5f0be0
+      internalID: -1464340434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b483116c819f41f41a77031a116f22e0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DIF-Frame0082: 877917304
+      DIF-Frame0084: 253438884
+      DIF-Frame0086: 1509452268
+      DIF-Frame0088: 1648228815
+      DIF-Frame0090: 368787224
+      DIF-Frame0092: 1805738498
+      DIF-Frame0094: 2142084741
+      DIF-Frame0096: -1272558935
+      DIF-Frame0098: -733770739
+      DIF-Frame0100: 228248758
+      DIF-Frame0102: 341788000
+      DIF-Frame0104: -1832767838
+      DIF-Frame0106: -1802552671
+      DIF-Frame0108: 1796468946
+      DIF-Frame0110: 506633873
+      DIF-Frame0112: 1137940546
+      DIF-Frame0114: -978262407
+      DIF-Frame0116: -428184105
+      DIF-Frame0118: 213614186
+      DIF-Frame0120: -1756414008
+      DIF-Frame0122: 1123986752
+      DIF-Frame0124: -1917644096
+      DIF-Frame0126: -925153217
+      DIF-Frame0128: -1075915473
+      DIF-Frame0130: 962440532
+      DIF-Frame0132: -1197505352
+      DIF-Frame0134: 301132774
+      DIF-Frame0136: -1646725065
+      DIF-Frame0138: -1405068997
+      DIF-Frame0140: -1521979368
+      DIF-Frame0142: -1950187227
+      DIF-Frame0144: 2079325281
+      DIF-Frame0146: -832399158
+      DIF-Frame0148: 360266031
+      DIF-Frame0150: 1808848435
+      DIF-Frame0152: -750584922
+      DIF-Frame0154: -772626536
+      DIF-Frame0156: -1331881476
+      DIF-Frame0158: -325938343
+      DIF-Frame0160: -1194790992
+      DIF-Frame0162: 1664859177
+      DIF-Frame0164: 1499411307
+      DIF-Frame0166: -734996130
+      DIF-Frame0168: 1912782372
+      DIF-Frame0170: -1163156285
+      DIF-Frame0172: 965560805
+      DIF-Frame0174: -1247422784
+      DIF-Frame0176: -1843885615
+      DIF-Frame0178: -552334423
+      DIF-Frame0180: 2118016625
+      DIF-Frame0182: -433624553
+      DIF-Frame0184: 1320238883
+      DIF-Frame0186: 969408801
+      DIF-Frame0188: 553717172
+      DIF-Frame0190: -995656126
+      DIF-Frame0192: 163092387
+      DIF-Frame0194: -1267510746
+      DIF-Frame0196: 557891849
+      DIF-Frame0198: -1502672655
+      DIF-Frame0200: 1407058156
+      DIF-Frame0202: -1654261862
+      DIF-Frame0204: -1464340434
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

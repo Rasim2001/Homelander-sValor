@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b443e42e20471fae80535587687d78, type: 3}
+  m_Name: BonfireData
+  m_EditorClassIdentifier: 
+  Levels:
+  - LevelId: 1
+    CoinsValue: 1
+    Hp: 100
+    UpgradedBonfireObject: {fileID: 3173574864502648914, guid: 409784fda192a2f4d9775aa444372135, type: 3}
+    SchemeConfigs:
+    - BuildingTypeId: 1
+      Amount: 2
+    - BuildingTypeId: 10
+      Amount: 1
+    - BuildingTypeId: 11
+      Amount: 1
+    - BuildingTypeId: 8
+      Amount: 1
+    RequiredBuildings: []
+  - LevelId: 2
+    CoinsValue: 12
+    Hp: 500
+    UpgradedBonfireObject: {fileID: 3173574864502648914, guid: b579a9884dd40364fa85cefa3f2f0bf6, type: 3}
+    SchemeConfigs:
+    - BuildingTypeId: 8
+      Amount: 2
+    - BuildingTypeId: 16
+      Amount: 1
+    - BuildingTypeId: 13
+      Amount: 2
+    - BuildingTypeId: 12
+      Amount: 1
+    RequiredBuildings:
+    - BuildingTypeId: 10
+      LevelId: 1
+      CardKey: -1
+      Amount: 1
+    - BuildingTypeId: 1
+      LevelId: 1
+      CardKey: -1
+      Amount: 2
+    - BuildingTypeId: 11
+      LevelId: 1
+      CardKey: -1
+      Amount: 1
+  - LevelId: 3
+    CoinsValue: 15
+    Hp: 700
+    UpgradedBonfireObject: {fileID: 3173574864502648914, guid: 248fe5fae7abc5e4eaad530692f3ffd3, type: 3}
+    SchemeConfigs:
+    - BuildingTypeId: 12
+      Amount: 1
+    - BuildingTypeId: 13
+      Amount: 5
+    - BuildingTypeId: 8
+      Amount: 5
+    - BuildingTypeId: 1
+      Amount: 5
+    RequiredBuildings:
+    - BuildingTypeId: 8
+      LevelId: 2
+      CardKey: 4
+      Amount: 1
+    - BuildingTypeId: 8
+      LevelId: 2
+      CardKey: 3
+      Amount: 1

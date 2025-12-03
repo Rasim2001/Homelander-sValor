@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MT_BackgroundNear
+  m_Shader: {fileID: 4800000, guid: 79ee6cefbc672a44e97359d4d14ea301, type: 3}
+  m_Parent: {fileID: 2100000, guid: 5513e55f77cf8e242a96bbef59b82b92, type: 2}
+  m_ModifiedSerializedProperties: 4
+  m_ValidKeywords:
+  - CONTRAST_ON
+  - GRADIENT2COL_ON
+  - GREYSCALE_ON
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _BlurIntensity: 1
+    - _Brightness: 0
+    - _Contrast: 0.85
+    - _GradBlend: 0
+    - _GradBoostY: 3.31
+    - _GreyscaleBlend: 0.356
+    - _GreyscaleLuminosity: 0.25
+    - _GreyscaleOutline: 0
+    - _MaxXUV: 0.9550781
+    - _MaxYUV: 0.53271484
+    - _MinXUV: 0.45117188
+    - _MinYUV: 0.41210938
+    m_Colors:
+    - _GradTopLeftCol: {r: 1, g: 1, b: 1, a: 1}
+    - _GreyscaleTintColor: {r: 0, g: 0.654902, b: 1, a: 1}
+  m_BuildTextureStacks: []

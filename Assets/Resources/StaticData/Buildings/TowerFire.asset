@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a306de890949129245148bb923a655, type: 3}
+  m_Name: TowerFire
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  BuildingTypeId: 9
+  BuildingsData:
+  - LevelId: 1
+    CardKey: -1
+    Cards:
+    - CardId: -1
+      Prefab: {fileID: 5139767595996873133, guid: d16b6cdc3f75b4442a2562d6ccb990fd, type: 3}
+      CardPrefabUI: {fileID: 0}
+    HP: 0
+    GridSizeX: 2
+    CoinsValue: 100
+    BuildingTime: 0
+  GhostSprite: {fileID: 1927143054, guid: 185205a9e9c149643bf43a935faa2266, type: 3}
+  KeyboardHint: TowerFire
+  HintSprite: {fileID: -2079954117, guid: d99c8eb7705f5284ab55ce6bfb22ad58, type: 3}
+  CatalogItemUI: {fileID: 84870595, guid: fd50f7a3c548a994eb7eedfec65dd469, type: 3}
+  TooltipText: TowerFire

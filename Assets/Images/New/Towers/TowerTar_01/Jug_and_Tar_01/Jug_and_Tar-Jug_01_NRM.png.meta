@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: 070ff8b72c6a7e74faf7b73d00c6683c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0000
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 604
+        width: 57
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5614035, y: 0.071428575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8bf56c6473c72b4b9356298f0518e17
+      internalID: 496599071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0001
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 604
+        width: 57
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5614035, y: 0.071428575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9f355e83b6eec44a14171a89c54e89
+      internalID: 1689319752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0002
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 604
+        width: 57
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5614035, y: 0.071428575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371def61e95c02b45a872f90833bc35e
+      internalID: -214444312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0003
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 530
+        width: 69
+        height: 67
+      alignment: 9
+      pivot: {x: 0.6086956, y: 0.13432837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad65340844a768458e2ea9c4c85fc03
+      internalID: 628974533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0004
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 516
+        width: 83
+        height: 81
+      alignment: 9
+      pivot: {x: 0.62650603, y: 0.13580246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42570c5faa2407e4caf03408724fefc7
+      internalID: 1138044773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0005
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 420
+        width: 97
+        height: 90
+      alignment: 9
+      pivot: {x: 0.6494845, y: 0.13333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9368212bba2d94d94d4e39cc5c1e0e
+      internalID: -692808000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0006
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 416
+        width: 113
+        height: 94
+      alignment: 9
+      pivot: {x: 0.6460177, y: 0.12765957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cd59d4b88220143bf1143f6e2950cf
+      internalID: 746495149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0007
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 416
+        width: 128
+        height: 94
+      alignment: 9
+      pivot: {x: 0.6328125, y: 0.12765957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbb58ea6ca51ad42b17118f6b94b6f8
+      internalID: 470786142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0008
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 417
+        width: 140
+        height: 93
+      alignment: 9
+      pivot: {x: 0.60714287, y: 0.15053764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1715d6cfec038f4b86220408912055d
+      internalID: 1363413490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0009
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 512
+        width: 154
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5974026, y: 0.16470589}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da66d43a07ed7e4eaed40099480c085
+      internalID: -352100309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0010
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 522
+        width: 164
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5914634, y: 0.18666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b4860680753c74bbe646102b35b486
+      internalID: -2085907586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0011
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 599
+        width: 174
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5862069, y: 0.24590164}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430d33c1de5b8614d9d9605799d0266e
+      internalID: -2066228719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0012
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 618
+        width: 182
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5824176, y: 0.35714287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255e6aa2c01a5ed4ca414563828cc4fe
+      internalID: 21517682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0013
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 987
+        width: 188
+        height: 36
+      alignment: 9
+      pivot: {x: 0.57978725, y: 0.41666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c620caaabaefd42bd4e192ec5edafd
+      internalID: 1044424658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0014
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 987
+        width: 192
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5833333, y: 0.41666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c21506fe929784a963c7dce9ef7b79
+      internalID: -1446619443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0015
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 867
+        width: 195
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5794872, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffaf9fa1ff93e441892d6edb6bb09e9
+      internalID: -793860561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0016
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 867
+        width: 198
+        height: 38
+      alignment: 9
+      pivot: {x: 0.57575756, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b95c154dc4c4c438f52a461e738325
+      internalID: -1624238113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0017
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 907
+        width: 198
+        height: 38
+      alignment: 9
+      pivot: {x: 0.57575756, y: 0.4473684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5829f64772cb7489bd8b45782190c5
+      internalID: -352518953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0018
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 907
+        width: 199
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5728643, y: 0.4473684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb66e0b7d7245647ac33d399d945cd2
+      internalID: 1981254731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0019
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 947
+        width: 199
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5728643, y: 0.4473684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2c55469fd16334cad69d3552025e29
+      internalID: -385831405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0020
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 947
+        width: 199
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5728643, y: 0.4473684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63256a97013f944db5d8c5dc654f774
+      internalID: 240571321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0021
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 662
+        width: 199
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5728643, y: 0.46153846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc52012220adf847884a7ed7f8e6753
+      internalID: -846512382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0022
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 662
+        width: 198
+        height: 39
+      alignment: 9
+      pivot: {x: 0.57575756, y: 0.46153846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b7563d2c61c4b4cb587cde9ca3e090
+      internalID: -574948335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0023
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 703
+        width: 198
+        height: 39
+      alignment: 9
+      pivot: {x: 0.57575756, y: 0.46153846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b229d1333a138488b1a348fd3fbb7e
+      internalID: -574527168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 703
+        width: 198
+        height: 39
+      alignment: 9
+      pivot: {x: 0.57575756, y: 0.46153846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5183ffc95472a7a49b28b6c4d867f720
+      internalID: -145985452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0025
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 744
+        width: 198
+        height: 39
+      alignment: 9
+      pivot: {x: 0.57575756, y: 0.46153846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d0ccd7be2f0734c9aea888d921a222
+      internalID: 1869580447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0026
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 744
+        width: 198
+        height: 39
+      alignment: 9
+      pivot: {x: 0.57575756, y: 0.46153846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea44d5c22fd98e64bae009eb93ff83e6
+      internalID: -36179254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0027
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 785
+        width: 198
+        height: 39
+      alignment: 9
+      pivot: {x: 0.57575756, y: 0.46153846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc29953582d89d340b0eefd52d4fef17
+      internalID: -626776693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0028
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 785
+        width: 198
+        height: 39
+      alignment: 9
+      pivot: {x: 0.57575756, y: 0.46153846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a1c20822da57e479d3779054b714ab
+      internalID: -259740627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0029
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 826
+        width: 198
+        height: 39
+      alignment: 9
+      pivot: {x: 0.57575756, y: 0.46153846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752d67b274b0e62489a56c7d0f801a65
+      internalID: -650222044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerTar_01_2_CavityPass.png0030
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 826
+        width: 198
+        height: 39
+      alignment: 9
+      pivot: {x: 0.57575756, y: 0.46153846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c9253eb37847d43992b898ffabec1e
+      internalID: -224803838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1b91acccab332c94a959b4836360658b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TowerTar_01_2_CavityPass.png0000: 496599071
+      TowerTar_01_2_CavityPass.png0001: 1689319752
+      TowerTar_01_2_CavityPass.png0002: -214444312
+      TowerTar_01_2_CavityPass.png0003: 628974533
+      TowerTar_01_2_CavityPass.png0004: 1138044773
+      TowerTar_01_2_CavityPass.png0005: -692808000
+      TowerTar_01_2_CavityPass.png0006: 746495149
+      TowerTar_01_2_CavityPass.png0007: 470786142
+      TowerTar_01_2_CavityPass.png0008: 1363413490
+      TowerTar_01_2_CavityPass.png0009: -352100309
+      TowerTar_01_2_CavityPass.png0010: -2085907586
+      TowerTar_01_2_CavityPass.png0011: -2066228719
+      TowerTar_01_2_CavityPass.png0012: 21517682
+      TowerTar_01_2_CavityPass.png0013: 1044424658
+      TowerTar_01_2_CavityPass.png0014: -1446619443
+      TowerTar_01_2_CavityPass.png0015: -793860561
+      TowerTar_01_2_CavityPass.png0016: -1624238113
+      TowerTar_01_2_CavityPass.png0017: -352518953
+      TowerTar_01_2_CavityPass.png0018: 1981254731
+      TowerTar_01_2_CavityPass.png0019: -385831405
+      TowerTar_01_2_CavityPass.png0020: 240571321
+      TowerTar_01_2_CavityPass.png0021: -846512382
+      TowerTar_01_2_CavityPass.png0022: -574948335
+      TowerTar_01_2_CavityPass.png0023: -574527168
+      TowerTar_01_2_CavityPass.png0024: -145985452
+      TowerTar_01_2_CavityPass.png0025: 1869580447
+      TowerTar_01_2_CavityPass.png0026: -36179254
+      TowerTar_01_2_CavityPass.png0027: -626776693
+      TowerTar_01_2_CavityPass.png0028: -259740627
+      TowerTar_01_2_CavityPass.png0029: -650222044
+      TowerTar_01_2_CavityPass.png0030: -224803838
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

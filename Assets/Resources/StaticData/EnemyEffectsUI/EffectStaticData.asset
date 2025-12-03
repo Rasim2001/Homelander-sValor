@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ccd13691bf34b46852bdf2c2fca95a4, type: 3}
+  m_Name: EffectStaticData
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _effects:
+  - _effectTypeName: FearEffect
+    _effectSprite: {fileID: -1830971665, guid: 6947ab2206859564288d0b4d83302f8b, type: 3}
+  - _effectTypeName: SlowdownEffect
+    _effectSprite: {fileID: -1443181624, guid: 6947ab2206859564288d0b4d83302f8b, type: 3}
+  - _effectTypeName: MissEffect
+    _effectSprite: {fileID: -650341814, guid: 6947ab2206859564288d0b4d83302f8b, type: 3}
+  - _effectTypeName: ConvertEffect
+    _effectSprite: {fileID: -17411756, guid: 6947ab2206859564288d0b4d83302f8b, type: 3}
+  - _effectTypeName: StunEffect
+    _effectSprite: {fileID: -898006700, guid: 6947ab2206859564288d0b4d83302f8b, type: 3}
+  - _effectTypeName: FireEffect
+    _effectSprite: {fileID: -1677428512, guid: 6947ab2206859564288d0b4d83302f8b, type: 3}
+  - _effectTypeName: ArmorBreakEffect
+    _effectSprite: {fileID: -537869710, guid: 6947ab2206859564288d0b4d83302f8b, type: 3}
+  - _effectTypeName: BleedEffect
+    _effectSprite: {fileID: -1564831398, guid: 6947ab2206859564288d0b4d83302f8b, type: 3}

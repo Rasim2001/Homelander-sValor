@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MT_BackgroundMiddle
+  m_Shader: {fileID: 4800000, guid: 79ee6cefbc672a44e97359d4d14ea301, type: 3}
+  m_Parent: {fileID: 2100000, guid: 2ddd56a483a75a44683c6ef341b2677a, type: 2}
+  m_ModifiedSerializedProperties: 4
+  m_ValidKeywords:
+  - CONTRAST_ON
+  - GRADIENT2COL_ON
+  - GREYSCALEOUTLINE_ON
+  - GREYSCALE_ON
+  m_InvalidKeywords:
+  - _GREYSCALEOUTLINE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _BlurHD: 0
+    - _BlurIntensity: 1
+    - _Brightness: 0
+    - _ColorRampBlend: 0
+    - _ColorRampLuminosity: 0
+    - _Contrast: 0.8
+    - _EditorDrawers: 11
+    - _GhostColorBoost: 1
+    - _GradBlend: 0.213
+    - _GradBoostX: 0.1
+    - _GradBoostY: 1.67
+    - _GreyscaleBlend: 0.337
+    - _GreyscaleLuminosity: 1
+    - _GreyscaleOutline: 1
+    - _MaxXUV: 0.99902344
+    - _MaxYUV: 0.6201172
+    - _MinXUV: 0.00048828125
+    - _MinYUV: 0.5336914
+    m_Colors:
+    - _GradBotLeftCol: {r: 0, g: 0, b: 0.5471698, a: 1}
+    - _GradTopLeftCol: {r: 0.2548767, g: 0.13415204, b: 0.7484276, a: 1}
+  m_BuildTextureStacks: []

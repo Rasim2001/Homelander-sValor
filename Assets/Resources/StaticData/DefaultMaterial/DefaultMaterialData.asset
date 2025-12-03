@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f673271259d4bb7900489372910209e, type: 3}
+  m_Name: DefaultMaterialData
+  m_EditorClassIdentifier: 
+  UnlitMaterial: {fileID: 2100000, guid: cc63264f20e4fd64cafe6d64dbc6c3dc, type: 2}
+  LitMaterial: {fileID: 2100000, guid: c8fd94d3dad94274684478187d90a4f2, type: 2}
+  EnemyDeathMaterial: {fileID: 2100000, guid: 683ef2e61c708d34ea0042a3e1b97405, type: 2}
