@@ -37,7 +37,11 @@ namespace CutScenes
 
         [FoldoutGroup("Other")] [SerializeField]
         private Transform _movePoint;
+
         public bool IsPlaying { get; private set; }
+        public Action OnPlayFinishHappened { get; set; }
+        public Action OnPlayStartHappened { get; set; }
+        public Transform CristalTransform => transform;
 
         private ICoroutineRunner _coroutineRunner;
         private Transform _playerTransform;
@@ -135,6 +139,7 @@ namespace CutScenes
             TimelineSequence timelineSequence = new TimelineSequence(_coroutineRunner);
 
             timelineSequence
+                .Add(() => OnPlayStartHappened?.Invoke())
                 .Add(onComplete => _playerSignal.MoveToTarget(onComplete))
                 .Join(_stonesSignal.MoveWaveStones)
                 .Join(_cameraSignal.StopCamera)
@@ -160,6 +165,7 @@ namespace CutScenes
                 .Add(_cameraSignal.MoveToPlayer)
                 .Add(cycleUpdater.UnFreezTime)
                 .Add(_lightRing.StopLightRing)
+                .Add(() => OnPlayFinishHappened?.Invoke())
                 .Execute();
         }
     }

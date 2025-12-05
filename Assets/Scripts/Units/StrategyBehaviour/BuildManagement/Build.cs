@@ -41,7 +41,6 @@ namespace Units.StrategyBehaviour.BuildManagement
         private readonly ICoroutineRunner _coroutineRunner;
         private readonly IMarkerSignCoordinatorService _markerSignService;
         private readonly IPersistentProgressService _progressService;
-        private readonly IHomelessOrdersService _homelessOrdersService;
         private readonly IFogOfWarMinimap _fogOfWarMinimap;
         private readonly IBuildingRegistryService _buildingRegistryService;
         private readonly IFenceService _fenceService;
@@ -70,7 +69,6 @@ namespace Units.StrategyBehaviour.BuildManagement
             ICoroutineRunner coroutineRunner,
             IMarkerSignCoordinatorService markerSignService,
             IPersistentProgressService progressService,
-            IHomelessOrdersService homelessOrdersService,
             IFogOfWarMinimap fogOfWarMinimap,
             IBuildingRegistryService buildingRegistryService,
             IFenceService fenceService)
@@ -84,7 +82,6 @@ namespace Units.StrategyBehaviour.BuildManagement
             _coroutineRunner = coroutineRunner;
             _markerSignService = markerSignService;
             _progressService = progressService;
-            _homelessOrdersService = homelessOrdersService;
             _fogOfWarMinimap = fogOfWarMinimap;
             _buildingRegistryService = buildingRegistryService;
             _fenceService = fenceService;
@@ -234,7 +231,6 @@ namespace Units.StrategyBehaviour.BuildManagement
             ShowBarricadeFlag();
             ShowUpgradedBuild();
             ClearOldBuildingProgress();
-            RegisterNewBuild();
 
             _indexForDelete = _ordersList.IndexOf(_orderMarker);
             if (_indexForDelete == -1)
@@ -242,17 +238,6 @@ namespace Units.StrategyBehaviour.BuildManagement
 
             _buildingProgress.ShakeAllWoods(5,
                 () => _finishBuildCoroutine = _coroutineRunner.StartCoroutine(FinishBuildAnimationCoroutine()));
-        }
-
-        private void RegisterNewBuild()
-        {
-            _orderMarker.GetComponent<BoxCollider2D>().enabled = false;
-
-            Minimap minimap = _orderMarker.GetComponentInChildren<Minimap>();
-            minimap.HideUpgradedProcess();
-
-            BuildInfo nextBuildInfo = _buildInfo.NextBuild.GetComponent<BuildInfo>();
-            _buildingRegistryService.AddBuild(nextBuildInfo);
         }
 
         private void ShowBarricadeFlag()
@@ -313,7 +298,23 @@ namespace Units.StrategyBehaviour.BuildManagement
             yield return AnimateBuildObjects(scaffoldsList, centerOfScaffoldsX);
 
             if (currentOrderMarker != null)
+            {
+                RegisterNewBuild(currentOrderMarker);
                 ClearCurrentOrder(currentOrderMarker);
+            }
+        }
+
+        private void RegisterNewBuild(OrderMarker currentOrderMarker)
+        {
+            currentOrderMarker.GetComponent<BoxCollider2D>().enabled = false;
+
+            Minimap minimap = currentOrderMarker.GetComponentInChildren<Minimap>();
+            minimap.HideUpgradedProcess();
+
+            BuildInfo buildInfo = currentOrderMarker.GetComponent<BuildInfo>();
+
+            BuildInfo nextBuildInfo = buildInfo.NextBuild.GetComponent<BuildInfo>();
+            _buildingRegistryService.AddBuild(nextBuildInfo);
         }
 
         private void EnableFirstBuild(OrderMarker currentOrderMarker)
@@ -352,24 +353,11 @@ namespace Units.StrategyBehaviour.BuildManagement
 
             if (currentOrderMarker.gameObject != buildInfo.NextBuild.gameObject)
             {
-                if (currentOrderMarker.TryGetComponent(out IHomelessOrder previousOrder))
-                    _homelessOrdersService.RemoveOrder(previousOrder);
-
                 _buildingRegistryService.RemoveBuild(buildInfo);
                 Object.Destroy(currentOrderMarker.gameObject);
             }
             else
                 DeleteMarkingBuild(buildInfo, buildingProgress);
-
-
-            if (buildInfo.NextBuild.TryGetComponent(out IHomelessOrder order))
-            {
-                UniqueId uniqueId = buildInfo.NextBuild.GetComponent<UniqueId>();
-                OrderMarker nextOrderMarker = buildInfo.NextBuild.GetComponent<OrderMarker>();
-
-                _homelessOrdersService.AddOrder(order, nextOrderMarker, buildInfo.NextBuild.transform.position.x,
-                    uniqueId.Id);
-            }
         }
 
         private void DeleteMarkingBuild(BuildInfo buildInfo, BuildingProgress buildingProgress)

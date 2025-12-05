@@ -13,14 +13,10 @@ MonoBehaviour:
   m_Name: CheatStaticData
   m_EditorClassIdentifier: 
   LevelWaveId: 0
-  SkipCutScene: 1
-  GetSchemes: 1
+  SkipCutScene: 0
+  GetSchemes: 0
   UnitCheatInfos:
-  - UnitTypeId: 0
-    Amount: 1
   - UnitTypeId: 2
-    Amount: 1
-  - UnitTypeId: 5
     Amount: 1
   - UnitTypeId: 1
     Amount: 1

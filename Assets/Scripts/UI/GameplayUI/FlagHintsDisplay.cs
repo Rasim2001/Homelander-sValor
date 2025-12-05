@@ -8,7 +8,7 @@ namespace UI.GameplayUI
 
         public override void ShowHints()
         {
-            if (!tutorialCheckerService.TutorialStarted && !buildingModeService.IsBuildingState)
+            if (!TutorialProgressService.TutorialStarted && !buildingModeService.IsBuildingState)
                 Show(true);
         }
 

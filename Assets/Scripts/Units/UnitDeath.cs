@@ -48,11 +48,11 @@ namespace Units
 
         private void Death()
         {
-            GameObject unit = _gameFactory.CreateUnit(UnitTypeId.Vagabond);
+            /*GameObject unit = _gameFactory.CreateUnit(UnitTypeId.Vagabond);
             unit.transform.position = transform.position;
 
             VagabondStateMachineView vagabondStateMachineView = unit.GetComponent<VagabondStateMachineView>();
-            vagabondStateMachineView.ChangeState<ScaryRunVagabondState>();
+            vagabondStateMachineView.ChangeState<ScaryRunVagabondState>();*/
 
             _unitsRecruiterService.RemoveUnitFromAllLists(_unitStatus);
 

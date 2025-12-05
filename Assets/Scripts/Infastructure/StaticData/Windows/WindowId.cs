@@ -11,6 +11,13 @@ namespace Infastructure.StaticData.Windows
         IntroTutorialWindow = 6,
         FinishTutorialWindow = 7,
         CardsWindow = 9,
-        TaskBookWindow = 10
+        TaskBookWindow = 10,
+
+        MovementTutorialWindow = 100,
+        CutsceneTutorialWindow = 101,
+        AccelerationTutorialWindow = 102,
+        MainFlagTutorialWindow = 103,
+        BarricadeTutorialWindow = 104,
+        CallingNightTutorialWindow = 105,
     }
 }

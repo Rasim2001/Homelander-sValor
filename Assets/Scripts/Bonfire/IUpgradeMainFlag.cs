@@ -13,5 +13,6 @@ namespace Bonfire
         event Action OnUpgradeFailed;
         event Action OnUpgradeHappened;
         bool HasUpgradeRightNow();
+        event Action OnUpgradeFinished;
     }
 }

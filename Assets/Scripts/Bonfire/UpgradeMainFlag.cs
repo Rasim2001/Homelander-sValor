@@ -31,9 +31,9 @@ namespace Bonfire
         private readonly IBuildBonfire _buildBonfire;
 
         public int LevelIndex { get; set; } = 1;
-
         public event Action OnUpgradeFailed;
         public event Action OnUpgradeHappened;
+        public event Action OnUpgradeFinished;
 
         private Coroutine _schemeCoroutine;
         private ChestBonfire _chest;
@@ -58,6 +58,7 @@ namespace Bonfire
         }
 
 
+        // ReSharper disable Unity.PerformanceAnalysis
         public void Upgrade(BonfireMarker bonfireMarker, BuildingCoinsUI buildingCoinsUI)
         {
             BonfireLevelData bonfireLevelData = _staticDataService.ForUpgradeBonfire(LevelIndex);
@@ -72,7 +73,12 @@ namespace Bonfire
             OnUpgradeHappened?.Invoke();
 
             UpdateVisualBuild(bonfireLevelData, bonfireMarker,
-                () => StartSchemeCoroutine(bonfireLevelData, bonfireMarker));
+                () =>
+                {
+                    OnUpgradeFinished?.Invoke();
+
+                    StartSchemeCoroutine(bonfireLevelData, bonfireMarker);
+                });
 
             RegisterHp(bonfireLevelData, bonfireMarker);
             LevelUp(bonfireMarker, bonfireLevelData);

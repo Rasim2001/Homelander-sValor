@@ -1,3 +1,4 @@
+using _Tutorial.NewTutorial;
 using Bonfire;
 using Bonfire.Builds;
 using BuildProcessManagement.WorkshopBuilding;
@@ -11,6 +12,7 @@ using Infastructure.Services.AutomatizationService.Homeless;
 using Infastructure.Services.BuildingCatalog;
 using Infastructure.Services.BuildingRegistry;
 using Infastructure.Services.BuildModeServices;
+using Infastructure.Services.CallNight;
 using Infastructure.Services.CameraFocus;
 using Infastructure.Services.Cards;
 using Infastructure.Services.CoinsCreator;
@@ -208,7 +210,16 @@ namespace Infastructure.CompositionRoot
             BindStreetLightsService();
 
             BindMinimapNotifierService();
+
+            BindTutorialArrowDisplayer();
+
+            BindTutorialCheckerService();
+
+            BindCallNightService();
         }
+
+        private void BindCallNightService() =>
+            Container.BindInterfacesAndSelfTo<CallNightService>().AsSingle();
 
         private void BindMinimapNotifierService() =>
             Container.BindInterfacesAndSelfTo<MinimapNotifierService>().AsSingle();
@@ -305,6 +316,15 @@ namespace Infastructure.CompositionRoot
                 .Bind<ITooltip>()
                 .To<TooltipUI>()
                 .FromComponentInNewPrefabResource(UIAssetPath.TooltipUI)
+                .AsSingle();
+        }
+
+        private void BindTutorialArrowDisplayer()
+        {
+            Container
+                .Bind<ITutorialArrowDisplayer>()
+                .To<TutorialArrowDisplayer>()
+                .FromComponentInNewPrefabResource(UIAssetPath.TutorialArrowDisplayerPath)
                 .AsSingle();
         }
 
@@ -455,5 +475,8 @@ namespace Infastructure.CompositionRoot
 
         private void BindWindowService() =>
             Container.BindInterfacesAndSelfTo<GameWindowService>().AsSingle();
+
+        private void BindTutorialCheckerService() =>
+            Container.BindInterfacesAndSelfTo<TutorialService>().AsSingle();
     }
 }

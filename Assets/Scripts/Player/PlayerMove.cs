@@ -5,6 +5,7 @@ using Infastructure.Services.InputPlayerService;
 using Infastructure.Services.PauseService;
 using Infastructure.Services.SaveLoadService;
 using Infastructure.Services.Tutorial;
+using Infastructure.Services.Tutorial.TutorialProgress;
 using UnityEngine;
 using Zenject;
 
@@ -15,15 +16,15 @@ namespace Player
         [SerializeField] private TirednessProgressBar _tirednessProgressBar;
         [SerializeField] private PlayerAnimator _playerAnimator;
         public bool AccelerationPressedWithMove =>
-            _inputService.AccelerationPressed && _inputService.MoveKeysPressed &&
-            (!_tutorialCheckerService.TutorialStarted || _tutorialCheckerService.ReadyToUseAcceleration);
+            _inputService.AccelerationPressed &&
+            _inputService.MoveKeysPressed &&
+            _tutorialProgressService.ReadyToUseAcceleration;
 
         public float Speed;
         public float AccelerationTime;
 
         public Action AccelerationButtonUpHappened;
 
-        private ITutorialCheckerService _tutorialCheckerService;
         private IInputService _inputService;
         private SpriteRenderer _spriteRenderer;
 
@@ -31,19 +32,20 @@ namespace Player
         private float _defaultAccelerationTime;
         private IPauseService _pauseService;
         private ICameraFocusService _cameraFocusService;
+        private ITutorialProgressService _tutorialProgressService;
 
 
         [Inject]
         public void Construct(
             IInputService inputService,
-            ITutorialCheckerService tutorialCheckerService,
+            ITutorialProgressService tutorialProgressService,
             IPauseService pauseService,
             ICameraFocusService cameraFocusService)
         {
             _cameraFocusService = cameraFocusService;
             _pauseService = pauseService;
             _inputService = inputService;
-            _tutorialCheckerService = tutorialCheckerService;
+            _tutorialProgressService = tutorialProgressService;
         }
 
 
@@ -112,7 +114,7 @@ namespace Player
             float tiredPercentage = AccelerationTime / _defaultSpeed;
             _tirednessProgressBar.UpdateProgressBar(tiredPercentage);
 
-            if (_inputService.AccelerationPressed)
+            if (_inputService.AccelerationPressed && _tutorialProgressService.ReadyToUseAcceleration)
             {
                 if (tiredPercentage > 0.6f)
                     _tirednessProgressBar.SetAlpha(0f);
@@ -134,19 +136,20 @@ namespace Player
 
         private void Animate()
         {
-            AccelerationTime = AccelerationPressedWithMove
+            AccelerationTime = AccelerationPressedWithMove && _tutorialProgressService.ReadyToUseAcceleration
                 ? Mathf.Max(0, AccelerationTime - Time.deltaTime)
                 : Mathf.Min(_defaultAccelerationTime, AccelerationTime + Time.deltaTime);
 
             _playerAnimator.SetAccelerationTime(AccelerationTime);
+
+
             _playerAnimator.PlayWalkAnimation(_inputService.MoveKeysPressed &&
                                               (!_inputService.AccelerationPressed ||
-                                               _tutorialCheckerService.TutorialStarted &&
-                                               !_tutorialCheckerService.ReadyToUseAcceleration));
+                                               !_tutorialProgressService.ReadyToUseAcceleration));
 
-            if (!_tutorialCheckerService.TutorialStarted || _tutorialCheckerService.ReadyToUseAcceleration)
-                _playerAnimator.PlayRunAnimation(_inputService.AccelerationPressed
-                                                 && _inputService.MoveKeysPressed &&
+            if (_tutorialProgressService.ReadyToUseAcceleration)
+                _playerAnimator.PlayRunAnimation(_inputService.AccelerationPressed &&
+                                                 _inputService.MoveKeysPressed &&
                                                  AccelerationTime > 0.1f);
         }
 
@@ -169,7 +172,7 @@ namespace Player
             if (AccelerationTime < 0.1f || _playerAnimator.IsBuildingModeActive)
                 return;
 
-            if (AccelerationPressedWithMove)
+            if (AccelerationPressedWithMove && _tutorialProgressService.ReadyToUseAcceleration)
                 Speed = _defaultSpeed * 2;
             else
                 Speed = _defaultSpeed;

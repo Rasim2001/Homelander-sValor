@@ -5,6 +5,7 @@ using Infastructure.Services.ProgressWatchers;
 using Infastructure.Services.QuitGameApplicationService;
 using Infastructure.Services.SaveLoadService;
 using Infastructure.Services.Tutorial;
+using Infastructure.Services.Tutorial.TutorialProgress;
 using Infastructure.Services.Window.ProjectWindowService;
 using Infastructure.States;
 using Infastructure.StaticData.StaticDataService;
@@ -39,12 +40,15 @@ namespace Infastructure.CompositionRoot
 
             BindProgressWatchersService();
 
-            BindTutorialCheckerService();
-
             BindTitleCurtain();
 
             BindAssetProvider();
+
+            BindTutorialProgressService();
         }
+
+        private void BindTutorialProgressService() =>
+            Container.BindInterfacesAndSelfTo<TutorialProgressService>().AsSingle();
 
         private void BindQuitGameService() =>
             Container.BindInterfacesAndSelfTo<QuitGameService>().AsSingle();
@@ -62,8 +66,6 @@ namespace Infastructure.CompositionRoot
                 .AsSingle();
         }
 
-        private void BindTutorialCheckerService() =>
-            Container.BindInterfacesAndSelfTo<TutorialCheckerService>().AsSingle();
 
         private void BindProgressWatchersService() =>
             Container.BindInterfacesAndSelfTo<ProgressWatchersService>().AsSingle();

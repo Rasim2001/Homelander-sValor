@@ -170,7 +170,7 @@ namespace Infastructure.Services.AutomatizationService.Homeless
 
         private bool CanExecute(HomelessOrderInfo orderInfo)
         {
-            return orderInfo != null &&
+              return orderInfo != null &&
                    orderInfo.HomelessOrder.HasAvailableSlot() &&
                    orderInfo.OrderMarker != null &&
                    !orderInfo.OrderMarker.IsStarted;

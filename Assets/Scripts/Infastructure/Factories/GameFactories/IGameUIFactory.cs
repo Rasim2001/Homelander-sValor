@@ -12,5 +12,6 @@ namespace Infastructure.Factories.GameFactories
         void CreateDefeatWindow(WindowId windowId);
         GameObject CreateCardsWindow(WindowId windowId);
         void CreateTaskBookWindow(WindowId windowId);
+        GameObject CreateTutorialWindow(WindowId windowId);
     }
 }

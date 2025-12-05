@@ -8,5 +8,6 @@ namespace Infastructure
 
         public const string CurtainPath = "Prefabs/UI/Windows/CurtainUIRoot";
         public const string TooltipUI = "Prefabs/Tooltip/TooltipUI";
+        public const string TutorialArrowDisplayerPath = "Prefabs/UI/GamePlayUI/Tutorial/TutorialArrowDisplayer";
     }
 }

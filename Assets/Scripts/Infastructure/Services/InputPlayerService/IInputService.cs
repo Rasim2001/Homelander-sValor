@@ -11,7 +11,7 @@ namespace Infastructure.Services.InputPlayerService
         bool SelectUnitPressed { get; }
         bool MoveKeysButtonUp { get; }
         bool AccelerationButtonUp { get; }
-        bool CastSkillPressed { get; }
+        bool SpacePressed { get; }
         bool MoveKeysButtonDown { get; }
         bool ExecuteOrderButtonUp { get; }
         bool ExecuteOrderPressed { get; }
@@ -23,5 +23,7 @@ namespace Infastructure.Services.InputPlayerService
         bool ShootPressed { get; }
         bool ShootPressedUp { get; }
         bool ShootPressedDown { get; }
+        bool EnterPressed { get; }
+        bool SpacePressedUp { get; }
     }
 }

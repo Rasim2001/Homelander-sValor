@@ -108,6 +108,14 @@ namespace Infastructure.Factories.GameFactories
 
             return window;
         }
+        
+        public GameObject CreateTutorialWindow(WindowId windowId)
+        {
+            WindowConfig windowConfig = _staticData.ForWindow(windowId);
+            GameObject window = _diContainer.InstantiatePrefab(windowConfig.Prefab, _uiRoot.transform);
+
+            return window;
+        }
 
 
         public void CreateFinishTutorialWindow(WindowId windowId)

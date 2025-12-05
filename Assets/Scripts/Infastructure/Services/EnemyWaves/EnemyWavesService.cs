@@ -7,7 +7,6 @@ using Infastructure.Services.PlayerProgressService;
 using Infastructure.Services.SafeBuildZoneTracker;
 using Infastructure.Services.SaveLoadService;
 using Infastructure.Services.StreetLight;
-using Infastructure.Services.Tutorial;
 using Infastructure.Services.UnitEvacuationService;
 using Infastructure.Services.Window.GameWindowService;
 using Infastructure.StaticData.DayCycle;
@@ -33,13 +32,11 @@ namespace Infastructure.Services.EnemyWaves
         private Coroutine _coroutine;
         private DayCycleUpdater _dayCycleUpdater;
         private IEnemyWavesService _enemyWavesServiceImplementation;
-        private readonly ITutorialCheckerService _tutorialCheckerService;
         private readonly ISafeBuildZone _saveBuildZone;
         private readonly IEvacuationService _evacuationService;
         private readonly IFutureOrdersService _futureOrdersService;
         private readonly IHomelessOrdersService _homelessOrdersService;
         private readonly IStreetLightsService _streetLightsService;
-
 
         private bool _isTimeFreezed;
 
@@ -55,7 +52,6 @@ namespace Infastructure.Services.EnemyWaves
             IPersistentProgressService progressService,
             ISaveLoadService saveLoadService,
             IGameWindowService gameWindowService,
-            ITutorialCheckerService tutorialCheckerService,
             ISafeBuildZone saveBuildZone,
             IEvacuationService evacuationService,
             IFutureOrdersService futureOrdersService,
@@ -69,7 +65,6 @@ namespace Infastructure.Services.EnemyWaves
             _progressService = progressService;
             _saveLoadService = saveLoadService;
             _gameWindowService = gameWindowService;
-            _tutorialCheckerService = tutorialCheckerService;
             _saveBuildZone = saveBuildZone;
             _evacuationService = evacuationService;
             _futureOrdersService = futureOrdersService;
@@ -78,32 +73,33 @@ namespace Infastructure.Services.EnemyWaves
         }
 
 
-        public void Dispose()
-        {
-        }
-
         public void Initialize(WavesProgressBar wavesProgressBar, DayCycleUpdater dayCycleUpdater)
         {
             _wavesProgressBar = wavesProgressBar;
             _dayCycleUpdater = dayCycleUpdater;
         }
 
+
+        public void Dispose()
+        {
+        }
+
         public void StartWaveCycle() =>
             _coroutine = _coroutineRunner.StartCoroutine(StartWaveCycleCoroutine());
 
+
+        public void ForceNight()
+        {
+            timeWaitOfDay = 0;
+
+            _dayCycleUpdater.ForceNight();
+        }
 
         public void FreezTimeEditor() =>
             _isTimeFreezed = true;
 
         public void UnFreezTimeEditor() =>
             _isTimeFreezed = false;
-
-        public void ForceNightEditor()
-        {
-            timeWaitOfDay = 0;
-
-            _dayCycleUpdater.ForceNight();
-        }
 
         public void ForceDayEditor()
         {

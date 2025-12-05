@@ -32,7 +32,7 @@ namespace _Tutorial
         private ITutorialSpawnService _tutorialSpawnService;
         private IFlagTrackerService _flagTrackerService;
         private INearestBuildFindService _nearestBuildFindService;
-        private ITutorialCheckerService _tutorialCheckerService;
+        private ITutorialService _tutorialService;
         private IGameWindowService _gameWindowService;
         private IGameFactory _gameFactory;
 
@@ -43,14 +43,14 @@ namespace _Tutorial
             ITutorialSpawnService tutorialSpawnService,
             IFlagTrackerService flagTrackerService,
             INearestBuildFindService nearestBuildFindService,
-            ITutorialCheckerService tutorialCheckerService,
+            ITutorialService tutorialService,
             IGameWindowService gameWindowService,
             IGameFactory gameFactory)
         {
             _tutorialSpawnService = tutorialSpawnService;
             _flagTrackerService = flagTrackerService;
             _nearestBuildFindService = nearestBuildFindService;
-            _tutorialCheckerService = tutorialCheckerService;
+            _tutorialService = tutorialService;
             _gameWindowService = gameWindowService;
             _gameFactory = gameFactory;
         }
@@ -115,7 +115,7 @@ namespace _Tutorial
                 new TreeStateTutorial(
                     _tutorialStateMachine,
                     _tutorialArrowHelper,
-                    _tutorialCheckerService,
+                    _tutorialService,
                     _nearestBuildFindService,
                     _playerInputOrders,
                     _observerTrigger,

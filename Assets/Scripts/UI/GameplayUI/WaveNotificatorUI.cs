@@ -7,8 +7,15 @@ namespace UI.GameplayUI
     {
         [SerializeField] private GameObject[] _arrows;
 
-        public void Notify(int direction) =>
-            StartCoroutine(StartNotifyWave(direction));
+        private Coroutine _currentCoroutine;
+
+        public void Notify(int direction)
+        {
+            if (_currentCoroutine != null)
+                StopCoroutine(_currentCoroutine);
+
+            _currentCoroutine = StartCoroutine(StartNotifyWave(direction));
+        }
 
         private IEnumerator StartNotifyWave(int direction)
         {
@@ -17,6 +24,8 @@ namespace UI.GameplayUI
             yield return new WaitForSeconds(3);
 
             _arrows[direction == -1 ? 0 : 1].SetActive(false);
+
+            _currentCoroutine = null;
         }
     }
 }

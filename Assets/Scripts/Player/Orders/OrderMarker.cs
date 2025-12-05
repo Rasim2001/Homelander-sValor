@@ -12,9 +12,7 @@ namespace Player.Orders
         public List<OrderPlace> Places;
 
         public bool IsStarted;
-        public bool IsMarkered;
-        
-        
+        //public bool IsMarkered;
     }
 
     [Serializable]

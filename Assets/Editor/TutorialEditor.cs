@@ -1,13 +1,14 @@
 using System.Linq;
 using _Tutorial;
 using Infastructure.StaticData.Tutorial;
+using Sirenix.OdinInspector.Editor;
 using UnityEditor;
 using UnityEngine;
 
 namespace Editor
 {
     [CustomEditor(typeof(TutorialStaticData))]
-    public class TutorialEditor : UnityEditor.Editor
+    public class TutorialEditor : OdinEditor
     {
         public override void OnInspectorGUI()
         {

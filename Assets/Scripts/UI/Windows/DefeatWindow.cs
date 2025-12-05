@@ -24,8 +24,6 @@ namespace UI.Windows
         {
             base.Initialize();
 
-            Debug.Log("DefeatWindow");
-
             _pauseService.TurnOn();
         }
 

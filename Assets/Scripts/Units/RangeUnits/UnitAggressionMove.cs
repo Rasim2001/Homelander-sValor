@@ -1,5 +1,4 @@
 using Infastructure.StaticData.Unit;
-using Units.Animators;
 using Units.UnitStates;
 using Units.UnitStates.DefaultStates;
 using Units.UnitStates.StateMachineViews;
@@ -17,7 +16,7 @@ namespace Units.RangeUnits
 
         public float ReachedDistance;
         public float DefenseDistance;
-        
+
         public bool CanMove;
 
         [SerializeField] private Transform _target;

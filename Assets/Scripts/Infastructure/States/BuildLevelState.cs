@@ -11,8 +11,8 @@ using Grid;
 using Infastructure.Data;
 using Infastructure.Factories.GameFactories;
 using Infastructure.Services.AutomatizationService.Builders;
-using Infastructure.Services.BuildingCatalog;
 using Infastructure.Services.BuildModeServices;
+using Infastructure.Services.CallNight;
 using Infastructure.Services.CameraFocus;
 using Infastructure.Services.EnemyWaves;
 using Infastructure.Services.Forest;
@@ -23,6 +23,7 @@ using Infastructure.Services.Pool;
 using Infastructure.Services.ProgressWatchers;
 using Infastructure.Services.ResourceLimiter;
 using Infastructure.Services.Tutorial;
+using Infastructure.Services.Tutorial.TutorialProgress;
 using Infastructure.Services.UnitRecruiter;
 using Infastructure.Services.VagabondCampManagement;
 using Infastructure.StaticData;
@@ -61,12 +62,10 @@ namespace Infastructure.States
         private readonly IFutureOrdersService _futureOrdersService;
         private readonly IEnemyWavesService _enemyWavesService;
         private readonly IEnemySpawnService _enemySpawnService;
-        private readonly IProgressWatchersService _progressWatchersService;
         private readonly IExecuteOrdersService _executeOrdersService;
         private readonly IPoolObjects<CoinLoot> _poolLoots;
         private readonly ITutorialSpawnService _tutorialSpawnService;
-        private readonly INearestBuildFindService _nearestBuildFindService;
-        private readonly ITutorialCheckerService _tutorialCheckerService;
+        private readonly ITutorialService _tutorialService;
         private readonly ICoroutineRunner _coroutineRunner;
         private readonly IGridMap _gridMap;
         private readonly IUnitsRecruiterService _unitsRecruiterService;
@@ -77,6 +76,8 @@ namespace Infastructure.States
         private readonly IVagabondCampService _vagabondCampService;
         private readonly IResourceLimiterService _resourceLimiterService;
         private readonly IHudFaderService _hudFaderService;
+        private readonly ICallNightService _callNightService;
+        private readonly ITutorialProgressService _tutorialProgressService;
 
         private readonly List<OrderInfo> _orderInfos = new List<OrderInfo>();
         private readonly List<FlagSlotCoordinator> _buildingFlags = new List<FlagSlotCoordinator>();
@@ -98,7 +99,6 @@ namespace Infastructure.States
             IPoolObjects<CoinLoot> poolLoots,
             ITutorialSpawnService tutorialSpawnService,
             INearestBuildFindService nearestBuildFindService,
-            ITutorialCheckerService tutorialCheckerService,
             ICoroutineRunner coroutineRunner,
             IGridMap gridMap,
             IUnitsRecruiterService unitsRecruiterService,
@@ -109,8 +109,9 @@ namespace Infastructure.States
             IVagabondCampService vagabondCampService,
             IResourceLimiterService resourceLimiterService,
             IHudFaderService hudFaderService,
-            IBuildingModeConfigurationService buildingModeConfigurationService,
-            IBuildingCatalogService buildingCatalogService
+            ICallNightService callNightService,
+            ITutorialProgressService tutorialProgressService,
+            ITutorialService tutorialService
         )
         {
             _gameFactory = gameFactory;
@@ -120,12 +121,9 @@ namespace Infastructure.States
             _futureOrdersService = futureOrdersService;
             _enemyWavesService = enemyWavesService;
             _enemySpawnService = enemySpawnService;
-            _progressWatchersService = progressWatchersService;
             _executeOrdersService = executeOrdersService;
             _poolLoots = poolLoots;
             _tutorialSpawnService = tutorialSpawnService;
-            _nearestBuildFindService = nearestBuildFindService;
-            _tutorialCheckerService = tutorialCheckerService;
             _coroutineRunner = coroutineRunner;
             _gridMap = gridMap;
             _unitsRecruiterService = unitsRecruiterService;
@@ -136,12 +134,18 @@ namespace Infastructure.States
             _vagabondCampService = vagabondCampService;
             _resourceLimiterService = resourceLimiterService;
             _hudFaderService = hudFaderService;
+            _callNightService = callNightService;
+            _tutorialProgressService = tutorialProgressService;
+            _tutorialService = tutorialService;
         }
 
         public void Initialize()
         {
+            _tutorialProgressService.TutorialStarted = true;
+
             _camera = Camera.main;
 
+            _callNightService.SubscribeUpdates();
             _coroutineRunner.StopAllCoroutines();
             _forestTransitionService.SubscribeUpdates();
             _buildingModeService.SubscribeUpdates();
@@ -158,7 +162,7 @@ namespace Infastructure.States
 
         private void InitTutorial()
         {
-            if (_tutorialCheckerService.TutorialStarted)
+            if (_tutorialProgressService.TutorialStarted)
                 _tutorialSpawnService.StartSpawn();
         }
 
@@ -222,8 +226,8 @@ namespace Infastructure.States
             InitVagabondCamps();
             InitEnemyCrystals();
 
-
             _cristalTimeline.Initialize(playerObject.transform);
+            _tutorialService.Initialize();
         }
 
         private void InitEnemyCrystals()
@@ -237,7 +241,7 @@ namespace Infastructure.States
 
         private void InitCristalUI(GameObject playerObject)
         {
-            if (_tutorialCheckerService.TutorialStarted)
+            if (_tutorialProgressService.TutorialStarted)
                 return;
 
             DayCycleUpdater dayCycleUpdater = _camera.GetComponentInChildren<DayCycleUpdater>();

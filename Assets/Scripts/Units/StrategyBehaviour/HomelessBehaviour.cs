@@ -1,11 +1,9 @@
 using System;
 using System.Collections.Generic;
-using BuildProcessManagement.Towers;
 using BuildProcessManagement.Towers.SpawnOnTowers;
 using BuildProcessManagement.WorkshopBuilding;
 using Infastructure;
 using Infastructure.Services.AutomatizationService.Homeless;
-using Infastructure.Services.SafeBuildZoneTracker;
 using Infastructure.StaticData.StaticDataService;
 using Infastructure.StaticData.Unit;
 using Units.StrategyBehaviour.BindingToTower;

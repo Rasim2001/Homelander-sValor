@@ -20,12 +20,14 @@ namespace Infastructure.Services.InputPlayerService
         public bool ExecuteOrderPressed => Input.GetKey(KeyCode.W);
         public bool ExecuteOrderButtonUp => Input.GetKeyUp(KeyCode.W);
         public bool SelectUnitPressed => Input.GetKeyDown(KeyCode.F);
-        public bool CastSkillPressed => Input.GetKeyDown(KeyCode.Space);
+        public bool SpacePressed => Input.GetKeyDown(KeyCode.Space);
+        public bool SpacePressedUp => Input.GetKeyUp(KeyCode.Space);
         public bool ShootPressedDown => Input.GetMouseButtonDown(0);
         public bool ShootPressed => Input.GetMouseButton(0);
         public bool ShootPressedUp => Input.GetMouseButtonUp(0);
 
         public bool TabPressed => Input.GetKeyDown(KeyCode.Tab);
+        public bool EnterPressed => Input.GetKeyDown(KeyCode.KeypadEnter);
 
         public bool MouseClicked => Input.GetMouseButtonDown(0);
         public bool ECSPressed => Input.GetKeyDown(KeyCode.Escape);
