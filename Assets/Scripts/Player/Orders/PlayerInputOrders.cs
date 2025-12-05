@@ -11,6 +11,9 @@ using Infastructure.Services.InputPlayerService;
 using Infastructure.Services.PauseService;
 using Infastructure.Services.Pool;
 using Infastructure.Services.PurchaseDelay;
+using Infastructure.Services.SafeBuildZoneTracker;
+using Infastructure.Services.Tutorial;
+using Infastructure.Services.Tutorial.TutorialProgress;
 using Infastructure.Services.UnitRecruiter;
 using Player.Shoot;
 using Player.Skills;
@@ -51,6 +54,7 @@ namespace Player.Orders
         private IBuildingModifyService _buildingModifyService;
         private IPurchaseDelayService _purchaseDelayService;
         private IPauseService _pauseService;
+        private ITutorialProgressService _tutorialProgressService;
         private Cristal _cristal;
 
         private bool _readyUseSkill;
@@ -58,6 +62,7 @@ namespace Player.Orders
         private ICameraFocusService _cameraFocusService;
         private IBuilderCommandExecutor _builderCommandExecutor;
         private IPoolObjects<FreezParticleMarker> _freezParticlePool;
+        private ISafeBuildZone _safeBuildZone;
 
         [Inject]
         public void Construct(
@@ -73,9 +78,13 @@ namespace Player.Orders
             IGameUIFactory gameUIFactory,
             ICristalTimeline cristalTimeline,
             ICameraFocusService cameraFocusService,
+            ITutorialProgressService tutorialProgressService,
             IBuilderCommandExecutor builderCommandExecutor,
+            ISafeBuildZone safeBuildZone,
             IPoolObjects<FreezParticleMarker> freezParticlePool)
         {
+            _safeBuildZone = safeBuildZone;
+            _tutorialProgressService = tutorialProgressService;
             _freezParticlePool = freezParticlePool;
             _builderCommandExecutor = builderCommandExecutor;
             _cameraFocusService = cameraFocusService;
@@ -104,15 +113,16 @@ namespace Player.Orders
                 _pauseService.IsPaused || _cristalTimeline.IsPlaying || _cameraFocusService.PlayerDefeated)
                 return;
 
-            if (_inputService.CastSkillPressed)
+            if (_inputService.SpacePressed && _tutorialProgressService.IsCallUnitsReadyToUse && _safeBuildZone.IsNight)
                 CastSkill();
-            else if (_inputService.CallUnitsPressed)
+            else if (_inputService.CallUnitsPressed && _tutorialProgressService.IsCallUnitsReadyToUse)
                 CallUnits();
-            else if (_inputService.ReleaseUnitsPressed)
+            else if (_inputService.ReleaseUnitsPressed && _tutorialProgressService.IsReleaseUnitsReadyToUse)
                 ReleaseUnits();
-            else if (_inputService.SelectUnitPressed)
+            else if (_inputService.SelectUnitPressed && _tutorialProgressService.IsSelectUnitsReadyToUse)
                 _selectUnitArrow.SelectUnit();
-            else if (_inputService.ExecuteOrderPressedDown && _orderObserverTrigger.CurrentCollider != null)
+            else if (_inputService.ExecuteOrderPressedDown && _orderObserverTrigger.CurrentCollider != null &&
+                     _tutorialProgressService.IsGiveOrderReadyToUse)
                 HandlePlayerOrder();
         }
 

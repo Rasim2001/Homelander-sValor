@@ -11,7 +11,7 @@ namespace Infastructure.Services.EnemyWaves
         void StartWaveCycle();
         void FreezTimeEditor();
         void UnFreezTimeEditor();
-        void ForceNightEditor();
+        void ForceNight();
         void ForceDayEditor();
     }
 }

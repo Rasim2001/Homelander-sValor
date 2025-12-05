@@ -18,7 +18,6 @@ namespace Infastructure.Services.Tutorial
         private readonly IGameFactory _gameFactory;
         private readonly IPoolObjects<CoinLoot> _pool;
 
-
         public GameObject FightPointObject { get; private set; }
         public GameObject EnemyObject { get; private set; }
         public GameObject ChestObject { get; private set; }
@@ -36,14 +35,14 @@ namespace Infastructure.Services.Tutorial
 
         public void StartSpawn()
         {
-            List<TutorialData> tutorialObjects = _staticData.TutorialStaticData.TutorialObjects;
+            /*List<TutorialData> tutorialObjects = _staticData.TutorialStaticData.TutorialObjects;
 
             foreach (TutorialData tutorialObject in tutorialObjects)
-                Spawn(tutorialObject);
+                Spawn(tutorialObject);*/
         }
 
 
-        private void Spawn(TutorialData tutorialObject)
+        /*private void Spawn(TutorialData tutorialObject)
         {
             switch (tutorialObject.TypeId)
             {
@@ -115,6 +114,6 @@ namespace Infastructure.Services.Tutorial
 
             EnemyObject.GetComponent<EnemyMove>().enabled = false;
             EnemyObject.GetComponent<EnemyAttack>().enabled = false;
-        }
+        }*/
     }
 }

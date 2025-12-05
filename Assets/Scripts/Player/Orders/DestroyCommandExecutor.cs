@@ -77,8 +77,6 @@ namespace Player.Orders
                 _minimapNotifierService.BarricadeDestroyedNotify(buildInfo.transform.position);
             }
 
-            Debug.Log("Destroy");
-            
             _buildingRegistryService.RemoveBuild(buildInfo);
             _fogOfWarMinimap.UpdateFogPositionAfterDestroyBuild(buildInfo.transform.position.x);
 

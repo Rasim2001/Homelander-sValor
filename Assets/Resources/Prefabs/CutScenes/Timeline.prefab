@@ -73,7 +73,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.1333985, y: 0.35453153}
+  m_Offset: {x: -1.5903326, y: 0.35453153}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -84,7 +84,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.266796, y: 1}
+  m_Size: {x: 4.180664, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &800828446150977694
 MonoBehaviour:
@@ -961,15 +961,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: 0.2959
+      value: 0.29520002
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 0.71915
+      value: 0.72015
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 0.77779996
+      value: 0.77830005
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_ShapePath.Array.data[0].x
@@ -1198,19 +1198,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
-      value: 0.004099995
+      value: 0.004150003
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: 0.31589997
+      value: 0.31715
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 0.6953
+      value: 0.69544995
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 0.7981
+      value: 0.79865
       objectReference: {fileID: 0}
     - target: {fileID: 4921775343045769376, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_Name
@@ -1287,19 +1287,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
-      value: -0.0012499988
+      value: -0.0011000037
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: 0.2338
+      value: 0.23375002
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 0.73265004
+      value: 0.7339
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 0.718
+      value: 0.71755004
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_ShapePath.Array.data[0].x
@@ -1556,19 +1556,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
-      value: 0.0034500062
+      value: 0.0036000013
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: 0.30265
+      value: 0.30165002
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 0.66285
+      value: 0.663
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 0.79085004
+      value: 0.79055
       objectReference: {fileID: 0}
     - target: {fileID: 1102847948304941420, guid: b2cb3b94f65c95d4dad0f3188e583e36, type: 3}
       propertyPath: m_ShapePath.Array.data[0].x

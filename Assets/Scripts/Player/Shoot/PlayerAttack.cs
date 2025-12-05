@@ -1,4 +1,5 @@
 using Infastructure.Services.InputPlayerService;
+using Infastructure.Services.Tutorial.TutorialProgress;
 using UnityEngine;
 using Zenject;
 
@@ -26,10 +27,14 @@ namespace Player.Shoot
 
         private float _shootPointX;
         private IInputService _inputService;
+        private ITutorialProgressService _tutorialProgressService;
 
         [Inject]
-        public void Construct(IInputService inputService) =>
+        public void Construct(IInputService inputService, ITutorialProgressService tutorialProgressService)
+        {
+            _tutorialProgressService = tutorialProgressService;
             _inputService = inputService;
+        }
 
         private void Awake()
         {
@@ -43,6 +48,9 @@ namespace Player.Shoot
 
         private void Update()
         {
+            if (!_tutorialProgressService.IsAttackReadyToUse)
+                return;
+
             if (CanShoot())
                 TryAim();
             else if (_inputService.ShootPressedUp)

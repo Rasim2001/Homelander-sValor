@@ -1,5 +1,5 @@
 using DG.Tweening;
-using Infastructure.Services.Tutorial;
+using Infastructure.Services.Tutorial.TutorialProgress;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -11,11 +11,11 @@ namespace UI.Windows
         [SerializeField] private Transform _container;
         [SerializeField] private Image _image;
 
-        private ITutorialCheckerService _tutorialCheckerService;
+        private ITutorialProgressService _tutorialProgressService;
 
         [Inject]
-        public void Construct(ITutorialCheckerService tutorialCheckerService) =>
-            _tutorialCheckerService = tutorialCheckerService;
+        public void Construct(ITutorialProgressService tutorialProgressService) =>
+            _tutorialProgressService = tutorialProgressService;
 
         protected override void Initialize()
         {
@@ -29,7 +29,7 @@ namespace UI.Windows
                 .SetDelay(3)
                 .OnComplete(() =>
                 {
-                    _tutorialCheckerService.TutorialStarted = false;
+                    _tutorialProgressService.TutorialStarted = false;
                     Destroy(gameObject);
                 });
             ;

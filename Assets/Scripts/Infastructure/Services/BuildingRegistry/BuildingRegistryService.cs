@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using BuildProcessManagement;
 using Infastructure.Factories.GameFactories;
 using Infastructure.Services.AutomatizationService.Homeless;
+using Infastructure.Services.Tutorial;
+using Infastructure.Services.Tutorial.NewTutorial;
+using Infastructure.StaticData.Building;
 using Infastructure.StaticData.Unit;
 using Player.Orders;
 using Units;
@@ -16,7 +19,6 @@ namespace Infastructure.Services.BuildingRegistry
 
         private readonly IGameFactory _gameFactory;
         private readonly IHomelessOrdersService _homelessOrdersService;
-
         public event Action OnBuildAddHappened;
 
         public BuildingRegistryService(IGameFactory gameFactory, IHomelessOrdersService homelessOrdersService)

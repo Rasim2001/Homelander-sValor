@@ -10,7 +10,7 @@ namespace Infastructure.Services.Tutorial.States
     {
         private readonly ITutorialStateMachine _tutorialStateMachine;
         private readonly TutorialArrowHelper _tutorialArrowHelper;
-        private readonly ITutorialCheckerService _tutorialCheckerService;
+        private readonly ITutorialService _tutorialService;
         private readonly INearestBuildFindService _nearestBuildFindService;
         private readonly PlayerInputOrders _playerInputOrders;
         private readonly ObserverTrigger _observerTrigger;
@@ -22,7 +22,7 @@ namespace Infastructure.Services.Tutorial.States
 
         public TreeStateTutorial(ITutorialStateMachine tutorialStateMachine,
             TutorialArrowHelper tutorialArrowHelper,
-            ITutorialCheckerService tutorialCheckerService,
+            ITutorialService tutorialService,
             INearestBuildFindService nearestBuildFindService,
             PlayerInputOrders playerInputOrders,
             ObserverTrigger observerTrigger,
@@ -30,7 +30,7 @@ namespace Infastructure.Services.Tutorial.States
         {
             _tutorialStateMachine = tutorialStateMachine;
             _tutorialArrowHelper = tutorialArrowHelper;
-            _tutorialCheckerService = tutorialCheckerService;
+            _tutorialService = tutorialService;
             _nearestBuildFindService = nearestBuildFindService;
             _playerInputOrders = playerInputOrders;
             _observerTrigger = observerTrigger;
@@ -46,7 +46,7 @@ namespace Infastructure.Services.Tutorial.States
             _tutorialHints.Show();
 
             _tutorialArrowHelper.SetTarget(_tutorialHints.transform);
-            _tutorialCheckerService.ReadyToUseAcceleration = true;
+            //_tutorialService.ReadyToUseAcceleration = true;
             _shiftGameObject.SetActive(true);
             _accelerationHintsIsActive = true;
         }

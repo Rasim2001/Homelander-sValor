@@ -14,10 +14,127 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyCamps: []
   BuildingSpawners:
-  - UniqueId: 4497747d-c0a7-4cb7-bc0a-a36e20343131
+  - UniqueId: 4063f613-522d-44ff-b2b2-e8f287da211e
     Position: {x: 0, y: -2.65, z: 0}
     BuildingTypeId: 7
-  ResourceSpawners: []
+  ResourceSpawners:
+  - UniqueId: 7c77542f-3e2c-4e8c-bcc7-ef5ae4b9b7a0
+    Position: {x: 42.21, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: 0c4e1d9a-440c-4a70-af86-e225ebb7b6cb
+    Position: {x: 35.15, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: 0c7378eb-98b2-41ea-8828-a867d03d2ce5
+    Position: {x: -62.12, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: fa5d260b-cd42-40c7-b40c-2280eb073714
+    Position: {x: -126.2, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: be1ea04a-7a3f-421f-8573-7dbc198c8092
+    Position: {x: -69.38, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: d3173ae8-0466-44e7-b4d1-f0376b766e89
+    Position: {x: 83.33, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: 541bb7b2-8260-4aed-973f-8f6022c35a90
+    Position: {x: 42.21, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: 36dafee2-b19a-4126-8669-178033bcdc44
+    Position: {x: 29.71, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: 207d904d-1a42-4186-a6d2-33a9be45cc09
+    Position: {x: -97.69, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: b8367180-105a-432b-a586-25947e8f6021
+    Position: {x: 47.74, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: 8291fadd-4b1a-4ea9-9f04-2eb0cee26e74
+    Position: {x: 94.12, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: 6c385c9b-3424-443b-bfaf-827e98831655
+    Position: {x: -130.19, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: dbf65088-63a2-465c-aec5-0af41129d0e2
+    Position: {x: -83, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: d4447ba1-96c9-4ec2-867b-f1ca73143dec
+    Position: {x: 45.23, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: 3eff2275-032a-4062-a958-ec49d09b6fb5
+    Position: {x: 25.7, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: 96b1051a-7d5e-40d6-99ba-6302dc1883eb
+    Position: {x: 39.88, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: 1b7a4c77-c01d-4fda-b6c6-75674ecf9d7d
+    Position: {x: 33.88, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: d166f750-396d-471a-b017-11df08b7b414
+    Position: {x: 58.79, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: 76765414-1ce3-46b1-a412-f4d3b2c939d5
+    Position: {x: 38.71, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: e33412ef-fb24-41b4-8c57-2afba5622953
+    Position: {x: -76.77, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: ef1f8eda-5eaa-48cc-b1f4-ebf499fd20d8
+    Position: {x: 22.08, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: caf8f1b2-a349-4786-9018-84bd7363c85d
+    Position: {x: -66.42, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: e5f3b57f-9321-41c0-9218-bbf6aa0d0ca5
+    Position: {x: -109.17, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: 35aa488b-c2fa-4a46-8b3c-29821243410d
+    Position: {x: -42.62, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: b7a002c6-a16b-4d77-96f4-31498e6ca599
+    Position: {x: -45.19, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: a93636d6-5ae5-4543-9607-f9894f34fb3c
+    Position: {x: 37.22, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: ce0d184e-6c0b-4f89-a432-df83a8c5773c
+    Position: {x: -59.21, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: 256cd01b-b019-42fc-ac35-4f27edbf2bfd
+    Position: {x: -49.67, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: 7f4f5b30-cfc6-4474-b02f-8b7bda6ddacc
+    Position: {x: -40.09, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: 1c8c0354-bc59-45e9-95a3-678d5f10efee
+    Position: {x: 41.3, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: fda76ae2-58bf-4ec0-af39-04991ba3751d
+    Position: {x: -57.67, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: 33621f94-baf3-49e9-9cb8-498d5d64f9e2
+    Position: {x: 124.4, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: 0562279d-b375-437c-af0a-8aeb299b75e5
+    Position: {x: 61.74, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: 58b9c383-3db5-40ec-9be5-955b0f4a229a
+    Position: {x: -89.84, y: -2.65, z: 0}
+    ResourceId: 2
+  - UniqueId: da0289a6-9bed-47ef-a3cc-b814c5f2686e
+    Position: {x: -35.32, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: bdd50091-a1be-4dfa-b02e-ac08787ad134
+    Position: {x: -72.21, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: 5452ddc8-7382-4f9a-aa41-d48cb3175b36
+    Position: {x: 167.6, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: 936e68e9-6a5d-47e6-a9c0-e062ed974757
+    Position: {x: 19.04, y: -2.65, z: 0}
+    ResourceId: 1
+  - UniqueId: 06574fa0-4e6f-4a3f-ac17-d24e65847adf
+    Position: {x: 53.5, y: -2.65, z: 0}
+    ResourceId: 2
   ForestSides:
   - Position: {x: -79.96, y: -2.77}
     ColliderOffset: {x: -0.10094452, y: 0}

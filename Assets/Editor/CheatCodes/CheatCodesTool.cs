@@ -193,7 +193,7 @@ namespace Editor.CheatCodes
             DiContainer container = sceneContext.Container;
 
             IEnemyWavesService wavesService = container.Resolve<IEnemyWavesService>();
-            wavesService.ForceNightEditor();
+            wavesService.ForceNight();
         }
 
 

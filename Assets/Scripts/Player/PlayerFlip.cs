@@ -9,6 +9,7 @@ namespace Player
     {
         [SerializeField] private PlayerMove _playerMove;
         [SerializeField] private SpriteRenderer _spriteRenderer;
+        public bool FlipX => _spriteRenderer.flipX;
 
         private IInputService _inputService;
         private ICameraFocusService _cameraFocusService;

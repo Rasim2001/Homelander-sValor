@@ -36,6 +36,13 @@ namespace Infastructure.Services.Window.GameWindowService
             {
                 case WindowId.GameSettingsWindow:
                     return _gameUIFactory.CreateGameSettingsWindow(WindowId.GameSettingsWindow);
+                case WindowId.MovementTutorialWindow:
+                case WindowId.CutsceneTutorialWindow:
+                case WindowId.AccelerationTutorialWindow:
+                case WindowId.MainFlagTutorialWindow:
+                case WindowId.BarricadeTutorialWindow:
+                case WindowId.CallingNightTutorialWindow:
+                    return _gameUIFactory.CreateTutorialWindow(windowId);
             }
 
             return null;

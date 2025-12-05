@@ -1,4 +1,3 @@
-using System;
 using Bonfire;
 using Infastructure.Services.PlayerRegistry;
 using Infastructure.StaticData.SpeachBuble.Player;
@@ -17,7 +16,7 @@ namespace BuildProcessManagement.HandleOrders
         private IUpgradeMainFlag _upgradeMainFlag;
         private IPlayerRegistryService _playerRegistryService;
 
-        private SpeachBuble _speachBuble;
+        private SpeachBuble _speechBubble;
 
         [Inject]
         public void Construct(IUpgradeMainFlag upgradeMainFlag, IPlayerRegistryService playerRegistryService)
@@ -27,7 +26,7 @@ namespace BuildProcessManagement.HandleOrders
         }
 
         private void Awake() =>
-            _speachBuble = _playerRegistryService.Player.GetComponentInChildren<SpeachBuble>();
+            _speechBubble = _playerRegistryService.Player.GetComponentInChildren<SpeachBuble>();
 
 
         public void Handle()
@@ -36,7 +35,7 @@ namespace BuildProcessManagement.HandleOrders
                 return;
 
             if (!_upgradeMainFlag.IsEnoughCoins())
-                _speachBuble.UpdateSpeach(SpeachBubleId.Coins);
+                _speechBubble.UpdateSpeach(SpeachBubleId.Coins);
             else
                 _upgradeMainFlag.Upgrade(_bonfireMarker, _buildingCoinsUI);
         }

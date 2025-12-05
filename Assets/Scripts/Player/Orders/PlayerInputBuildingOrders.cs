@@ -6,6 +6,8 @@ using Infastructure.Services.CameraFocus;
 using Infastructure.Services.ECSInput;
 using Infastructure.Services.InputPlayerService;
 using Infastructure.Services.PauseService;
+using Infastructure.Services.Tutorial;
+using Infastructure.Services.Tutorial.TutorialProgress;
 using UI.GameplayUI.TowerSelectionUI;
 using UI.GameplayUI.TowerSelectionUI.MoveItems;
 using UnityEngine;
@@ -35,6 +37,7 @@ namespace Player.Orders
         private ICristalTimeline _cristalTimeline;
         private IPauseService _pauseService;
         private ICameraFocusService _cameraFocusService;
+        private ITutorialProgressService _tutorialProgressService;
 
 
         [Inject]
@@ -48,8 +51,10 @@ namespace Player.Orders
             IBuildingModeConfigurationService configurationService,
             ICristalTimeline cristalTimeline,
             IPauseService pauseService,
-            ICameraFocusService cameraFocusService)
+            ICameraFocusService cameraFocusService,
+            ITutorialProgressService tutorialService)
         {
+            _tutorialProgressService = tutorialService;
             _cameraFocusService = cameraFocusService;
             _pauseService = pauseService;
             _cristalTimeline = cristalTimeline;
@@ -79,6 +84,9 @@ namespace Player.Orders
 
         private void Update()
         {
+            if (!_tutorialProgressService.IsBuildingStateReadyToUse)
+                return;
+
             if (_cristalTimeline.IsPlaying || _pauseService.IsPaused ||
                 _cameraFocusService.PlayerDefeated || _playerAnimator.AnyStateIsActive)
                 return;

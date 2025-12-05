@@ -44,6 +44,8 @@ namespace Player.Orders
         private readonly IMarkerSignCoordinatorService _markerSignCoordinatorService;
 
         public Action OnBuildHappened { get; set; }
+        public Action OnBuildFinished { get; set; }
+        public Action OnBuildStarted { get; set; }
 
         private SpeachBuble _speachBuble;
         private SelectUnitArrow _selectUnitArrow;
@@ -183,6 +185,8 @@ namespace Player.Orders
 
         private IEnumerator StartBuildCoroutine(OrderMarker orderMarker)
         {
+            OnBuildStarted?.Invoke();
+
             _markerSignCoordinatorService.AddMarker(orderMarker);
 
             BuildInfo buildInfo = orderMarker.GetComponent<BuildInfo>();
@@ -198,6 +202,8 @@ namespace Player.Orders
             _markerSignCoordinatorService.RemoveMarker(orderMarker);
 
             ShowNewBuild(orderMarker);
+
+            OnBuildFinished?.Invoke();
         }
 
         private void ShowNewBuild(OrderMarker orderMarker)

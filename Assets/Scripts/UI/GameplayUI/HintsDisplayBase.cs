@@ -1,5 +1,6 @@
 using Infastructure.Services.BuildModeServices;
 using Infastructure.Services.Tutorial;
+using Infastructure.Services.Tutorial.TutorialProgress;
 using Player.Orders;
 using UnityEngine;
 using Zenject;
@@ -8,16 +9,16 @@ namespace UI.GameplayUI
 {
     public abstract class HintsDisplayBase : MonoBehaviour
     {
-        protected ITutorialCheckerService tutorialCheckerService;
+        protected ITutorialProgressService TutorialProgressService;
         protected IBuildingModeService buildingModeService;
 
         protected OrderMarker _orderMarker;
 
 
         [Inject]
-        public void Construct(ITutorialCheckerService tutorialChecker, IBuildingModeService buildingMode)
+        public void Construct(ITutorialProgressService tutorialProgressService, IBuildingModeService buildingMode)
         {
-            tutorialCheckerService = tutorialChecker;
+            TutorialProgressService = tutorialProgressService;
             buildingModeService = buildingMode;
         }
 

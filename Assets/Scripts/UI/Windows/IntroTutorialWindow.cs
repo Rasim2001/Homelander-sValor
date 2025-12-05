@@ -1,4 +1,3 @@
-using Infastructure.Services.Tutorial;
 using Infastructure.States;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,14 +11,10 @@ namespace UI.Windows
         [SerializeField] private Button _skipButton;
 
         private IStateMachine _stateMachine;
-        private ITutorialCheckerService _tutorialCheckerService;
 
         [Inject]
-        public void Constuct(IStateMachine stateMachine, ITutorialCheckerService tutorialCheckerService)
-        {
+        public void Construct(IStateMachine stateMachine) =>
             _stateMachine = stateMachine;
-            _tutorialCheckerService = tutorialCheckerService;
-        }
 
         protected override void SubscribeUpdates()
         {
@@ -39,15 +34,11 @@ namespace UI.Windows
 
         private void Skip()
         {
-            _tutorialCheckerService.TutorialStarted = false;
-
             StartGame();
         }
 
         private void TutorialOpen()
         {
-            _tutorialCheckerService.TutorialStarted = true;
-
             StartGame();
         }
 

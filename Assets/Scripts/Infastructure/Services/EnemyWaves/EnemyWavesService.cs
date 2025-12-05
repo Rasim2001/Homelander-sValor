@@ -3,12 +3,10 @@ using System.Collections;
 using DayCycle;
 using Infastructure.Services.AutomatizationService.Builders;
 using Infastructure.Services.AutomatizationService.Homeless;
-using Infastructure.Services.InputPlayerService;
 using Infastructure.Services.PlayerProgressService;
 using Infastructure.Services.SafeBuildZoneTracker;
 using Infastructure.Services.SaveLoadService;
 using Infastructure.Services.StreetLight;
-using Infastructure.Services.Tutorial;
 using Infastructure.Services.UnitEvacuationService;
 using Infastructure.Services.Window.GameWindowService;
 using Infastructure.StaticData.DayCycle;
@@ -17,11 +15,10 @@ using Infastructure.StaticData.WaveOfEnemies;
 using Infastructure.StaticData.Windows;
 using UI.GameplayUI;
 using UnityEngine;
-using Zenject;
 
 namespace Infastructure.Services.EnemyWaves
 {
-    public class EnemyWavesService : IEnemyWavesService, IDisposable, ITickable
+    public class EnemyWavesService : IEnemyWavesService, IDisposable
     {
         private readonly IStaticDataService _staticDataService;
         private readonly ICoroutineRunner _coroutineRunner;
@@ -35,14 +32,11 @@ namespace Infastructure.Services.EnemyWaves
         private Coroutine _coroutine;
         private DayCycleUpdater _dayCycleUpdater;
         private IEnemyWavesService _enemyWavesServiceImplementation;
-        private readonly ITutorialCheckerService _tutorialCheckerService;
         private readonly ISafeBuildZone _saveBuildZone;
         private readonly IEvacuationService _evacuationService;
         private readonly IFutureOrdersService _futureOrdersService;
         private readonly IHomelessOrdersService _homelessOrdersService;
         private readonly IStreetLightsService _streetLightsService;
-        private readonly IInputService inputService;
-
 
         private bool _isTimeFreezed;
 
@@ -58,13 +52,11 @@ namespace Infastructure.Services.EnemyWaves
             IPersistentProgressService progressService,
             ISaveLoadService saveLoadService,
             IGameWindowService gameWindowService,
-            ITutorialCheckerService tutorialCheckerService,
             ISafeBuildZone saveBuildZone,
             IEvacuationService evacuationService,
             IFutureOrdersService futureOrdersService,
             IHomelessOrdersService homelessOrdersService,
-            IStreetLightsService streetLightsService,
-            IInputService inputService)
+            IStreetLightsService streetLightsService)
         {
             _staticDataService = staticDataService;
             _coroutineRunner = coroutineRunner;
@@ -73,13 +65,11 @@ namespace Infastructure.Services.EnemyWaves
             _progressService = progressService;
             _saveLoadService = saveLoadService;
             _gameWindowService = gameWindowService;
-            _tutorialCheckerService = tutorialCheckerService;
             _saveBuildZone = saveBuildZone;
             _evacuationService = evacuationService;
             _futureOrdersService = futureOrdersService;
             _homelessOrdersService = homelessOrdersService;
             _streetLightsService = streetLightsService;
-            this.inputService = inputService;
         }
 
 
@@ -89,11 +79,6 @@ namespace Infastructure.Services.EnemyWaves
             _dayCycleUpdater = dayCycleUpdater;
         }
 
-        public void Tick()
-        {
-            if (inputService.EnterPressed && !_saveBuildZone.IsNight)
-                ForceNightEditor();
-        }
 
         public void Dispose()
         {
@@ -103,18 +88,18 @@ namespace Infastructure.Services.EnemyWaves
             _coroutine = _coroutineRunner.StartCoroutine(StartWaveCycleCoroutine());
 
 
-        public void FreezTimeEditor() =>
-            _isTimeFreezed = true;
-
-        public void UnFreezTimeEditor() =>
-            _isTimeFreezed = false;
-
-        public void ForceNightEditor()
+        public void ForceNight()
         {
             timeWaitOfDay = 0;
 
             _dayCycleUpdater.ForceNight();
         }
+
+        public void FreezTimeEditor() =>
+            _isTimeFreezed = true;
+
+        public void UnFreezTimeEditor() =>
+            _isTimeFreezed = false;
 
         public void ForceDayEditor()
         {

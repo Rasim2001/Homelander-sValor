@@ -1,3 +1,4 @@
+using _Tutorial.NewTutorial;
 using Bag;
 using BuildProcessManagement.Towers;
 using BuildProcessManagement.Towers.CatapultTower;
@@ -91,6 +92,12 @@ namespace Infastructure.CompositionRoot
         [FoldoutGroup("MinimapNotifier")] [SerializeField]
         private Transform _minimapContainer;
 
+        [FoldoutGroup("ArrowTutorial")] [SerializeField]
+        private TutorialArrowView _tutorialArrow;
+
+        [FoldoutGroup("ArrowTutorial")] [SerializeField]
+        private Transform _tutorialArrowContainer;
+
 
         public override void InstallBindings()
         {
@@ -115,6 +122,16 @@ namespace Infastructure.CompositionRoot
             BindFreezParticlePool();
 
             BindMinimapNotifierPool();
+
+            BindTutorialArrowPool();
+        }
+
+        private void BindTutorialArrowPool()
+        {
+            Container
+                .BindInterfacesAndSelfTo<PoolObjects<TutorialArrowView>>()
+                .AsSingle()
+                .WithArguments(_tutorialArrow, _tutorialArrowContainer);
         }
 
         private void BindMinimapNotifierPool()
