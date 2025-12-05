@@ -42,6 +42,7 @@ namespace Infastructure.Services.Window.GameWindowService
                 case WindowId.MainFlagTutorialWindow:
                 case WindowId.BarricadeTutorialWindow:
                 case WindowId.CallingNightTutorialWindow:
+                case WindowId.AttackTutorialWindow:
                     return _gameUIFactory.CreateTutorialWindow(windowId);
             }
 

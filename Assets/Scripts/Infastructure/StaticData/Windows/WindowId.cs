@@ -19,5 +19,6 @@ namespace Infastructure.StaticData.Windows
         MainFlagTutorialWindow = 103,
         BarricadeTutorialWindow = 104,
         CallingNightTutorialWindow = 105,
+        AttackTutorialWindow = 106,
     }
 }
