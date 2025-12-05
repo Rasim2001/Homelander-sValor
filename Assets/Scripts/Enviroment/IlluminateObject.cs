@@ -43,7 +43,7 @@ namespace Enviroment
             if (_orderMarker == null)
                 return;
 
-            if (_orderMarker.IsStarted || _orderMarker.IsMarkered)
+            if (_orderMarker.IsStarted)
                 return;
 
             if (_orderMarker.OrderID == OrderID.Chop || _orderMarker.OrderID == OrderID.Dig)

@@ -166,7 +166,7 @@ namespace Player.Orders
 
             return _inputService.ExecuteOrderPressed &&
                    towerHintsDisplay != null &&
-                   orderMarker != null && !orderMarker.IsMarkered && !orderMarker.IsStarted &&
+                   orderMarker != null && !orderMarker.IsStarted &&
                    !_buildingModifyService.IsActive &&
                    !_playerMove.IsMoving();
         }

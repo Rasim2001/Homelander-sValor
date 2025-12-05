@@ -26,6 +26,7 @@ namespace Infastructure.Services.InputPlayerService
         public bool ShootPressedUp => Input.GetMouseButtonUp(0);
 
         public bool TabPressed => Input.GetKeyDown(KeyCode.Tab);
+        public bool EnterPressed => Input.GetKeyDown(KeyCode.KeypadEnter);
 
         public bool MouseClicked => Input.GetMouseButtonDown(0);
         public bool ECSPressed => Input.GetKeyDown(KeyCode.Escape);

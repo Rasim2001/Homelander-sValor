@@ -27,7 +27,7 @@ namespace UI.GameplayUI
 
         public virtual void ShowHints()
         {
-            if (_orderMarker == null || _orderMarker.IsMarkered || buildingModeService.IsBuildingState)
+            if (_orderMarker == null || buildingModeService.IsBuildingState)
                 return;
 
             Show(true);

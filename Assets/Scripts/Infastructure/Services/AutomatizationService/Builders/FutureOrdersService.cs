@@ -61,8 +61,6 @@ namespace Infastructure.Services.AutomatizationService.Builders
                 _orders.Add(orderMarker);
                 _markerCoodinatorService.AddMarker(orderMarker);
 
-                orderMarker.IsMarkered = true;
-
                 if (orderMarker.TryGetComponent(out IlluminateObject illuminateObject))
                     illuminateObject.Release();
 
@@ -100,7 +98,6 @@ namespace Infastructure.Services.AutomatizationService.Builders
             {
                 _orders.Remove(orderMarker);
                 _markerCoodinatorService.RemoveMarker(orderMarker);
-                orderMarker.IsMarkered = false;
             }
         }
 
@@ -142,8 +139,6 @@ namespace Infastructure.Services.AutomatizationService.Builders
             _orders.Insert(0, orderMarker);
             _markerCoodinatorService.AddMarker(orderMarker);
 
-            orderMarker.IsMarkered = true;
-
             ExecuteOrder();
         }
 
@@ -177,7 +172,8 @@ namespace Infastructure.Services.AutomatizationService.Builders
 
             List<OrderMarker> currentOrders =
                 isNight
-                    ? new List<OrderMarker>(_nightOrders).Where(x => _safeBuildZone.IsSafeZone(x.transform.position.x)).ToList()
+                    ? new List<OrderMarker>(_nightOrders).Where(x => _safeBuildZone.IsSafeZone(x.transform.position.x))
+                        .ToList()
                     : new List<OrderMarker>(_orders);
 
             for (int i = 0; i < amountOfFreeUnits; i++)

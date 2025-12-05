@@ -9,6 +9,5 @@ namespace Player.Orders
         void StartBuild(OrderMarker orderMarker);
         void StartBuildAfterBuildingMode(OrderMarker orderMarker);
         Action OnBuildHappened { get; set; }
-        void StartHarvest(OrderMarker orderMarker);
     }
 }

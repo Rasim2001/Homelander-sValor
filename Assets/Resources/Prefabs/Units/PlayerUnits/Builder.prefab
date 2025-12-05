@@ -136,6 +136,7 @@ MonoBehaviour:
   _animator: {fileID: 8802072686489606712}
   _unitStatus: {fileID: 2624188396786580368}
   _strategyBehaviour: {fileID: 2265374881107766931}
+  _speed: 0
 --- !u!114 &8802072686489606712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,7 +185,6 @@ MonoBehaviour:
   <PlayerFlip>k__BackingField: {fileID: 0}
   PlayerAnimator: {fileID: 0}
   FreePlaceIndex: -1
-  _orderUniqueId1: 
 --- !u!114 &2685021084369631674
 MonoBehaviour:
   m_ObjectHideFlags: 0

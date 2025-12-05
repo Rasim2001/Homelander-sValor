@@ -37,7 +37,6 @@ namespace Units.StrategyBehaviour
         private IPoolObjects<CoinLoot> _poolLoot;
         private IMarkerSignCoordinatorService _markerSignService;
         private IPersistentProgressService _progressService;
-        private IHomelessOrdersService _homelessOrdersService;
         private IStaticDataService _staticDataService;
         private IFogOfWarMinimap _fogOfWarMinimap;
         private IGridMap _gridMap;
@@ -51,7 +50,6 @@ namespace Units.StrategyBehaviour
             IPoolObjects<CoinLoot> poolLoot,
             IMarkerSignCoordinatorService markerSignService,
             IPersistentProgressService progressService,
-            IHomelessOrdersService homelessOrdersService,
             IStaticDataService staticDataService,
             IGridMap gridMap,
             IFogOfWarMinimap fogOfWarMinimap,
@@ -65,7 +63,6 @@ namespace Units.StrategyBehaviour
             _poolLoot = poolLoot;
             _markerSignService = markerSignService;
             _progressService = progressService;
-            _homelessOrdersService = homelessOrdersService;
             _staticDataService = staticDataService;
             _gridMap = gridMap;
             _fogOfWarMinimap = fogOfWarMinimap;
@@ -119,7 +116,6 @@ namespace Units.StrategyBehaviour
                 _coroutineRunner,
                 _markerSignService,
                 _progressService,
-                _homelessOrdersService,
                 _fogOfWarMinimap,
                 _buildingRegistryService,
                 _fenceService);

@@ -115,8 +115,7 @@ namespace Infastructure.Services.BuildModeServices
 
 
             bool canOccupy = _gridMap.AreCellsFree(currentPosition) &&
-                             IsEnoughCoins(buildingUpgradeData) &&
-                             IsAvailableZone(currentPosition);
+                             IsEnoughCoins(buildingUpgradeData);
 
             if (canOccupy)
             {
@@ -179,21 +178,8 @@ namespace Infastructure.Services.BuildModeServices
         public void MoveGhost(Vector3 position) =>
             _buildingGhostTransform.position = position;
 
-        public void PaintGhost(int currentPosition)
-        {
-            if (_gridMap.AreCellsFree(currentPosition) && IsAvailableZone(currentPosition))
-                _ghostSpriteRender.color = Color.white;
-            else
-                _ghostSpriteRender.color = Color.red;
-        }
-
-        private bool IsAvailableZone(int currentPosition)
-        {
-            if (_rightResource == null || _leftResource == null)
-                return false;
-
-            return currentPosition < _rightResource.position.x && currentPosition > _leftResource.position.x;
-        }
+        public void PaintGhost(int currentPosition) =>
+            _ghostSpriteRender.color = _gridMap.AreCellsFree(currentPosition) ? Color.white : Color.red;
 
         private void ChangeEnteredResource(bool isRight, Transform resource)
         {

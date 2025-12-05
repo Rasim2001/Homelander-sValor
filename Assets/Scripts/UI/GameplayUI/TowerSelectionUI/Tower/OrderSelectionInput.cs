@@ -83,7 +83,7 @@ namespace UI.GameplayUI.TowerSelectionUI.Tower
 
             _mainSelectionUI.OrderSelectionId = selectionId;
 
-            if (_orderMarker.IsMarkered || _orderMarker.IsStarted)
+            if (_orderMarker.IsStarted)
                 return;
 
             if (selectionId == OrderSelectionId.LevelUp)

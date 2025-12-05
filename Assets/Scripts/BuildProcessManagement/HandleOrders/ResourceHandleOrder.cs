@@ -14,7 +14,9 @@ namespace BuildProcessManagement.HandleOrders
         public void Construct(IBuilderCommandExecutor builderCommandExecutor) =>
             _builderCommandExecutor = builderCommandExecutor;
 
-        public void Handle() =>
-            _builderCommandExecutor.StartHarvest(_orderMarker);
+        public void Handle()
+        {
+            //_builderCommandExecutor.StartHarvest(_orderMarker);
+        }
     }
 }

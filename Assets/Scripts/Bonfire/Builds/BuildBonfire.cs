@@ -65,6 +65,7 @@ namespace Bonfire.Builds
             while (bonfireInfo.CurrentWoodsCount > 0)
             {
                 progressBonfire.BuildWoods();
+                
                 yield return new WaitForSeconds(0.25f);
             }
 

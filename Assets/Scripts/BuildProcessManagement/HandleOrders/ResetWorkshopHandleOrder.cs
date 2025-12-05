@@ -42,9 +42,6 @@ namespace BuildProcessManagement.HandleOrders
 
         public void Handle()
         {
-            if (_orderMarker.IsMarkered)
-                return;
-
             int correctSelectableUnitIndex = _selectUnitArrow.IsActive()
                 ? _selectUnitArrow.SelectableUnitIndex - 1
                 : _selectUnitArrow.SelectableUnitIndex;

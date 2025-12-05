@@ -23,5 +23,6 @@ namespace Infastructure.Services.InputPlayerService
         bool ShootPressed { get; }
         bool ShootPressedUp { get; }
         bool ShootPressedDown { get; }
+        bool EnterPressed { get; }
     }
 }

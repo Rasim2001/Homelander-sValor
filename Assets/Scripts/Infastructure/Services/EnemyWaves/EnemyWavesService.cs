@@ -3,6 +3,7 @@ using System.Collections;
 using DayCycle;
 using Infastructure.Services.AutomatizationService.Builders;
 using Infastructure.Services.AutomatizationService.Homeless;
+using Infastructure.Services.InputPlayerService;
 using Infastructure.Services.PlayerProgressService;
 using Infastructure.Services.SafeBuildZoneTracker;
 using Infastructure.Services.SaveLoadService;
@@ -16,10 +17,11 @@ using Infastructure.StaticData.WaveOfEnemies;
 using Infastructure.StaticData.Windows;
 using UI.GameplayUI;
 using UnityEngine;
+using Zenject;
 
 namespace Infastructure.Services.EnemyWaves
 {
-    public class EnemyWavesService : IEnemyWavesService, IDisposable
+    public class EnemyWavesService : IEnemyWavesService, IDisposable, ITickable
     {
         private readonly IStaticDataService _staticDataService;
         private readonly ICoroutineRunner _coroutineRunner;
@@ -39,6 +41,7 @@ namespace Infastructure.Services.EnemyWaves
         private readonly IFutureOrdersService _futureOrdersService;
         private readonly IHomelessOrdersService _homelessOrdersService;
         private readonly IStreetLightsService _streetLightsService;
+        private readonly IInputService inputService;
 
 
         private bool _isTimeFreezed;
@@ -60,7 +63,8 @@ namespace Infastructure.Services.EnemyWaves
             IEvacuationService evacuationService,
             IFutureOrdersService futureOrdersService,
             IHomelessOrdersService homelessOrdersService,
-            IStreetLightsService streetLightsService)
+            IStreetLightsService streetLightsService,
+            IInputService inputService)
         {
             _staticDataService = staticDataService;
             _coroutineRunner = coroutineRunner;
@@ -75,17 +79,24 @@ namespace Infastructure.Services.EnemyWaves
             _futureOrdersService = futureOrdersService;
             _homelessOrdersService = homelessOrdersService;
             _streetLightsService = streetLightsService;
+            this.inputService = inputService;
         }
 
-
-        public void Dispose()
-        {
-        }
 
         public void Initialize(WavesProgressBar wavesProgressBar, DayCycleUpdater dayCycleUpdater)
         {
             _wavesProgressBar = wavesProgressBar;
             _dayCycleUpdater = dayCycleUpdater;
+        }
+
+        public void Tick()
+        {
+            if (inputService.EnterPressed && !_saveBuildZone.IsNight)
+                ForceNightEditor();
+        }
+
+        public void Dispose()
+        {
         }
 
         public void StartWaveCycle() =>

@@ -156,7 +156,7 @@ namespace Player.Orders
         private bool IsBuildingOrder(OrderMarker orderMarker)
         {
             return orderMarker != null && orderMarker.OrderID == OrderID.Build &&
-                   (orderMarker.IsMarkered || orderMarker.IsStarted);
+                   orderMarker.IsStarted;
         }
 
         private bool IsHealOrder(OrderMarker orderMarker) =>

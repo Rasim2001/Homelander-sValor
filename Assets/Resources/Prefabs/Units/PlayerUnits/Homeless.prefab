@@ -40,7 +40,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2832018176999540745}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -241,6 +241,7 @@ MonoBehaviour:
   _animator: {fileID: 3333687229592453987}
   _unitStatus: {fileID: 2152215704359047689}
   _strategyBehaviour: {fileID: 4384997640047782148}
+  _speed: 0
 --- !u!114 &6807192790718888921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,7 +277,6 @@ MonoBehaviour:
   <PlayerFlip>k__BackingField: {fileID: 0}
   PlayerAnimator: {fileID: 0}
   FreePlaceIndex: -1
-  _orderUniqueId1: 
 --- !u!114 &8006399352853797202
 MonoBehaviour:
   m_ObjectHideFlags: 0

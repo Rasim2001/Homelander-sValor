@@ -1,36 +1,47 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using Bonfire.Builds;
 using BuildProcessManagement;
 using BuildProcessManagement.Towers;
+using Flag;
+using FogOfWar;
+using Infastructure;
+using Infastructure.Data;
 using Infastructure.Services.AutomatizationService.Builders;
-using Infastructure.Services.Cards;
+using Infastructure.Services.BuildingRegistry;
+using Infastructure.Services.Fence;
+using Infastructure.Services.MarkerSignCoordinator;
 using Infastructure.Services.PlayerProgressService;
 using Infastructure.Services.ResourceLimiter;
 using Infastructure.Services.SafeBuildZoneTracker;
 using Infastructure.Services.UnitRecruiter;
 using Infastructure.StaticData.Building;
-using Infastructure.StaticData.RecourceElements;
 using Infastructure.StaticData.SpeachBuble.Player;
 using Infastructure.StaticData.StaticDataService;
-using Infastructure.StaticData.Unit;
+using MinimapCore;
 using UI.GameplayUI.BuildingCoinsUIManagement;
 using UI.GameplayUI.SpeachBubleUI;
 using Units;
-using Units.StrategyBehaviour;
-using Units.UnitStatusManagement;
+using Units.UnitStates;
 using UnityEngine;
+using Object = UnityEngine.Object;
+using Random = UnityEngine.Random;
 
 namespace Player.Orders
 {
     public class BuilderCommandExecutor : IBuilderCommandExecutor
     {
         private readonly ISafeBuildZone _safeBuildZone;
-        private readonly IExecuteOrdersService _executeOrdersService;
         private readonly IPersistentProgressService _progressService;
-        private readonly IFutureOrdersService _futureOrdersService;
         private readonly IStaticDataService _staticData;
-        private readonly IUnitsRecruiterService _unitsRecruiterService;
-        private readonly ICardTrackerService _cardTrackerService;
         private readonly IResourceLimiterService _resourceLimiterService;
+        private readonly ICoroutineRunner _coroutineRunner;
+        private readonly IBuildingRegistryService _buildingRegistryService;
+        private readonly IFogOfWarMinimap _fogOfWarMinimap;
+        private readonly IFenceService _fenceService;
+        private readonly IMarkerSignCoordinatorService _markerSignCoordinatorService;
 
         public Action OnBuildHappened { get; set; }
 
@@ -40,21 +51,23 @@ namespace Player.Orders
 
         public BuilderCommandExecutor(
             ISafeBuildZone safeBuildZone,
-            IExecuteOrdersService executeOrdersService,
             IPersistentProgressService progressService,
-            IFutureOrdersService futureOrdersService,
             IStaticDataService staticDataService,
-            IUnitsRecruiterService unitsRecruiterService,
-            ICardTrackerService cardTrackerService,
-            IResourceLimiterService resourceLimiterService)
+            IResourceLimiterService resourceLimiterService,
+            ICoroutineRunner coroutineRunner,
+            IBuildingRegistryService buildingRegistryService,
+            IFogOfWarMinimap fogOfWarMinimap,
+            IFenceService fenceService,
+            IMarkerSignCoordinatorService markerSignCoordinatorService)
         {
+            _coroutineRunner = coroutineRunner;
+            _buildingRegistryService = buildingRegistryService;
+            _fogOfWarMinimap = fogOfWarMinimap;
+            _fenceService = fenceService;
+            _markerSignCoordinatorService = markerSignCoordinatorService;
             _safeBuildZone = safeBuildZone;
-            _executeOrdersService = executeOrdersService;
             _progressService = progressService;
-            _futureOrdersService = futureOrdersService;
             _staticData = staticDataService;
-            _unitsRecruiterService = unitsRecruiterService;
-            _cardTrackerService = cardTrackerService;
             _resourceLimiterService = resourceLimiterService;
         }
 
@@ -69,48 +82,17 @@ namespace Player.Orders
             if (orderMarker == null)
                 return;
 
-            int freePlaceIndex = _executeOrdersService.FreePlaceIndex(orderMarker);
-            if (freePlaceIndex == -1 || !IsOrderExecutable(orderMarker))
+            if (!IsOrderExecutable(orderMarker))
                 return;
 
-            if (_safeBuildZone.IsNight)
-            {
-                if (_safeBuildZone.IsSafeZone(orderMarker.transform.position.x))
-                    GiveOrderToBuilders(orderMarker, freePlaceIndex);
-                else
-                {
-                    TryBuild(orderMarker, out bool canBuild);
-
-                    if (canBuild)
-                        _futureOrdersService.AddOrder(orderMarker);
-                }
-            }
+            if (_safeBuildZone.IsNight && _safeBuildZone.IsSafeZone(orderMarker.transform.position.x))
+                GiveOrderAfterBuildMode(orderMarker);
             else
-                GiveOrderToBuilders(orderMarker, freePlaceIndex);
+                GiveOrderAfterBuildMode(orderMarker);
 
             OnBuildHappened?.Invoke();
-            _unitsRecruiterService.RelocateRemainingUnitsToPlayer();
         }
 
-        public void StartHarvest(OrderMarker orderMarker)
-        {
-            if (orderMarker == null)
-                return;
-
-            int freePlaceIndex = _executeOrdersService.FreePlaceIndex(orderMarker);
-            if (freePlaceIndex == -1 || !IsOrderExecutable(orderMarker))
-                return;
-
-            if (_safeBuildZone.IsNight)
-            {
-                if (_safeBuildZone.IsSafeZone(orderMarker.transform.position.x))
-                    GiveHarvestOrder(orderMarker, freePlaceIndex);
-                else
-                    _futureOrdersService.AddOrder(orderMarker);
-            }
-            else
-                GiveHarvestOrder(orderMarker, freePlaceIndex);
-        }
 
         public void StartBuildAfterBuildingMode(OrderMarker orderMarker)
         {
@@ -120,121 +102,47 @@ namespace Player.Orders
             if (_safeBuildZone.IsNight)
             {
                 if (_safeBuildZone.IsSafeZone(orderMarker.transform.position.x))
-                    GiveOrderAfterBuildMode(orderMarker);
+                    _coroutineRunner.StartCoroutine(StartBuildCoroutine(orderMarker));
             }
             else
-                GiveOrderAfterBuildMode(orderMarker);
-
-            _futureOrdersService.AddOrder(orderMarker);
-            _unitsRecruiterService.RelocateRemainingUnitsToPlayer();
+                _coroutineRunner.StartCoroutine(StartBuildCoroutine(orderMarker));
         }
 
-        private void GiveHarvestOrder(OrderMarker orderMarker, int freePlaceIndex)
-        {
-            bool isSelectingUnit = false;
-
-            if (_selectUnitArrow.IsActive())
-            {
-                int correctIndex = _selectUnitArrow.SelectableUnitIndex - 1;
-                UnitTypeId unitType = _unitsRecruiterService.GetUnitType(correctIndex);
-
-                if (unitType == UnitTypeId.Builder)
-                {
-                    isSelectingUnit = true;
-                    _selectUnitArrow.UnSelectUnit();
-                }
-            }
-
-            UnitStatus unitStatus = isSelectingUnit
-                ? _unitsRecruiterService.ReleaseUnit(UnitTypeId.Anyone, _selectUnitArrow.SelectableUnitIndex - 1)
-                : _unitsRecruiterService.ReleaseUnit(UnitTypeId.Builder);
-
-            if (!orderMarker.IsStarted)
-                orderMarker.IsStarted = true;
-
-            if (unitStatus == null)
-                _futureOrdersService.AddOrder(orderMarker);
-            else
-            {
-                UnitMove unitMove = unitStatus.GetComponent<UnitMove>();
-                GiveOrderToBuilder(unitMove, orderMarker, freePlaceIndex);
-            }
-        }
 
         private void GiveOrderAfterBuildMode(OrderMarker orderMarker)
         {
-            int placesCount = orderMarker.Places.Count;
-            for (int i = 0; i < placesCount; i++)
-            {
-                int freePlaceIndex = _executeOrdersService.FreePlaceIndex(orderMarker);
-                if (freePlaceIndex != -1)
-                    ExecuteOrderForBuilders(orderMarker, freePlaceIndex);
-            }
-        }
-
-        private void GiveOrderToBuilders(OrderMarker orderMarker, int freePlaceIndex)
-        {
-            if (_selectUnitArrow.IsActive())
-            {
-                int correctIndex = _selectUnitArrow.SelectableUnitIndex - 1;
-                UnitTypeId unitType = _unitsRecruiterService.GetUnitType(correctIndex);
-
-                if (unitType == UnitTypeId.Builder)
-                {
-                    ExecuteOrderForBuilders(orderMarker, freePlaceIndex, true);
-                    _selectUnitArrow.UnSelectUnit();
-                }
-            }
-            else
-            {
-                ExecuteOrderForBuilders(orderMarker, freePlaceIndex);
-            }
-        }
-
-        private void ExecuteOrderForBuilders(OrderMarker orderMarker, int freePlaceIndex, bool isSelectingUnit = false)
-        {
-            UnitStatus unitStatus = isSelectingUnit
-                ? _unitsRecruiterService.ReleaseUnit(UnitTypeId.Anyone, _selectUnitArrow.SelectableUnitIndex - 1)
-                : _unitsRecruiterService.ReleaseUnit(UnitTypeId.Builder);
-
             TryBuild(orderMarker, out bool canBuild);
 
             if (!canBuild)
                 return;
 
-            if (unitStatus == null)
-                _futureOrdersService.AddOrder(orderMarker);
-            else
-            {
-                UnitMove unitMove = unitStatus.GetComponent<UnitMove>();
-                GiveOrderToBuilder(unitMove, orderMarker, freePlaceIndex);
-            }
+            RegisterBuild(orderMarker);
+            _coroutineRunner.StartCoroutine(StartBuildCoroutine(orderMarker));
         }
 
         private void TryBuild(OrderMarker orderMarker, out bool canBuild)
         {
+            Debug.Log("TryBuild");
+
             BuildInfo buildInfo = orderMarker.GetComponent<BuildInfo>();
 
             BuildingUpgradeData buildingUpgradeNextData =
                 _staticData.ForBuilding(buildInfo.BuildingTypeId, buildInfo.NextBuildingLevelId, buildInfo.CardKey);
 
-            if (buildingUpgradeNextData == null && (!orderMarker.IsMarkered || !orderMarker.IsStarted))
+            if (buildingUpgradeNextData == null && !orderMarker.IsStarted)
             {
                 canBuild = false;
                 return;
             }
 
-            if (!orderMarker.IsStarted && orderMarker.OrderID == OrderID.Build)
+            if (!orderMarker.IsStarted)
             {
                 BuildingCoinsUI buildingCoinsUI = orderMarker.GetComponentInChildren<BuildingCoinsUI>();
                 buildingCoinsUI.PlaySpendAnimation(buildingUpgradeNextData.CoinsValue, orderMarker.transform);
 
                 _progressService.PlayerProgress.CoinData.Spend(buildingUpgradeNextData.CoinsValue);
-
-                MarkingBuild markingBuild = orderMarker.GetComponent<MarkingBuild>();
-                markingBuild.InitializeNextBuild();
-                markingBuild.StartBuild();
             }
+
 
             canBuild = true;
         }
@@ -253,10 +161,10 @@ namespace Player.Orders
             if (visibilityZone != null && visibilityZone.HasVisiableEnemy)
                 return false;
 
-            if (!orderMarker.IsMarkered && buildingUpgradeNextData == null)
+            if (buildingUpgradeNextData == null)
                 return false;
 
-            if (!orderMarker.IsMarkered && orderMarker.OrderID == OrderID.Build &&
+            if (orderMarker.OrderID == OrderID.Build &&
                 !_progressService.PlayerProgress.CoinData.IsEnoughCoins(buildingUpgradeNextData.CoinsValue))
             {
                 _speachBuble.UpdateSpeach(SpeachBubleId.Coins);
@@ -266,12 +174,191 @@ namespace Player.Orders
             return true;
         }
 
-        private void GiveOrderToBuilder(UnitMove unitMove, OrderMarker orderMarker, int freePlaceIndex)
+        private void RegisterBuild(OrderMarker orderMarker)
         {
-            BuilderBehaviour builderBehaviour =
-                unitMove.GetComponentInChildren<BuilderBehaviour>();
-            _executeOrdersService.ExecuteOrder(builderBehaviour, orderMarker, freePlaceIndex,
-                _futureOrdersService.RemoveCompletedOrder, _futureOrdersService.ContinueExecuteOrders);
+            MarkingBuild markingBuild = orderMarker.GetComponent<MarkingBuild>();
+            markingBuild.InitializeNextBuild();
+            markingBuild.StartBuild();
+        }
+
+        private IEnumerator StartBuildCoroutine(OrderMarker orderMarker)
+        {
+            _markerSignCoordinatorService.AddMarker(orderMarker);
+
+            BuildInfo buildInfo = orderMarker.GetComponent<BuildInfo>();
+            BuildingProgress buildingProgress = orderMarker.GetComponent<BuildingProgress>();
+
+            while (buildInfo.CurrentWoodsCount > 0)
+            {
+                buildingProgress.BuildWoods();
+
+                yield return new WaitForSeconds(0.25f);
+            }
+
+            _markerSignCoordinatorService.RemoveMarker(orderMarker);
+
+            ShowNewBuild(orderMarker);
+        }
+
+        private void ShowNewBuild(OrderMarker orderMarker)
+        {
+            orderMarker.IsStarted = false;
+
+            BuildingProgress buildingProgress = orderMarker.GetComponent<BuildingProgress>();
+
+            _fogOfWarMinimap.UpdateFogPosition(orderMarker.transform.position.x);
+
+            ShowBarricadeFlag(orderMarker);
+            ShowUpgradedBuild(orderMarker);
+            ClearOldBuildingProgress(orderMarker);
+
+            buildingProgress.ShakeAllWoods(5,
+                () => _coroutineRunner.StartCoroutine(FinishBuildAnimationCoroutine(orderMarker)));
+        }
+
+        private void ClearOldBuildingProgress(OrderMarker orderMarker)
+        {
+            UniqueId uniqueId = orderMarker.GetComponent<UniqueId>();
+
+            BuildingProgressData savedData =
+                _progressService.PlayerProgress.WorldData.BuildingProgressData.FirstOrDefault(x =>
+                    x.UniqueId == uniqueId.Id);
+
+            _progressService.PlayerProgress.WorldData.BuildingProgressData.Remove(savedData);
+        }
+
+        private void ShowUpgradedBuild(OrderMarker orderMarker)
+        {
+            BuildInfo buildInfo = orderMarker.GetComponent<BuildInfo>();
+
+            if (buildInfo.NextBuild != null)
+            {
+                DecorOnBuild decorOnBuild = buildInfo.GetComponent<DecorOnBuild>();
+                decorOnBuild?.Hide();
+
+                buildInfo.NextBuild.SetActive(true);
+            }
+        }
+
+        private void ShowBarricadeFlag(OrderMarker orderMarker)
+        {
+            BuildInfo buildInfo = orderMarker.GetComponent<BuildInfo>();
+
+            FlagActivator currentFlag = orderMarker.GetComponentInChildren<FlagActivator>();
+            FlagActivator nextFlag = buildInfo.NextBuild.GetComponentInChildren<FlagActivator>();
+
+            if (currentFlag == null && nextFlag == null)
+                return;
+
+            if (currentFlag == nextFlag)
+                nextFlag.SpawnFlag();
+            else if (currentFlag.HasFlag())
+                nextFlag.Initialize(currentFlag.GetFlag());
+
+            _fenceService.BuildFence((int)orderMarker.transform.position.x);
+        }
+
+
+        private IEnumerator FinishBuildAnimationCoroutine(OrderMarker orderMarker)
+        {
+            EnableFirstBuild(orderMarker);
+
+            BuildInfo buildInfo = orderMarker.GetComponent<BuildInfo>();
+
+            float centerOfWoodsX = buildInfo.GetComponentInChildren<WoodBuild>().transform.localPosition.x;
+            float centerOfScaffoldsX = buildInfo.GetComponentInChildren<ScaffoldsBuild>().transform.localPosition.x;
+
+            List<GameObject> woodsList = buildInfo.WoodsList.ToList();
+            List<GameObject> scaffoldsList = buildInfo.ScaffoldsList.ToList();
+
+            yield return AnimateBuildObjects(woodsList, centerOfWoodsX);
+            yield return AnimateBuildObjects(scaffoldsList, centerOfScaffoldsX);
+
+            RegisterNewBuild(orderMarker);
+            DestroyPreviousBuild(orderMarker);
+        }
+
+        private void DestroyPreviousBuild(OrderMarker currentOrderMarker)
+        {
+            currentOrderMarker.GetComponent<BoxCollider2D>().enabled = true;
+
+            BuildInfo buildInfo = currentOrderMarker.GetComponent<BuildInfo>();
+            BuildingProgress buildingProgress = buildInfo.GetComponent<BuildingProgress>();
+
+            if (currentOrderMarker.gameObject != buildInfo.NextBuild.gameObject)
+            {
+                _buildingRegistryService.RemoveBuild(buildInfo);
+                Object.Destroy(currentOrderMarker.gameObject);
+            }
+            else
+                DeleteMarkingBuild(buildInfo, buildingProgress);
+        }
+
+        private void DeleteMarkingBuild(BuildInfo buildInfo, BuildingProgress buildingProgress)
+        {
+            List<GameObject> currentWoodsList = new List<GameObject>(buildInfo.WoodsList);
+            List<GameObject> currentScaffoldsList = new List<GameObject>(buildInfo.ScaffoldsList);
+
+            foreach (GameObject woods in currentWoodsList)
+                Object.Destroy(woods.gameObject);
+
+            foreach (GameObject scaffold in currentScaffoldsList)
+                Object.Destroy(scaffold.gameObject);
+
+            buildInfo.WoodsList.Clear();
+            buildInfo.ScaffoldsList.Clear();
+            buildingProgress.Clear();
+
+            buildInfo.CurrentWoodsCount = 0;
+        }
+
+        private void RegisterNewBuild(OrderMarker currentOrderMarker)
+        {
+            currentOrderMarker.GetComponent<BoxCollider2D>().enabled = false;
+
+            Minimap minimap = currentOrderMarker.GetComponentInChildren<Minimap>();
+            minimap.HideUpgradedProcess();
+
+            BuildInfo buildInfo = currentOrderMarker.GetComponent<BuildInfo>();
+
+            BuildInfo nextBuildInfo = buildInfo.NextBuild.GetComponent<BuildInfo>();
+            _buildingRegistryService.AddBuild(nextBuildInfo);
+        }
+
+        private void EnableFirstBuild(OrderMarker currentOrderMarker)
+        {
+            BuildInfo buildInfo = currentOrderMarker.GetComponent<BuildInfo>();
+
+            if (currentOrderMarker.gameObject == buildInfo.NextBuild.gameObject)
+            {
+                Minimap minimap = currentOrderMarker.GetComponentInChildren<Minimap>();
+                minimap.Show();
+
+                DecorOnBuild decorOnBuild = currentOrderMarker.GetComponent<DecorOnBuild>();
+                decorOnBuild?.Show();
+            }
+        }
+
+        private IEnumerator AnimateBuildObjects(IEnumerable<GameObject> objects, float centerX)
+        {
+            foreach (GameObject obj in objects)
+            {
+                Rigidbody2D rb = obj.GetComponent<Rigidbody2D>();
+                if (rb != null)
+                    AddRandomMovement(rb, centerX);
+            }
+
+            yield return new WaitForSeconds(0.75f);
+        }
+
+        private void AddRandomMovement(Rigidbody2D woodRb, float centerOfBuildX)
+        {
+            float deltaX = woodRb.transform.localPosition.x - centerOfBuildX;
+            int randomHeight = Random.Range(3, 7);
+            int randomX = Random.Range(-2, 2);
+
+            woodRb.gravityScale = 1.5f;
+            woodRb.AddRelativeForce(new Vector2(deltaX + randomX, randomHeight), ForceMode2D.Impulse);
         }
     }
 }

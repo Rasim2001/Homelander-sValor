@@ -1,13 +1,17 @@
 using System;
+using Infastructure.Factories.GameFactories;
 using Infastructure.Services.AutomatizationService.Homeless;
 using Infastructure.Services.PlayerProgressService;
 using Infastructure.Services.PurchaseDelay;
 using Infastructure.StaticData.StaticDataService;
+using Infastructure.StaticData.Unit;
 using Infastructure.StaticData.Workshop;
 using UI.GameplayUI;
 using UI.GameplayUI.BuildingCoinsUIManagement;
 using Units;
+using Units.StrategyBehaviour;
 using Units.UnitStates;
+using Units.UnitStatusManagement;
 using UnityEngine;
 using Zenject;
 
@@ -36,19 +40,25 @@ namespace BuildProcessManagement.WorkshopBuilding
         private Coroutine _coroutine;
         private Animator _vendorAnimator;
 
+        private bool _isActiveVendorOrder;
+        private IGameFactory _gameFactory;
+
+
         [Inject]
         public void Construct(
             IWorkshopService workshopService,
             IStaticDataService staticDataService,
             IPersistentProgressService progressService,
             IHomelessOrdersService homelessOrdersService,
-            IPurchaseDelayService purchaseDelayService)
+            IPurchaseDelayService purchaseDelayService,
+            IGameFactory gameFactory)
         {
             _workshopService = workshopService;
             _staticDataService = staticDataService;
             _progressService = progressService;
             _homelessOrdersService = homelessOrdersService;
             _purchaseDelayService = purchaseDelayService;
+            _gameFactory = gameFactory;
         }
 
         private void Awake() =>
@@ -84,12 +94,11 @@ namespace BuildProcessManagement.WorkshopBuilding
         {
             WorkshopStaticData workshopData = _staticDataService.ForWorkshop(_workshopInfo.WorkshopItemId);
 
-            if (HasAvailableItem() && IsEnoughCoins(workshopData))
+            if (HasAvailableItem() && IsEnoughCoins(workshopData) && HasVendor)
             {
                 SpendCoins(workshopData);
                 CreateItem();
-
-                _homelessOrdersService.ContinueExecuteOrders();
+                BindToWorkshop();
             }
         }
 
@@ -101,6 +110,21 @@ namespace BuildProcessManagement.WorkshopBuilding
 
         public bool IsEmpty() =>
             _index <= 0;
+
+        private void BindToWorkshop()
+        {
+            UnitStatus unitStatus = _gameFactory.CreateUnit(UnitTypeId.Homeless).GetComponent<UnitStatus>();
+
+            SpriteRenderer homelessSpriteRender = unitStatus.GetComponent<SpriteRenderer>();
+            homelessSpriteRender.maskInteraction = SpriteMaskInteraction.VisibleOutsideMask;
+
+            HomelessBehaviour homelessBehaviour =
+                unitStatus.GetComponentInChildren<HomelessBehaviour>();
+
+            homelessBehaviour
+                .PlayHomelessOrderBehavior(this, transform.position.x,
+                    () => { _homelessOrdersService.CompleteOrder(this, unitStatus); });
+        }
 
         private void CreateItem()
         {
