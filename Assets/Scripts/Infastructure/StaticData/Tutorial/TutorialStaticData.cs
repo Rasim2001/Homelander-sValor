@@ -23,5 +23,7 @@ namespace Infastructure.StaticData.Tutorial
         MainFlagFinishBuildEvent = 4,
         BarricadeStartBuildEvent = 5,
         BarricadeFinishBuildEvent = 6,
+        BarricadeBuildingEvent = 7,
+        AttackStartEvent = 8,
     }
 }

@@ -29,11 +29,17 @@ namespace Infastructure.Services.Tutorial
 
         private ITutorialStateMachine _tutorialStateMachine;
 
-        public TutorialService(IGameWindowService gameWindowService, IInputService inputService,
-            ICristalTimeline cristalTimeline, ITutorialArrowDisplayer arrowDisplayer,
-            IPlayerRegistryService playerRegistryService, IStaticDataService staticDataService,
-            IUpgradeMainFlag upgradeMainFlag, IBuilderCommandExecutor builderCommandExecutor,
-            ICallNightService callNightService, ITutorialProgressService tutorialProgressService)
+        public TutorialService(
+            IGameWindowService gameWindowService,
+            IInputService inputService,
+            ICristalTimeline cristalTimeline,
+            ITutorialArrowDisplayer arrowDisplayer,
+            IPlayerRegistryService playerRegistryService,
+            IStaticDataService staticDataService,
+            IUpgradeMainFlag upgradeMainFlag,
+            IBuilderCommandExecutor builderCommandExecutor,
+            ICallNightService callNightService,
+            ITutorialProgressService tutorialProgressService)
         {
             _gameWindowService = gameWindowService;
             _inputService = inputService;
@@ -65,11 +71,16 @@ namespace Infastructure.Services.Tutorial
                     _gameWindowService, _builderCommandExecutor),
                 new CallNightTutorialState(_tutorialProgressService, _tutorialStateMachine, _gameWindowService,
                     _callNightService),
+                new AttackTutorialState(_tutorialProgressService, _tutorialStateMachine, _inputService,
+                    _staticDataService, _gameWindowService),
                 new UnknownTutorialState()
             };
 
             _tutorialStateMachine.Initialize(state);
         }
+
+        public void ChangeState<TState>() where TState : ITutorialState =>
+            _tutorialStateMachine.ChangeState<TState>();
 
         public void Tick() =>
             _tutorialStateMachine?.Update();

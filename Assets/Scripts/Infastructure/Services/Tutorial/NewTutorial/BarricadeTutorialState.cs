@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using _Tutorial;
 using _Tutorial.NewTutorial;
@@ -28,6 +29,7 @@ namespace Infastructure.Services.Tutorial.NewTutorial
         private GameObject _forDeleteDummy;
 
         private int _amountOfBarricades;
+        private List<TutorialData> _tutorialDatas;
 
         public BarricadeTutorialState(
             ITutorialProgressService tutorialProgressService,
@@ -52,12 +54,18 @@ namespace Infastructure.Services.Tutorial.NewTutorial
 
             _tutorialProgressService.IsBuildingStateReadyToUse = true;
 
+            _tutorialDatas = _staticDataService.TutorialStaticData.TutorialObjects.Where(x =>
+                x.TypeId == TutorialObjectTypeId.Barricade).ToList();
+
             InitializeArrow();
             InitializeText();
         }
 
         public void Exit()
         {
+            Object.Destroy(_forDeleteDummy);
+            Object.Destroy(_forDeleteWindow.gameObject);
+
             _builderCommandExecutor.OnBuildFinished -= BuildFinished;
             _builderCommandExecutor.OnBuildStarted -= StartBuild;
         }
@@ -70,14 +78,26 @@ namespace Infastructure.Services.Tutorial.NewTutorial
         {
             _amountOfBarricades++;
 
+            _tutorialArrowDisplayer.Hide(_forDeleteDummy.transform);
+
             if (_amountOfBarricades == 2)
                 _stateMachine.ChangeState<CallNightTutorialState>();
-            else
-                _tutorialArrowDisplayer.Hide(_forDeleteDummy.transform);
         }
 
-        private void BuildFinished() =>
-            DestroyAsync().Forget();
+        private void BuildFinished()
+        {
+            InitializeArrow();
+
+            string text = _staticDataService.TutorialStaticData.Infos
+                .FirstOrDefault(x => x.Key == TutorialEventData.BarricadeFinishBuildEvent).Value;
+
+            string buildingText = _staticDataService.TutorialStaticData.Infos
+                .FirstOrDefault(x => x.Key == TutorialEventData.BarricadeBuildingEvent).Value;
+
+            text += $"<br>{buildingText} : {_amountOfBarricades}/2";
+
+            _forDeleteWindow.Initialize(text);
+        }
 
         private void InitializeText()
         {
@@ -91,26 +111,16 @@ namespace Infastructure.Services.Tutorial.NewTutorial
 
         private void InitializeArrow()
         {
-            TutorialData tutorialData = _staticDataService.TutorialStaticData.TutorialObjects.FirstOrDefault(x =>
-                x.TypeId == TutorialObjectTypeId.Barricade);
+            TutorialData tutorialData = _tutorialDatas.FirstOrDefault();
+            if (tutorialData == null)
+                return;
+
+            _tutorialDatas.Remove(tutorialData);
 
             _forDeleteDummy = new GameObject("DeleteDummy");
             _forDeleteDummy.transform.position = tutorialData.Position;
 
             _tutorialArrowDisplayer.Show(_forDeleteDummy.transform);
-        }
-
-        private async UniTask DestroyAsync()
-        {
-            string text = _staticDataService.TutorialStaticData.Infos
-                .FirstOrDefault(x => x.Key == TutorialEventData.BarricadeFinishBuildEvent).Value;
-
-            _forDeleteWindow.Initialize(text);
-
-            await UniTask.Delay(TimeSpan.FromSeconds(4));
-
-            Object.Destroy(_forDeleteDummy);
-            Object.Destroy(_forDeleteWindow.gameObject);
         }
     }
 }

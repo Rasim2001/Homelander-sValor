@@ -1,4 +1,7 @@
 using BuildProcessManagement;
+using Infastructure.Services.Tutorial;
+using Infastructure.Services.Tutorial.NewTutorial;
+using Infastructure.Services.Tutorial.TutorialProgress;
 using MinimapCore;
 using Player.Orders;
 using UnityEngine;
@@ -15,6 +18,8 @@ namespace HealthSystem
         [SerializeField] private DestructionProgress _destructionProgress;
 
         private IDestroyCommandExecutor _destroyCommandExecutor;
+        private ITutorialProgressService _tutorialProgressService;
+        private ITutorialService _tutorialService;
 
         [field: SerializeField] public int CurrentHP { get; set; }
         [field: SerializeField] public int MaxHp { get; set; }
@@ -22,8 +27,13 @@ namespace HealthSystem
 
 
         [Inject]
-        public void Construct(IDestroyCommandExecutor destroyCommandExecutor) =>
+        public void Construct(IDestroyCommandExecutor destroyCommandExecutor,
+            ITutorialProgressService tutorialProgressService, ITutorialService tutorialService)
+        {
+            _tutorialService = tutorialService;
+            _tutorialProgressService = tutorialProgressService;
             _destroyCommandExecutor = destroyCommandExecutor;
+        }
 
         public void Initialize(int hp)
         {
@@ -36,6 +46,9 @@ namespace HealthSystem
 
         public void TakeDamage(int damage)
         {
+            if (!_tutorialProgressService.IsAttackReadyToUse)
+                _tutorialService.ChangeState<AttackTutorialState>();
+
             if (_orderMarker.OrderID == OrderID.Build)
                 _orderMarker.OrderID = OrderID.Heal;
 
