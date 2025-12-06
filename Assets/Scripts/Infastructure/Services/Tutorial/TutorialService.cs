@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using _Tutorial.NewTutorial;
 using Bonfire;
 using CutScenes;
 using Infastructure.Services.CallNight;
+using Infastructure.Services.EnemyWaves;
 using Infastructure.Services.InputPlayerService;
 using Infastructure.Services.PlayerRegistry;
 using Infastructure.Services.Tutorial.NewTutorial;
@@ -14,7 +16,7 @@ using Zenject;
 
 namespace Infastructure.Services.Tutorial
 {
-    public class TutorialService : ITutorialService, ITickable
+    public class TutorialService : ITutorialService, ITickable, IDisposable
     {
         private readonly IGameWindowService _gameWindowService;
         private readonly IInputService _inputService;
@@ -26,6 +28,7 @@ namespace Infastructure.Services.Tutorial
         private readonly IBuilderCommandExecutor _builderCommandExecutor;
         private readonly ICallNightService _callNightService;
         private readonly ITutorialProgressService _tutorialProgressService;
+        private readonly IEnemyWavesService _enemyWavesService;
 
         private ITutorialStateMachine _tutorialStateMachine;
 
@@ -39,7 +42,8 @@ namespace Infastructure.Services.Tutorial
             IUpgradeMainFlag upgradeMainFlag,
             IBuilderCommandExecutor builderCommandExecutor,
             ICallNightService callNightService,
-            ITutorialProgressService tutorialProgressService)
+            ITutorialProgressService tutorialProgressService,
+            IEnemyWavesService enemyWavesService)
         {
             _gameWindowService = gameWindowService;
             _inputService = inputService;
@@ -51,28 +55,46 @@ namespace Infastructure.Services.Tutorial
             _builderCommandExecutor = builderCommandExecutor;
             _callNightService = callNightService;
             _tutorialProgressService = tutorialProgressService;
+            _enemyWavesService = enemyWavesService;
         }
 
         public void Initialize()
+        {
+            SubscribeOnUpdates();
+            InitializeStateMachine();
+        }
+
+        public void Dispose() =>
+            _enemyWavesService.OnWaveCompleted -= WaveCompleted;
+
+        private void SubscribeOnUpdates() =>
+            _enemyWavesService.OnWaveCompleted += WaveCompleted;
+
+        private void InitializeStateMachine()
         {
             _tutorialStateMachine = new TutorialStateMachine();
 
             List<ITutorialState> state = new List<ITutorialState>()
             {
-                new MovementTutorialState(_tutorialStateMachine, _gameWindowService, _inputService),
-                new CutSceneTutorialState(_tutorialStateMachine, _cristalTimeline, _arrowDisplayer, _gameWindowService),
+                new MovementTutorialState(_tutorialStateMachine, _gameWindowService, _inputService, _staticDataService),
+                new CutSceneTutorialState(_tutorialStateMachine, _cristalTimeline, _arrowDisplayer, _gameWindowService,
+                    _staticDataService),
                 new AccelerationTutorialState(_tutorialProgressService, _tutorialStateMachine, _gameWindowService,
-                    _playerRegistryService),
+                    _playerRegistryService, _staticDataService),
                 new MainFlagTutorialState(_tutorialProgressService, _tutorialStateMachine, _arrowDisplayer,
-                    _gameWindowService,
-                    _staticDataService, _upgradeMainFlag),
+                    _gameWindowService, _staticDataService, _upgradeMainFlag),
+                new MainFlagSecondTutorialState(_tutorialProgressService, _tutorialStateMachine, _arrowDisplayer,
+                    _gameWindowService, _staticDataService, _upgradeMainFlag),
+                new MainFlagThirdTutorialState(_tutorialProgressService, _tutorialStateMachine, _arrowDisplayer,
+                    _gameWindowService, _staticDataService, _upgradeMainFlag),
                 new BarricadeTutorialState(_tutorialProgressService, _tutorialStateMachine, _staticDataService,
-                    _arrowDisplayer,
-                    _gameWindowService, _builderCommandExecutor),
+                    _arrowDisplayer, _gameWindowService, _builderCommandExecutor),
                 new CallNightTutorialState(_tutorialProgressService, _tutorialStateMachine, _gameWindowService,
-                    _callNightService),
+                    _callNightService, _staticDataService),
                 new AttackTutorialState(_tutorialProgressService, _tutorialStateMachine, _inputService,
                     _staticDataService, _gameWindowService),
+                new TowerTutorialState(_tutorialProgressService, _tutorialStateMachine, _staticDataService,
+                    _arrowDisplayer, _gameWindowService, _builderCommandExecutor),
                 new UnknownTutorialState()
             };
 
@@ -84,5 +106,13 @@ namespace Infastructure.Services.Tutorial
 
         public void Tick() =>
             _tutorialStateMachine?.Update();
+
+        private void WaveCompleted(int waveId)
+        {
+            if (waveId == 0)
+                ChangeState<MainFlagSecondTutorialState>();
+            else if (waveId == 1)
+                ChangeState<MainFlagThirdTutorialState>();
+        }
     }
 }

@@ -13,19 +13,13 @@ MonoBehaviour:
   m_Name: Wave0
   m_EditorClassIdentifier: 
   WaveId: 0
-  TimeWaitOfDay: 250
-  TimeWaitOfNight: 190
+  TimeWaitOfDay: 50
+  TimeWaitOfNight: 50
   TimeBetweenMicroWaves: 10
   PassedWaveCoins: 5
   PreNightPreparationTimeInSeconds: 10
   MicroWavesInfo:
     Waves:
-    - EnemyTypeId: 0
-      Amount: 2
-      TimeBetweenSpawnEnemy: 1
-    - EnemyTypeId: 0
-      Amount: 2
-      TimeBetweenSpawnEnemy: 1
     - EnemyTypeId: 0
       Amount: 2
       TimeBetweenSpawnEnemy: 1

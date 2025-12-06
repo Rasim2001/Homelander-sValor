@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using Infastructure.StaticData.Lights;
 using UnityEngine;
@@ -7,6 +8,8 @@ namespace DayCycle
 {
     public class DayCycleUpdater : MonoBehaviour
     {
+        [SerializeField] private AnimationCurve _dayCurve;
+
         private static readonly int TimeFactor = Shader.PropertyToID("_TimeFactor");
         private static readonly int TimeFactorNight = Shader.PropertyToID("_TimeFactorNight");
         private static readonly int TimeFactorDay = Shader.PropertyToID("_TimeFactorDay");
@@ -41,6 +44,9 @@ namespace DayCycle
         [SerializeField] private SpriteRenderer _sunSpriteRender;
         [SerializeField] private Material _material;
 
+        public float CurrentDayTime { get; private set; }
+        public float CurrentNightime { get; private set; }
+
         private GradientField _moonNormalGradient;
         private GradientField _moonMaskGradient;
 
@@ -61,6 +67,9 @@ namespace DayCycle
         private GradientField _globalLightGradient;
         private GradientField _globalLightBGGradient;
         private GradientField _globalLightMGGradient;
+
+        private bool _isForcingNight;
+        private bool _isForcingDay;
 
         private float _dayTime;
         private float _nightTime;
@@ -156,6 +165,9 @@ namespace DayCycle
             _material.SetFloat(TimeFactor, 0);
             _material.SetFloat(TimeFactorDay, 0);
             _material.SetFloat(TimeFactorNight, 1);
+
+            CurrentNightime = 0;
+            CurrentDayTime = 0;
         }
 
 
@@ -175,7 +187,7 @@ namespace DayCycle
 
             _dayTween = _dayCycleTransform
                 .DOLocalRotate(new Vector3(0, 0, -90f), _dayTime)
-                .SetEase(Ease.Linear)
+                .SetEase(_dayCurve)
                 .SetUpdate(UpdateType.Normal)
                 .OnUpdate(() =>
                 {
@@ -183,6 +195,7 @@ namespace DayCycle
                         return;
 
                     float currentDayTime = _dayTween.Elapsed();
+                    CurrentDayTime = currentDayTime;
 
                     UpdateGlobalLights(currentDayTime, _dayTime + _nightTime);
                     UpdateDayLights(currentDayTime, _dayTime);
@@ -201,7 +214,7 @@ namespace DayCycle
 
             _nightTween = _dayCycleTransform
                 .DOLocalRotate(new Vector3(0, 0, -270f), _nightTime)
-                .SetEase(Ease.Linear)
+                .SetEase(_dayCurve)
                 .SetUpdate(UpdateType.Normal)
                 .OnUpdate(() =>
                 {
@@ -209,6 +222,25 @@ namespace DayCycle
                         return;
 
                     float currentNightTime = _nightTween.Elapsed();
+                    CurrentNightime = currentNightTime;
+
+                    if (currentNightTime < _nightTime * _sunriseInPercent)
+                    {
+                        if (!_isForcingNight)
+                            ChangeSequenceTimeScale(10);
+                    }
+
+                    else if (currentNightTime > _nightTime * _sunsetInPercent)
+                    {
+                        if (!_isForcingDay)
+                            ChangeSequenceTimeScale(0);
+                    }
+                    else if (currentNightTime > _nightTime * _sunriseInPercent &&
+                             currentNightTime < _nightTime * _dayInPercent)
+                    {
+                        if (!_isForcingNight)
+                            ChangeSequenceTimeScale(1);
+                    }
 
                     UpdateGlobalLights(_dayTime + currentNightTime, _dayTime + _nightTime);
                     UpdateNightLights(currentNightTime, _nightTime);
@@ -291,6 +323,9 @@ namespace DayCycle
         {
             float timeFactor = Mathf.Lerp(1f, 0f, sunriseProgress / sunriseDuration);
             _material.SetFloat(TimeFactorNight, timeFactor);
+
+            if (!_isForcingNight)
+                ChangeSequenceTimeScale(10);
         }
 
         private void UpdateSunset(float sunsetProgress, float sunsetDuration)
@@ -298,52 +333,81 @@ namespace DayCycle
             float timeFactor = Mathf.Lerp(0, 1, sunsetProgress / sunsetDuration);
             _material.SetFloat(TimeFactor, timeFactor);
             _material.SetFloat(TimeFactorNight, timeFactor);
+
+            if (!_isForcingNight)
+                ChangeSequenceTimeScale(0);
         }
 
         private void UpdateDay(float dayProgress, float dayInPercent)
         {
             float timeFactor = Mathf.Lerp(0, 1, dayProgress / dayInPercent);
             _material.SetFloat(TimeFactorDay, timeFactor);
+
+            if (!_isForcingNight)
+                ChangeSequenceTimeScale(1);
         }
 
 
-        public void ForceNight()
+        public void ForceNight(Action onCompleted = null)
         {
-            _sequence.Kill();
-            _dayTween.Kill();
+            if (_dayTween == null || !_dayTween.IsActive())
+                return;
 
-            _material.SetFloat(TimeFactor, 1);
-            _material.SetFloat(TimeFactorNight, 1);
-            _dayCycleTransform.rotation = Quaternion.Euler(0, 0, -90f);
+            float remainingDay = 0;
 
-            UpdateDayLights(_dayTime, _dayTime);
-            PrepareForNight();
+            if (_isForcingNight == false)
+            {
+                float elapsedDay = _dayTween.Elapsed();
+                remainingDay = Mathf.Max(0f, _dayTime - elapsedDay);
+            }
 
+            _isForcingNight = true;
 
-            _nightTween = _dayCycleTransform
-                .DOLocalRotate(new Vector3(0, 0, -270f), _nightTime)
-                .SetEase(Ease.Linear)
-                .SetUpdate(UpdateType.Normal)
-                .OnUpdate(() =>
-                {
-                    if (_nightTween == null)
-                        return;
+            if (remainingDay <= 0.01f)
+                return;
 
-                    float currentNightTime = _nightTween.Elapsed();
+            float speedMultiplier = remainingDay / 2f;
 
-                    UpdateNightLights(currentNightTime, _nightTime);
-                });
+            _sequence.timeScale = speedMultiplier;
+            _nightTween.OnStart(() =>
+            {
+                onCompleted?.Invoke();
+                _sequence.timeScale = 1;
+                _isForcingNight = false;
+            });
         }
 
 
-        public void ForceDay()
+        public void ForceDay(Action onCompleted = null)
         {
-            _sequence.Kill();
-            _nightTween.Kill();
+            if (_nightTween == null || !_nightTween.IsActive())
+                return;
 
-            _dayCycleTransform.rotation = Quaternion.Euler(0, 0, 90);
+            float remainingNight = 0;
 
-            UpdateNightLights(_nightTime, _nightTime);
+            if (_isForcingDay == false)
+            {
+                float elapsedNight = _nightTween.Elapsed();
+                remainingNight = Mathf.Max(0f, _nightTime - elapsedNight);
+            }
+
+            _isForcingDay = true;
+
+            if (remainingNight <= 0.01f)
+                return;
+
+            float speedMultiplier = remainingNight / 2f;
+
+            _sequence.timeScale = speedMultiplier;
+            _dayTween.OnStart(() =>
+            {
+                onCompleted?.Invoke();
+
+                _sequence.timeScale = 1;
+                _isForcingDay = false;
+
+                UpdateNightLights(_nightTime, _nightTime);
+            });
         }
 
         public void UpdateLightIntensity(LightTypeId lightType, float value)
@@ -524,6 +588,14 @@ namespace DayCycle
             _nightTween.Play();
         }
 
+
+        private void ChangeSequenceTimeScale(float value)
+        {
+            if (Mathf.Approximately(value, _sequence.timeScale))
+                return;
+
+            _sequence.timeScale = value;
+        }
 
 #if UNITY_EDITOR
 

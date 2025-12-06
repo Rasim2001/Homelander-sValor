@@ -28,25 +28,11 @@ MonoBehaviour:
     SchemeConfigs:
     - BuildingTypeId: 8
       Amount: 2
-    - BuildingTypeId: 16
-      Amount: 1
-    - BuildingTypeId: 13
-      Amount: 2
-    - BuildingTypeId: 12
-      Amount: 1
     RequiredBuildings:
-    - BuildingTypeId: 10
-      LevelId: 1
-      CardKey: -1
-      Amount: 1
     - BuildingTypeId: 1
       LevelId: 1
       CardKey: -1
       Amount: 2
-    - BuildingTypeId: 11
-      LevelId: 1
-      CardKey: -1
-      Amount: 1
   - LevelId: 3
     CoinsValue: 15
     Hp: 700
@@ -54,18 +40,4 @@ MonoBehaviour:
     SchemeConfigs:
     - BuildingTypeId: 12
       Amount: 1
-    - BuildingTypeId: 13
-      Amount: 5
-    - BuildingTypeId: 8
-      Amount: 5
-    - BuildingTypeId: 1
-      Amount: 5
-    RequiredBuildings:
-    - BuildingTypeId: 8
-      LevelId: 2
-      CardKey: 4
-      Amount: 1
-    - BuildingTypeId: 8
-      LevelId: 2
-      CardKey: 3
-      Amount: 1
+    RequiredBuildings: []

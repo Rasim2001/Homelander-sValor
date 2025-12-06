@@ -23,7 +23,14 @@ namespace Infastructure.StaticData.Tutorial
         MainFlagFinishBuildEvent = 4,
         BarricadeStartBuildEvent = 5,
         BarricadeFinishBuildEvent = 6,
-        BarricadeBuildingEvent = 7,
+        BuildingEvent = 7,
         AttackStartEvent = 8,
+        MainFlagSecondStartBuildEvent = 9,
+        MainFlagSecondFinishBuildEvent = 10,
+        CallNightEvent = 11,
+        TowerStartBuildEvent = 12,
+        TowerFinishBuildEvent = 13,
+        MainFlagThirdStartBuildEvent = 14,
+        MainFlagThirdFinishBuildEvent = 15,
     }
 }

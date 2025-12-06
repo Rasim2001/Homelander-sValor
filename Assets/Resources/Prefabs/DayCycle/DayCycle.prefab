@@ -131,6 +131,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbe0950ab314bd49d5d3d3967fcebee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dayCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.0030975342
+      value: 0
+      inSlope: 1.120486
+      outSlope: 1.120486
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.3277751
+    - serializedVersion: 3
+      time: 0.3
+      value: 0.26194835
+      inSlope: 0
+      outSlope: 1.0714743
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.5090925
+      outWeight: 0.22103816
+    - serializedVersion: 3
+      time: 0.7
+      value: 0.7
+      inSlope: 1.048836
+      outSlope: 0.00092089426
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.91732943
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1.5311795
+      outSlope: 1.5311795
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.2984191
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   _moonNormalLight: {fileID: 4258902052129432314}
   _moonMaskLight: {fileID: 4975462972933865993}
   _moonNormalBGLight: {fileID: 3610958008148709248}

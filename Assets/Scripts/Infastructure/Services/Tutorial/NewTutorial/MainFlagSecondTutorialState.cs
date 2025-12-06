@@ -7,9 +7,9 @@ using Infastructure.StaticData.Tutorial;
 
 namespace Infastructure.Services.Tutorial.NewTutorial
 {
-    public class MainFlagTutorialState : MainFlagTutorialStateBase
+    public class MainFlagSecondTutorialState : MainFlagTutorialStateBase
     {
-        public MainFlagTutorialState(
+        public MainFlagSecondTutorialState(
             ITutorialProgressService tutorialProgressService,
             ITutorialStateMachine stateMachine,
             ITutorialArrowDisplayer tutorialArrowDisplayer,
@@ -22,14 +22,14 @@ namespace Infastructure.Services.Tutorial.NewTutorial
         }
 
         protected override TutorialEventData StartEvent =>
-            TutorialEventData.MainFlagStartBuildEvent;
+            TutorialEventData.MainFlagSecondStartBuildEvent;
 
         protected override TutorialEventData FinishEvent =>
-            TutorialEventData.MainFlagFinishBuildEvent;
+            TutorialEventData.MainFlagSecondFinishBuildEvent;
 
-        protected override float FinishDelaySeconds => 4f;
+        protected override float FinishDelaySeconds => 2f;
 
-        protected override void OnAfterDummyCreated(TutorialStaticData data) =>
-            TutorialProgressService.IsGiveOrderReadyToUse = true;
+        protected override void OnUpgradeFinished() =>
+            StateMachine.ChangeState<TowerTutorialState>();
     }
 }

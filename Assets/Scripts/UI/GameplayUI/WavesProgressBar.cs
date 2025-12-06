@@ -10,13 +10,31 @@ namespace UI.GameplayUI
 
         private int _allSeconds;
         private Tween _waveTween;
+        private int _lastSeconds = -1;
 
-        public void InitializeWaves(int allSeconds) =>
+        public void InitializeWaves(int allSeconds)
+        {
             _allSeconds = allSeconds;
+            _fillImage.fillAmount = 0f;
+            _lastSeconds = -1;
+        }
 
         public void UpdateWavesBar(int currentSeconds)
         {
-            _waveTween = _fillImage.DOFillAmount((float)currentSeconds / _allSeconds, 1)
+            if (_allSeconds <= 0)
+                return;
+
+            if (currentSeconds == _lastSeconds)
+                return;
+
+            _lastSeconds = currentSeconds;
+
+            _waveTween?.Kill();
+
+            float target = Mathf.Clamp01((float)currentSeconds / _allSeconds);
+
+            _waveTween = _fillImage
+                .DOFillAmount(target, 0.2f)
                 .SetEase(Ease.Linear);
         }
 
