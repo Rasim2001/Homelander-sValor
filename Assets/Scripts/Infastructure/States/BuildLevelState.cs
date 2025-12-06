@@ -141,7 +141,7 @@ namespace Infastructure.States
 
         public void Initialize()
         {
-            _tutorialProgressService.TutorialStarted = true;
+            //_tutorialProgressService.TutorialStarted = true;
 
             _camera = Camera.main;
 
@@ -227,7 +227,7 @@ namespace Infastructure.States
             InitEnemyCrystals();
 
             _cristalTimeline.Initialize(playerObject.transform);
-            _tutorialService.Initialize();
+            //_tutorialService.Initialize();
         }
 
         private void InitEnemyCrystals()

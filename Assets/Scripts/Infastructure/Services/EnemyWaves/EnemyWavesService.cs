@@ -27,6 +27,7 @@ namespace Infastructure.Services.EnemyWaves
         private readonly IPersistentProgressService _progressService;
         private readonly ISaveLoadService _saveLoadService;
         private readonly IGameWindowService _gameWindowService;
+        public event Action<int> OnWaveCompleted;
 
         private WavesProgressBar _wavesProgressBar;
         private Coroutine _coroutine;
@@ -40,9 +41,8 @@ namespace Infastructure.Services.EnemyWaves
 
         private bool _isTimeFreezed;
 
-        private int timeWaitOfDay;
-        private int timeWaitOfNight;
-
+        private float _timeWaitOfDay;
+        private float timeWaitOfNight;
 
         public EnemyWavesService(
             IStaticDataService staticDataService,
@@ -88,25 +88,17 @@ namespace Infastructure.Services.EnemyWaves
             _coroutine = _coroutineRunner.StartCoroutine(StartWaveCycleCoroutine());
 
 
-        public void ForceNight()
-        {
-            timeWaitOfDay = 0;
-
+        public void ForceNight() =>
             _dayCycleUpdater.ForceNight();
-        }
+
+        public void ForceDay() =>
+            _dayCycleUpdater.ForceDay();
 
         public void FreezTimeEditor() =>
             _isTimeFreezed = true;
 
         public void UnFreezTimeEditor() =>
             _isTimeFreezed = false;
-
-        public void ForceDayEditor()
-        {
-            timeWaitOfNight = 0;
-
-            _dayCycleUpdater.ForceDay();
-        }
 
 
         private IEnumerator StartWaveCycleCoroutine()
@@ -121,7 +113,7 @@ namespace Infastructure.Services.EnemyWaves
             {
                 WaveStaticData waveStaticData = _staticDataService.ForWave(levelWaveId, i);
 
-                timeWaitOfDay = waveStaticData.TimeWaitOfDay;
+                _timeWaitOfDay = waveStaticData.TimeWaitOfDay;
                 timeWaitOfNight = waveStaticData.TimeWaitOfNight;
 
                 InitDayCycle(waveStaticData);
@@ -134,22 +126,22 @@ namespace Infastructure.Services.EnemyWaves
                 _evacuationService.ReleaseOfDefenseUnits();
                 _homelessOrdersService.ContinueExecuteOrders();
 
-                while (timeWaitOfDay > 0)
+                while (_timeWaitOfDay > 0)
                 {
                     _wavesProgressBar.UpdateWavesBar(timeAllWaves);
-                    timeWaitOfDay--;
+                    _timeWaitOfDay = waveStaticData.TimeWaitOfDay - _dayCycleUpdater.CurrentDayTime;
+
                     timeAllWaves++;
 
-                    if (timeWaitOfDay == waveStaticData.PreNightPreparationTimeInSeconds)
+                    if (Mathf.Approximately(_timeWaitOfDay, waveStaticData.PreNightPreparationTimeInSeconds))
                     {
                         _streetLightsService.ShowStreetLight();
                         _evacuationService.EvacuateAllUnits();
                     }
 
                     yield return new WaitUntil(() => !_isTimeFreezed);
-                    yield return new WaitForSeconds(1);
+                    yield return null;
                 }
-
 
                 _saveBuildZone.IsNight = true;
 
@@ -160,14 +152,20 @@ namespace Infastructure.Services.EnemyWaves
                 while (timeWaitOfNight > 0)
                 {
                     _wavesProgressBar.UpdateWavesBar(timeAllWaves);
-                    timeWaitOfNight--;
+                    timeWaitOfNight = waveStaticData.TimeWaitOfNight - _dayCycleUpdater.CurrentNightime;
+
                     timeAllWaves++;
 
+                    if (_waveEnemiesCountService.NumberOfEnemiesOnWave == 0)
+                        ForceDay();
+
                     yield return new WaitUntil(() => !_isTimeFreezed);
-                    yield return new WaitForSeconds(1);
+                    yield return null;
                 }
 
-                yield return new WaitUntil(() => _waveEnemiesCountService.NumberOfEnemiesOnWave == 0);
+                //yield return new WaitUntil(() => _waveEnemiesCountService.NumberOfEnemiesOnWave == 0);
+
+                CallTutorialEvent(i);
                 ResetCycleDay();
                 Save(i);
             }
@@ -178,6 +176,9 @@ namespace Infastructure.Services.EnemyWaves
             if (_coroutine != null)
                 _coroutineRunner.StopCoroutine(_coroutine);
         }
+
+        private void CallTutorialEvent(int waveId) =>
+            OnWaveCompleted?.Invoke(waveId);
 
         private int GetAllWavesSeconds()
         {

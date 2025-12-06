@@ -6,26 +6,34 @@ namespace UI.GameplayUI
     public class WaveNotificatorUI : MonoBehaviour
     {
         [SerializeField] private GameObject[] _arrows;
+        [SerializeField] private float _showTime = 3f;
 
-        private Coroutine _currentCoroutine;
+        private Coroutine[] _arrowCoroutines;
+
+        private void Awake() =>
+            _arrowCoroutines = new Coroutine[_arrows.Length];
 
         public void Notify(int direction)
         {
-            if (_currentCoroutine != null)
-                StopCoroutine(_currentCoroutine);
+            int index = direction == -1 ? 0 : 1;
 
-            _currentCoroutine = StartCoroutine(StartNotifyWave(direction));
+            if (_arrowCoroutines[index] != null)
+                StopCoroutine(_arrowCoroutines[index]);
+
+            _arrowCoroutines[index] = StartCoroutine(NotifyArrowRoutine(index));
         }
 
-        private IEnumerator StartNotifyWave(int direction)
+
+        private IEnumerator NotifyArrowRoutine(int index)
         {
-            _arrows[direction == -1 ? 0 : 1].SetActive(true);
+            GameObject arrow = _arrows[index];
 
-            yield return new WaitForSeconds(3);
+            arrow.SetActive(true);
 
-            _arrows[direction == -1 ? 0 : 1].SetActive(false);
+            yield return new WaitForSeconds(_showTime);
 
-            _currentCoroutine = null;
+            arrow.SetActive(false);
+            _arrowCoroutines[index] = null;
         }
     }
 }

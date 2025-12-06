@@ -208,7 +208,7 @@ namespace Editor.CheatCodes
             DiContainer container = sceneContext.Container;
 
             IEnemyWavesService wavesService = container.Resolve<IEnemyWavesService>();
-            wavesService.ForceDayEditor();
+            wavesService.ForceDay();
         }
 
         private static void CollectCoins(int count)
