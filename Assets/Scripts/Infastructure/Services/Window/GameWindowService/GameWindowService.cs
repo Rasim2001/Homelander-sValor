@@ -35,14 +35,8 @@ namespace Infastructure.Services.Window.GameWindowService
             switch (windowId)
             {
                 case WindowId.GameSettingsWindow:
-                    return _gameUIFactory.CreateGameSettingsWindow(WindowId.GameSettingsWindow);
-                case WindowId.MovementTutorialWindow:
-                case WindowId.CutsceneTutorialWindow:
-                case WindowId.AccelerationTutorialWindow:
-                case WindowId.MainFlagTutorialWindow:
-                case WindowId.BarricadeTutorialWindow:
-                case WindowId.CallingNightTutorialWindow:
-                case WindowId.AttackTutorialWindow:
+                    return _gameUIFactory.CreateGameSettingsWindow(windowId);
+                case WindowId.TutorialWindow:
                     return _gameUIFactory.CreateTutorialWindow(windowId);
             }
 

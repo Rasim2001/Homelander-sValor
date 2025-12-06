@@ -76,21 +76,25 @@ namespace Infastructure.Services.Tutorial
 
             List<ITutorialState> state = new List<ITutorialState>()
             {
-                new MovementTutorialState(_tutorialStateMachine, _gameWindowService, _inputService),
-                new CutSceneTutorialState(_tutorialStateMachine, _cristalTimeline, _arrowDisplayer, _gameWindowService),
+                new MovementTutorialState(_tutorialStateMachine, _gameWindowService, _inputService, _staticDataService),
+                new CutSceneTutorialState(_tutorialStateMachine, _cristalTimeline, _arrowDisplayer, _gameWindowService,
+                    _staticDataService),
                 new AccelerationTutorialState(_tutorialProgressService, _tutorialStateMachine, _gameWindowService,
-                    _playerRegistryService),
+                    _playerRegistryService, _staticDataService),
                 new MainFlagTutorialState(_tutorialProgressService, _tutorialStateMachine, _arrowDisplayer,
                     _gameWindowService, _staticDataService, _upgradeMainFlag),
                 new MainFlagSecondTutorialState(_tutorialProgressService, _tutorialStateMachine, _arrowDisplayer,
                     _gameWindowService, _staticDataService, _upgradeMainFlag),
+                new MainFlagThirdTutorialState(_tutorialProgressService, _tutorialStateMachine, _arrowDisplayer,
+                    _gameWindowService, _staticDataService, _upgradeMainFlag),
                 new BarricadeTutorialState(_tutorialProgressService, _tutorialStateMachine, _staticDataService,
-                    _arrowDisplayer,
-                    _gameWindowService, _builderCommandExecutor),
+                    _arrowDisplayer, _gameWindowService, _builderCommandExecutor),
                 new CallNightTutorialState(_tutorialProgressService, _tutorialStateMachine, _gameWindowService,
-                    _callNightService),
+                    _callNightService, _staticDataService),
                 new AttackTutorialState(_tutorialProgressService, _tutorialStateMachine, _inputService,
                     _staticDataService, _gameWindowService),
+                new TowerTutorialState(_tutorialProgressService, _tutorialStateMachine, _staticDataService,
+                    _arrowDisplayer, _gameWindowService, _builderCommandExecutor),
                 new UnknownTutorialState()
             };
 
@@ -107,6 +111,8 @@ namespace Infastructure.Services.Tutorial
         {
             if (waveId == 0)
                 ChangeState<MainFlagSecondTutorialState>();
+            else if (waveId == 1)
+                ChangeState<MainFlagThirdTutorialState>();
         }
     }
 }

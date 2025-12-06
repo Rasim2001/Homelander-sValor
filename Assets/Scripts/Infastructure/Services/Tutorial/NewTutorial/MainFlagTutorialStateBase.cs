@@ -24,7 +24,7 @@ namespace Infastructure.Services.Tutorial.NewTutorial
         protected readonly IUpgradeMainFlag UpgradeMainFlag;
         protected readonly IStaticDataService StaticDataService;
 
-        protected MainFlagTutorialWindow Window;
+        protected TutorialWindow Window;
         protected GameObject Dummy;
 
         protected MainFlagTutorialStateBase(
@@ -83,8 +83,8 @@ namespace Infastructure.Services.Tutorial.NewTutorial
 
             OnAfterDummyCreated(data);
 
-            Window = GameWindowService.OpenAndGet(WindowId.MainFlagTutorialWindow)
-                .GetComponent<MainFlagTutorialWindow>();
+            Window = GameWindowService.OpenAndGet(WindowId.TutorialWindow)
+                .GetComponent<TutorialWindow>();
             Window.Initialize(text);
         }
 

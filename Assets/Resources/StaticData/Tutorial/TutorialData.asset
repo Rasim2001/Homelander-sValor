@@ -40,7 +40,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 10
+      Data: 15
     - Name: 
       Entry: 7
       Data: 
@@ -187,12 +187,76 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 11
+    - Name: $v
+      Entry: 1
+      Data: 'CallNight '
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 12
+    - Name: $v
+      Entry: 1
+      Data: TowerStartBuildEvent
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 13
+    - Name: $v
+      Entry: 1
+      Data: TowerFinish build Event
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 14
+    - Name: $v
+      Entry: 1
+      Data: MainFlagThitrdStartBukdEvent
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 15
+    - Name: $v
+      Entry: 1
+      Data: "Finish \u043F\u043E\u0441\u0438\u0442\u0440\u0439\u0442\u0435 \u043F\u0430\u043B\u0430\u0442\u043A\u0438"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
   TutorialObjects:
+  - TypeId: 2
+    Position: {x: -7.42, y: -2.75, z: 0}
+  - TypeId: 2
+    Position: {x: 8.38, y: -2.75, z: 0}
   - TypeId: 1
     Position: {x: 11.41, y: -2.75, z: 0}
   - TypeId: 0

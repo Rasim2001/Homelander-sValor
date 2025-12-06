@@ -34,9 +34,9 @@ namespace Infastructure.Services.Tutorial.NewTutorial
         {
             _tutorialProgressService.IsAttackReadyToUse = true;
 
-            _forDeleteWindow = _gameWindowService.OpenAndGet(WindowId.AttackTutorialWindow);
+            _forDeleteWindow = _gameWindowService.OpenAndGet(WindowId.TutorialWindow);
 
-            AttackTutorialWindow attackTutorialWindow = _forDeleteWindow.GetComponent<AttackTutorialWindow>();
+            TutorialWindow attackTutorialWindow = _forDeleteWindow.GetComponent<TutorialWindow>();
 
             string text = _staticDataService.TutorialStaticData.Infos
                 .FirstOrDefault(x => x.Key == TutorialEventData.AttackStartEvent).Value;

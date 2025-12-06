@@ -4,5 +4,6 @@ namespace _Tutorial
     {
         MainFlag = 0,
         Barricade = 1,
+        Tower = 2,
     }
 }

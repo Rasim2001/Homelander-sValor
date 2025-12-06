@@ -1,8 +1,12 @@
+using System.Linq;
 using Infastructure.Services.InputPlayerService;
 using Infastructure.Services.PlayerRegistry;
 using Infastructure.Services.Window;
 using Infastructure.Services.Window.GameWindowService;
+using Infastructure.StaticData.StaticDataService;
+using Infastructure.StaticData.Tutorial;
 using Infastructure.StaticData.Windows;
+using UI.Windows.Tutorial;
 using UnityEngine;
 
 namespace Infastructure.Services.Tutorial.NewTutorial
@@ -12,19 +16,28 @@ namespace Infastructure.Services.Tutorial.NewTutorial
         private readonly ITutorialStateMachine _stateMachine;
         private readonly IGameWindowService _windowService;
         private readonly IInputService _inputService;
+        private readonly IStaticDataService _staticDataService;
 
-        private GameObject _forDeleteWindow;
+        private TutorialWindow _forDeleteWindow;
 
         public MovementTutorialState(ITutorialStateMachine stateMachine, IGameWindowService windowService,
-            IInputService inputService)
+            IInputService inputService, IStaticDataService staticDataService)
         {
             _stateMachine = stateMachine;
             _windowService = windowService;
             _inputService = inputService;
+            _staticDataService = staticDataService;
         }
 
-        public void Enter() =>
-            _forDeleteWindow = _windowService.OpenAndGet(WindowId.MovementTutorialWindow);
+        public void Enter()
+        {
+            string text = _staticDataService.TutorialStaticData.Infos
+                .FirstOrDefault(x => x.Key == TutorialEventData.MovementEvent)
+                .Value;
+
+            _forDeleteWindow = _windowService.OpenAndGet(WindowId.TutorialWindow).GetComponent<TutorialWindow>();
+            _forDeleteWindow.Initialize(text);
+        }
 
         public void Update()
         {
@@ -33,6 +46,6 @@ namespace Infastructure.Services.Tutorial.NewTutorial
         }
 
         public void Exit() =>
-            Object.Destroy(_forDeleteWindow);
+            Object.Destroy(_forDeleteWindow.gameObject);
     }
 }

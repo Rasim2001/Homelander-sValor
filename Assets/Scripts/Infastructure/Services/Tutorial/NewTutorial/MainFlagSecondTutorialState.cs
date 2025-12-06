@@ -30,6 +30,6 @@ namespace Infastructure.Services.Tutorial.NewTutorial
         protected override float FinishDelaySeconds => 2f;
 
         protected override void OnUpgradeFinished() =>
-            StateMachine.ChangeState<UnknownTutorialState>();
+            StateMachine.ChangeState<TowerTutorialState>();
     }
 }

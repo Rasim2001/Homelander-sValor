@@ -1,9 +1,7 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using _Tutorial;
 using _Tutorial.NewTutorial;
-using Cysharp.Threading.Tasks;
 using Infastructure.Services.Tutorial.TutorialProgress;
 using Infastructure.Services.Window.GameWindowService;
 using Infastructure.StaticData.StaticDataService;
@@ -12,11 +10,10 @@ using Infastructure.StaticData.Windows;
 using Player.Orders;
 using UI.Windows.Tutorial;
 using UnityEngine;
-using Object = UnityEngine.Object;
 
 namespace Infastructure.Services.Tutorial.NewTutorial
 {
-    public class BarricadeTutorialState : ITutorialState
+    public class TowerTutorialState : ITutorialState
     {
         private readonly ITutorialStateMachine _stateMachine;
         private readonly IStaticDataService _staticDataService;
@@ -28,10 +25,10 @@ namespace Infastructure.Services.Tutorial.NewTutorial
         private TutorialWindow _forDeleteWindow;
         private GameObject _forDeleteDummy;
 
-        private int _amountOfBarricades;
+        private int _amountOfTowers;
         private List<TutorialData> _tutorialDatas;
 
-        public BarricadeTutorialState(
+        public TowerTutorialState(
             ITutorialProgressService tutorialProgressService,
             ITutorialStateMachine stateMachine,
             IStaticDataService staticDataService,
@@ -52,10 +49,8 @@ namespace Infastructure.Services.Tutorial.NewTutorial
             _builderCommandExecutor.OnBuildFinished += BuildFinished;
             _builderCommandExecutor.OnBuildStarted += StartBuild;
 
-            _tutorialProgressService.IsBuildingStateReadyToUse = true;
-
             _tutorialDatas = _staticDataService.TutorialStaticData.TutorialObjects.Where(x =>
-                x.TypeId == TutorialObjectTypeId.Barricade).ToList();
+                x.TypeId == TutorialObjectTypeId.Tower).ToList();
 
             InitializeArrow();
             InitializeText();
@@ -76,11 +71,11 @@ namespace Infastructure.Services.Tutorial.NewTutorial
 
         private void StartBuild()
         {
-            _amountOfBarricades++;
+            _amountOfTowers++;
 
             _tutorialArrowDisplayer.Hide(_forDeleteDummy.transform);
 
-            if (_amountOfBarricades == 2)
+            if (_amountOfTowers == 2)
                 _stateMachine.ChangeState<CallNightTutorialState>();
         }
 
@@ -89,12 +84,12 @@ namespace Infastructure.Services.Tutorial.NewTutorial
             InitializeArrow();
 
             string text = _staticDataService.TutorialStaticData.Infos
-                .FirstOrDefault(x => x.Key == TutorialEventData.BarricadeFinishBuildEvent).Value;
+                .FirstOrDefault(x => x.Key == TutorialEventData.TowerFinishBuildEvent).Value;
 
             string buildingText = _staticDataService.TutorialStaticData.Infos
                 .FirstOrDefault(x => x.Key == TutorialEventData.BuildingEvent).Value;
 
-            text += $"<br>{buildingText} : {_amountOfBarricades}/2";
+            text += $"<br>{buildingText} : {_amountOfTowers}/2";
 
             _forDeleteWindow.Initialize(text);
         }
@@ -102,7 +97,7 @@ namespace Infastructure.Services.Tutorial.NewTutorial
         private void InitializeText()
         {
             string text = _staticDataService.TutorialStaticData.Infos
-                .FirstOrDefault(x => x.Key == TutorialEventData.BarricadeStartBuildEvent).Value;
+                .FirstOrDefault(x => x.Key == TutorialEventData.TowerStartBuildEvent).Value;
 
             _forDeleteWindow = _gameWindowService
                 .OpenAndGet(WindowId.TutorialWindow).GetComponent<TutorialWindow>();
